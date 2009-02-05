@@ -1,0 +1,79 @@
+
+关于  =======================================================
+「1Lot滞留/完全同期」
+BlackList的模式,1.对符合BlackList的注文进行滞留持仓并且1Lot Trigger,2.完全同期(就是现在这样的,
+BlackList的Order不进行滞留)
+INSERT INTO JHF_APP_PROPERTY(PROP_TYPE, PROPERTY_KEY, PROPERTY_VALUE, DISPLAY_NAME, NOTE, 
+UPDATE_STAFF_ID, 
+INPUT_STAFF_ID, ACTIVE_FLAG, INPUT_DATE, UPDATE_DATE)
+  VALUES('BLACKLIST', 'BLACKLIST_MODE', '1', 'BLACKLIST_MODE', '#0:1Lot Stay&Trigger , #1:Normal 
+BlackList,Not Stay', 
+'system', 'system', 1, '2008-06-23 09:00:00', '2008-06-23 09:00:00');
+
+目的是,提高BlackList Order的约定成功率及降低fx风险(尽快的触发Cover掉)
+
+改动点:
+1.check BLO的方法中增加对1Lot滞留设定的判断.当是这种BL_MODE的时候,需要return 滞留持仓模式.
+2.trader进行约定的时候判断是否为BLO并且也是BL的1Lot滞留设定,如果是的话,则写CustTrade的时候对
+TriggerID进行set,并且发送JMS给
+Hedger进行Cover(类似AutoTrigger完成的功能)
+其它的模块不需要改动
+
+=============================================================
+
+解决方法：
+
+1.在公用方法 customerTradeModeCheckOut(
+			String customerId,String currencyPair, int side ,
+			int executionType,int defaultMode, String logPrefix)
+（返回 交易模式） 
+
+修改为如下逻辑
+
+（1）在JHF_CUSTOMER_BLACKLIST 没有对应客户记录情况 ，返回默认的交易模式 
+（2）在JHF_CUSTOMER_BLACKLIST 存在对应客户记录 ，并且customer（不管其对应的注文设置是1 还是 0）
+        app property 的  'BLACKLIST', 'BLACKLIST_MODE' 对应的值 BLACKLIST_MODE 
+
+	(传入defaultMode有可能是滞留或者非滞留)
+
+	如果为 0   （#0:1Lot Stay&Trigger , #1:Normal BlackList）  ，直接返回 滞留模式 ，
+     	如果为 1 ，使用以往的校验逻辑,进行后续的校验.
+
+ （3）(customer 在blacklist 里面存在 ,app property的BLACKLIST_MODE 为 1) 
+     a.传入的default模式不是滞留模式 ，则不进行 black list 的判断，返回default模式
+     b.传入的default模式是滞留模式，则根据类型与blacklist表的设置进行后续的校验  （以后的逻辑 略）
+
+
+
+
+
+2.在滞留模式下 trader 约定时
+
+	m_orderDao.createHedgeCusttrade(
+		BigDecimal.valueOf(CustTradeTypeEnum.CUST_STORE_ORDER_ENUM.getValue()), 
+		orderBean, excutionBean.getExecutionId());
+
+
+        根据 orderInfo 获得对应customer，然后查询此 customer 是否存在于 blacklist，并且
+		app property 的  'BLACKLIST', 'BLACKLIST_MODE' 对应值等于 0  ，
+
+        是 ：  创建HedgeCusttrade时设置上triggerId，并发给hedger  
+DestinationConstant.AutoHedgeTriggerQueue      （
+AutoHedgeTriggerInfo ），
+继续原来的逻辑。
+
+        否：继续原来的逻辑
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+

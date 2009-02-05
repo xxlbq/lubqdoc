@@ -1,0 +1,61 @@
+*==================================*
+*=========* FES 测试环境 *=========*
+*==================================*
+
+FRONT    http://10.15.3.180:8080/JNLP/fes.front.formal.jnlp
+         user     :pkwa0001
+         password :111111111111
+         customer :01001022
+
+         user     :MKab0001
+         password :111111111111
+         customer :00001100
+
+
+00001034        MHxi0001     593c9b4a9390551d53e5cacf28ebd638
+
+
+2) FES 管理画面 http://10.15.2.183:8080/jhf_fes_admin/（admin/11111111）
+   
+3) FES Mobile http://10.15.3.180:38080/jhf_fes_mobile 
+   
+4) FES 口座开设 http://10.15.3.180:8080/jhf_fes_web/register
+   
+5) FES CTI http://10.15.3.180:28080/jhf_fes_cti/
+   
+DB : 10.15.3.157-main /10.15.3.169-info 
+
+         user     :admin
+         password :11111111 
+
+■FES测试环境
+10.15.2.185   fes-dltest-middle1     middle
+10.15.2.186   fes-dltest-middle2     middle
+10.15.2.188   fes-dltest-batch     batch\Rollover\report
+10.15.2.189   fes-dltest-jboss     jboss
+10.15.3.157   fes-dltest-maindb    MAIN_DB
+10.15.3.169   fes-dltest-infodb    INFO_DB\gw
+10.15.3.180   fes-dltest-bakyard   front
+10.15.2.183   backyard
+
+
+fes testhttp://10.15.3.180:8080/JNLP/fes.front.formal.jnlp
+pkwa0001/gggggggggggg
+
+fes test 手动发送汇率：http://10.15.2.183:8080/jhf_fes_jms_admin/senJmsToGw.do
+
+10.15.2.185 fes-dltest-middle1     middle
+10.15.2.186 fes-dltest-middle2     middle
+10.15.2.188   fes-dltest-batch     batch\Rollover\report
+10.15.2.189   fes-dltest-jboss     jboss
+10.15.3.157   fes-dltest-maindb    MAIN_DB          mysql -uMAIN -pPrG7lv2Y -h10.15.3.157 MAIN 
+--default-character-set=cp932
+10.15.3.169   fes-dltest-infodb    INFO_DB\gw       mysql -uINFO -pPrG7lv2Y INFO
+10.15.3.180   fes-dltest-bakyard   front\bayard
+root、bestwiz
+Admin:
+http://10.15.2.183:8080/jhf_fes_admin/
+Register:
+http://10.15.3.180:8080/register/
+
+http://10.15.3.180:8080/jhf_fes_web/JNLP/fes.front.formal.jnlp

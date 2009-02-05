@@ -1,0 +1,246 @@
+
+
+
+deploy.bestwiz.cn
+
+
+
+
+> 大家好，部署服务器原来的10.15.2.32已经作废，现在更新为新的服务器，信息如下：
+> 域名(IP)：deploy.bestwiz.cn
+> 用户名：deployer
+> 密码：bestwiz
+> 用法和下面介绍的一样，请大家适当修改。
+> 同时测试首页信息也进行了统一使用浏览器访问如下URL：
+> http://fxtest.bestwiz.cn
+> 里面就能找到相应的测试服务器新的地址。
+> 外网提供给日方的地址面前没有做任何修改，等系统部统一以后另外通知大家。
+> 
+> Ice Liu wrote:
+>> 大家好：
+>> 经过大家的帮助，在前人的基础上系统部写出了新的测试、开发
+>> 服务器部署脚本，以及服务的管理程序，解决了老脚本的不少问题。
+>> 新脚本解决的问题有：
+>> 一、对关键的每个操作都做了异常判断，出现问题会及时停止。
+>> 二、日志更加详细，能及时的根据断点判断出问题。
+>> 三、启动服务不在滞留一个ssh进程。
+>> 四、开发、测试以及不同项目可以同时并发部署(当然是在硬件设备
+>> 的允许下。由于部署服务器不太好。所以2～3个同时部署就差不多了)。
+>> 代码路径以及使用方法：
+>> 还是使用原来的用户登录部署服务器，进入~/scripts/shell目录。
+>> 有两个命令：
+>> deployerfox 部署脚本，使用实例：
+>> mj项目开发服务器的前台部署
+>> ./deployerfox mj dev front
+>> panta项目测试服务器后台部署，并将日志发送到指定的两个邮件地址：
+>> ./deployerfox panta test backyard liuhg@bestwiz.cn,support@bestwiz.cn
+>> fxappctl 服务管理脚本，使用实例：
+>> 重新启动mj测试服务器所有服务
+>> ./fxappctl mj test ALL restart
+>> 停止fes开发服务器middle服务
+>> ./fxappctl fes dev middle restart
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[deploy-dev@deploy shell]$ sh fxappctl mj dev
+fxappctl {FXName|EnvironmentName|ModuleName|CMD}
+        FXName          (mj|fes|panta)
+        EnvironmentName (test|dev)
+        ModuleName      (front|backyard|middle|gw|setflag|ALL)
+        CMD             (start|stop|restart)
+EXAMPLES:
+        fxappctl mj test gw start
+[deploy-dev@deploy shell]$ sh fxappctl mj dev middle
+fxappctl {FXName|EnvironmentName|ModuleName|CMD}
+        FXName          (mj|fes|panta)
+        EnvironmentName (test|dev)
+        ModuleName      (front|backyard|middle|gw|setflag|ALL)
+        CMD             (start|stop|restart)
+EXAMPLES:
+        fxappctl mj test gw start
+[deploy-dev@deploy shell]$ sh fxappctl mj dev middle restart
+
+
+
+
+
+
+
+
+
+
+路径： 
+~/scripts/shell 
+deployerfox    开发、测试环境的部署通用shell 
+fxappctl       开发、测试环境服务重启管理通用shell 
+开发和测试可以同时运行。所以以后开发的部署也请使用 
+该脚本。为便于管理，如果有什么地方需要修改，比如配置 
+文件等，只允许系统部可以修改，开发人员请通知系统部 
+需要修改的地方，比如IP地址的变化，模块的增加等等。 
+如果运行中发现任何的问题请“保留现场”，通知系统部 
+以便能尽快排查部署问题。 
+
+
+
+
+./deployerforfx panta dev ALL
+
+./deployerforfx panta dev front
+
+
+
+
+
+
+
+
+
+
+[deploy-dev@deploy shell]$ sh fxappctl mj dev
+fxappctl {FXName|EnvironmentName|ModuleName|CMD}
+        FXName          (mj|fes|panta)
+        EnvironmentName (test|dev)
+        ModuleName      (front|backyard|middle|gw|setflag|ALL)
+        CMD             (start|stop|restart)
+EXAMPLES:
+        fxappctl mj test gw start
+[deploy-dev@deploy shell]$ sh fxappctl mj dev middle
+fxappctl {FXName|EnvironmentName|ModuleName|CMD}
+        FXName          (mj|fes|panta)
+        EnvironmentName (test|dev)
+        ModuleName      (front|backyard|middle|gw|setflag|ALL)
+        CMD             (start|stop|restart)
+EXAMPLES:
+        fxappctl mj test gw start
+[deploy-dev@deploy shell]$ sh fxappctl mj dev middle restart
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+重启 XXX 项目的所有模块，包括JBOSS状态设定 JBOSS重启,
+[deploy-dev@jboss ~]$ sh restartApp.sh panta all
+
+
+
+
+
+
+
+
+
+
+
+
+
+lib.20080415/
+
+
+
+[9:45:12] 孙厉.SUN 说：  用户  deploy-dev/bestwiz 
+这上面部署的是各个开发环境的脚本和crontab。          
+                 
+deployerForFx.sh 是部署用脚本。           
+example: 
+sh deployerForFx.sh 'mj' 'all' 'BR-MJ-PROJECTS-2007-08-01-GA' 
+是用'BR-MJ-PROJECTS-2007-08-01-GA'版本部署mj 的开发环境的所有程序。 
+sh deployerForFx.sh 'mj' 'front' 
+是用当前的版本部署mj 的开发环境的front程序。 
+sh deployerForFx.sh 'mj' 或 sh deployerForFx.sh 'mj' 'all' 
+是用当前的版本部署mj 的开发环境的所有程序 
+ 
+stopApp.sh ,startApp.sh,restartApp.sh分别是停止程序脚本，启动脚本 
+和重起脚本，用法和 deployerForFx.sh 相同。 
+------------------------------------------------------------------- 
+用户  deployer/bestwiz 
+这上面部署的环境的脚本和crontab即可以对开发环境也可以对测试环境。 
+ 
+用户  deployerForFx.sh 是部署用脚本。 
+example: 
+sh deployerForFx.sh 'mj' 'test' 'all' 'BR-MJ-PROJECTS-2007-08-01-GA' 
+是用'BR-MJ-PROJECTS-2007-08-01-GA'版本部署mj 的开发测试环境的所有程序。 
+sh deployerForFx.sh 'mj' 'dev' 'front' 
+是用当前的版本部署mj 的开发环境的front程序。 
+sh deployerForFx.sh 'mj' 'test'或 sh deployerForFx.sh 'mj' 'test' 'all' 
+是用当前的版本部署mj 的测试环境的所有程序 
+ 
+stopApp.sh ,startApp.sh,restartApp.sh分别是停止程序脚本，启动脚本 
+和重起脚本，用法和 deployerForFx.sh 相同。 
+
+
+
+
+
+
+PANTA  需要
+
+jhf_panta_core
+jhf_panta_hedger
+jhf_panta_info
+jhf_panta_ratecontroller
+jhf_panta_trader
+
+
+
+
+MJ 需要
+
+
+
+jhf_mj_core
+jhf_mj_hedger
+jhf_mj_info
+jhf_mj_ratecontroller
+jhf_mj_trader
+
+
+
+
+
+FES 需要
+
+jhf_fes_formula
+jhf_fes_core
+jhf_fes_hedger
+jhf_fes_info
+jhf_fes_ratecontroller
+jhf_fes_trader

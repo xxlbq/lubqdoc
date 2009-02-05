@@ -1,0 +1,209 @@
+由于开发BlackList的1Lot滞留2的课题,Trader模块改动点比较多,所以,需要大家一起协助来测试各个业务点.
+
+具体测试内容,请参考以下进行:
+1.LeaveOrder:->王宁/老卢
+     1.1.新规/决计的同期/滞留模式 : 对顾客的约定价格LimitOrder=OrderPrice.StopOrder=OpmTriggerRate
+     1.2.BlackList 同期           : 是指其它的顾客都进行滞留的情况下,被BlackList设定的顾客对应的注文是按照同期模式交易的
+                                    对顾客的约定价格LimitOrder=OrderPrice.StopOrder=OpmTriggerRate
+                                    注文不成功的可能性比较高,因为,Hedger在Cover之前有价格比较的逻辑
+     1.3.BlackList 1Lot滞留       : 是指被BlackList设定的顾客对应的注文,是按照先在Trader对顾客约定完毕后,立即发送给Hedger进行
+Cover
+                                    对顾客的约定价格LimitOrder=OrderPrice.StopOrder=OpmTriggerRate
+                                    注文的成功率100%.但是,系统可能赔钱,因为,Cover的时候,没有价格比较.
+2.LosscutOrder:->老黄/老卢
+     2.1.决计的同期模式           : 对顾客的约定价格=CpExecutionPrice +/- Admin画面的Spread设定的Variable对应的Ask/Bid的value
+     2.2.决计的滞留模式           : 对顾客的约定价格=Trader的当前Rate
+     2.3.BlackList 同期           : 是指其它的顾客都进行滞留的情况下,被BlackList设定的顾客对应的注文是按照同期模式交易的
+                                    对顾客的约定价格=CpExecutionPrice +/- Admin画面的Spread设定的Variable对应的Ask/Bid的value
+                                    注文不成功的可能性比较高,因为,Hedger在Cover之前有价格比较的逻辑
+     2.4.BlackList 1Lot滞留       : 是指被BlackList设定的顾客对应的注文,是按照先在Trader对顾客约定完毕后,立即发送给Hedger进行
+Cover
+                                    对顾客的约定价格=Trader的当前Rate
+                                    注文的成功率100%.但是,系统可能赔钱,因为,Cover的时候,没有价格比较.
+3.时间成行:->老黄/老卢
+     3.1.新规/决计的同期/滞留模式 : 对顾客的约定价格=Trader的当前Rate
+     3.2.BlackList 同期           : 是指其它的顾客都进行滞留的情况下,被BlackList设定的顾客对应的注文是按照同期模式交易的
+                                    对顾客的约定价格=Trader的当前Rate
+                                    注文不成功的可能性比较高,因为,Hedger在Cover之前有价格比较的逻辑
+     3.3.BlackList 1Lot滞留       : 是指被BlackList设定的顾客对应的注文,是按照先在Trader对顾客约定完毕后,立即发送给Hedger进行
+Cover
+                                    对顾客的约定价格=Trader的当前Rate
+                                    注文的成功率100%.但是,系统可能赔钱,因为,Cover的时候,没有价格比较.
+
+
+4.成行:->老左/老卢
+    4.1.新规/决计/同期/滞留       : 对顾客的约定价格的方式,对顾客的约定价格=按照顧客約定タイプ設定 来决定
+    4.2.BlackList 同期            : 是指其它的顾客都进行滞留的情况下,被BlackList设定的顾客对应的注文是按照同期模式交易的
+                                    对顾客的约定价格=按照顧客約定タイプ設定 来决定
+                                    注文不成功的可能性比较高,因为,Hedger在Cover之前有价格比较的逻辑
+    4.3.BlackList 1Lot滞留        : 是指被BlackList设定的顾客对应的注文,是按照先在Trader对顾客约定完毕后,立即发送给Hedger进行
+Cover
+                                    对顾客的约定价格=按照顧客約定タイプ設定 来决定
+    4.4.BlackList 1Lot滞留2       : 是指被BlackList设定的顾客对应的注文,是按照先在Trader对顾客约定完毕后,立即发送给Hedger进行
+Cover
+                                    对顾客的约定价格的逻辑,按照以下要求进行:
+                                    \projects\design\task\20081008@BlackList_1LotFire2\02)design\1.xls->1LOT滞留2判断逻辑
+5.一括决计:->老邱/老卢
+    5.1.决计/同期/滞留            : 对顾客的约定价格的方式,对顾客的约定价格=按照顧客約定タイプ設定 来决定
+    5.2.BlackList 同期            : 是指其它的顾客都进行滞留的情况下,被BlackList设定的顾客对应的注文是按照同期模式交易的
+                                    对顾客的约定价格=按照顧客約定タイプ設定 来决定
+                                    注文不成功的可能性比较高,因为,Hedger在Cover之前有价格比较的逻辑
+    5.3.BlackList 1Lot滞留        : 是指被BlackList设定的顾客对应的注文,是按照先在Trader对顾客约定完毕后,立即发送给Hedger进行
+Cover
+                                    对顾客的约定价格=按照顧客約定タイプ設定 来决定
+    5.4.BlackList 1Lot滞留2       : 是指被BlackList设定的顾客对应的注文,是按照先在Trader对顾客约定完毕后,立即发送给Hedger进行
+Cover
+                                    对顾客的约定价格的逻辑,按照以下要求进行:
+                                    \projects\design\task\20081008@BlackList_1LotFire2\02)design\1.xls->1LOT滞留2判断逻辑
+6.紧急决计:->王岩/老卢
+    6.1.决计/同期/滞留            : 对顾客的约定价格的方式,对顾客的约定价格=按照顧客約定タイプ設定 来决定
+    6.2.BlackList 同期            : 是指其它的顾客都进行滞留的情况下,被BlackList设定的顾客对应的注文是按照同期模式交易的
+                                    对顾客的约定价格=按照顧客約定タイプ設定 来决定
+                                    注文不成功的可能性比较高,因为,Hedger在Cover之前有价格比较的逻辑
+    6.3.BlackList 1Lot滞留        : 是指被BlackList设定的顾客对应的注文,是按照先在Trader对顾客约定完毕后,立即发送给Hedger进行
+Cover
+                                    对顾客的约定价格=按照顧客約定タイプ設定 来决定
+    6.4.BlackList 1Lot滞留2       : 是指被BlackList设定的顾客对应的注文,是按照先在Trader对顾客约定完毕后,立即发送给Hedger进行
+Cover
+                                    对顾客的约定价格的逻辑,按照以下要求进行:
+                                    \projects\design\task\20081008@BlackList_1LotFire2\02)design\1.xls->1LOT滞留2判断逻辑
+对于4,5,6的成行/一括决计/紧急决计,还有以下注意事项:
+   1.Admin画面->CP管理->顧客約定タイプ設定,以下是一个例子:
+   SpMode         OrderPrice Side NewTick Slippage Result       ExecutionPrice
+  ノーマルタイプ 105.10     Buy  105.09   1       Order Fail   
+   FX益重視タイプ 105.10     Buy  105.09   1       Order OK     105.10
+   顧客重視タイプ 105.10     Buy  105.09   1       Order OK     105.09
+   Panta和MJ正式环境目前使用的是FX益重視タイプ.保险起见,以上3中模式请分别测试.
+   2.Flash和Mobile都需要进行成行/一括决计/紧急决计的测试.因为,在Trader的程序中,Flash和Mobile的处理是不同的走向.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=========  new  ==================#########################################
+
+
+1.LeaveOrder:
+     1.1.新规/决计的同期/滞留模式 : 对顾客的约定价格LimitOrder=OrderPrice.StopOrder=OpmTriggerRate
+     1.2.BlackList 同期           : 是指其它的顾客都进行滞留的情况下,被BlackList设定的顾客对应的注文是按照同期模式交易的
+                                    对顾客的约定价格LimitOrder=OrderPrice.
+                                    对顾客的约定价格StopOrder:
+                                    顾客Ask时 且 系统当前的对顾价格>=(CP约定价格+AskAdjustment) ，顾客约定价格 = 系统当前的对顾
+价格;
+                                    顾客Ask时 且 系统当前的对顾价格< (CP约定价格+AskAdjustment) ，顾客约定价格 = (CP约定价格
++AskAdjustment);
+                                    顾客Bid时 且 系统当前的对顾价格<=(CP约定价格-BidAdjustment) ，顾客约定价格 = 系统当前的对顾
+价格;
+                                    顾客Bid时 且 系统当前的对顾价格> (CP约定价格-BidAdjustment) ，顾客约定价格 = (CP约定价格
+-BidAdjustment);
+                                    AskAdjustment: BACKYARD的"スプレッド設定"的Variable的ASK值;
+                                    BidAdjustment: BACKYARD的"スプレッド設定"的Variable的BID值;
+                                    注文不成功的可能性比较高,因为,Hedger在Cover之前有价格比较的逻辑
+     1.3.BlackList 1Lot滞留       : 是指被BlackList设定的顾客对应的注文,是按照先在Trader对顾客约定完毕后,立即发送给Hedger进行
+Cover
+                                    对顾客的约定价格LimitOrder=OrderPrice.StopOrder=OpmTriggerRate
+                                    注文的成功率100%.但是,系统可能赔钱,因为,Cover的时候,没有价格比较.
+2.LosscutOrder:
+     2.1.决计的同期模式           : 对顾客的约定价格=CpExecutionPrice +/- Admin画面的Spread设定的Variable对应的Ask/Bid的value
+     2.2.决计的滞留模式           : 对顾客的约定价格=Trader的当前Rate
+     2.3.BlackList 同期           : 是指其它的顾客都进行滞留的情况下,被BlackList设定的顾客对应的注文是按照同期模式交易的
+                                    对顾客的约定价格:
+                                    顾客Ask时 且 系统当前的对顾价格>=(CP约定价格+AskAdjustment) ，顾客约定价格 = 系统当前的对顾
+价格;
+                                    顾客Ask时 且 系统当前的对顾价格< (CP约定价格+AskAdjustment) ，顾客约定价格 = (CP约定价格
++AskAdjustment);
+                                    顾客Bid时 且 系统当前的对顾价格<=(CP约定价格-BidAdjustment) ，顾客约定价格 = 系统当前的对顾
+价格;
+                                    顾客Bid时 且 系统当前的对顾价格> (CP约定价格-BidAdjustment) ，顾客约定价格 = (CP约定价格
+-BidAdjustment);
+                                    AskAdjustment: BACKYARD的"スプレッド設定"的Variable的ASK值;
+                                    BidAdjustment: BACKYARD的"スプレッド設定"的Variable的BID值;
+                                    注文不成功的可能性比较高,因为,Hedger在Cover之前有价格比较的逻辑
+     2.4.BlackList 1Lot滞留       : 是指被BlackList设定的顾客对应的注文,是按照先在Trader对顾客约定完毕后,立即发送给Hedger进行
+Cover
+                                    对顾客的约定价格=Trader的当前Rate
+                                    注文的成功率100%.但是,系统可能赔钱,因为,Cover的时候,没有价格比较.
+3.时间成行:
+     3.1.新规/决计的同期/滞留模式 : 对顾客的约定价格=Trader的当前Rate
+     3.2.BlackList 同期           : 是指其它的顾客都进行滞留的情况下,被BlackList设定的顾客对应的注文是按照同期模式交易的
+                                    对顾客的约定价格=Trader的当前Rate
+                                    注文不成功的可能性比较高,因为,Hedger在Cover之前有价格比较的逻辑
+     3.3.BlackList 1Lot滞留       : 是指被BlackList设定的顾客对应的注文,是按照先在Trader对顾客约定完毕后,立即发送给Hedger进行
+Cover
+                                    对顾客的约定价格=Trader的当前Rate
+                                    注文的成功率100%.但是,系统可能赔钱,因为,Cover的时候,没有价格比较.
+
+4.成行:
+    4.1.新规/决计/同期/滞留       : 对顾客的约定价格的方式,对顾客的约定价格=按照顧客約定タイプ設定 来决定
+    4.2.BlackList 同期            : 是指其它的顾客都进行滞留的情况下,被BlackList设定的顾客对应的注文是按照同期模式交易的
+                                    对顾客的约定价格=按照顧客約定タイプ設定 来决定
+                                    注文不成功的可能性比较高,因为,Hedger在Cover之前有价格比较的逻辑
+    4.3.BlackList 1Lot滞留        : 是指被BlackList设定的顾客对应的注文,是按照先在Trader对顾客约定完毕后,立即发送给Hedger进行
+Cover
+                                    对顾客的约定价格=按照顧客約定タイプ設定 来决定
+    4.4.BlackList 1Lot滞留2       : 是指被BlackList设定的顾客对应的注文,是按照先在Trader对顾客约定完毕后,立即发送给Hedger进行
+Cover
+                                    对顾客的约定价格的逻辑,按照以下要求进行:
+                                    \projects\design\task\20081008@BlackList_1LotFire2\02)design\1.xls->1LOT滞留2判断逻辑
+5.一括决计:
+    5.1.决计/同期/滞留            : 对顾客的约定价格的方式,对顾客的约定价格=按照顧客約定タイプ設定 来决定
+    5.2.BlackList 同期            : 是指其它的顾客都进行滞留的情况下,被BlackList设定的顾客对应的注文是按照同期模式交易的
+                                    对顾客的约定价格=按照顧客約定タイプ設定 来决定
+                                    注文不成功的可能性比较高,因为,Hedger在Cover之前有价格比较的逻辑
+    5.3.BlackList 1Lot滞留        : 是指被BlackList设定的顾客对应的注文,是按照先在Trader对顾客约定完毕后,立即发送给Hedger进行
+Cover
+                                    对顾客的约定价格=按照顧客約定タイプ設定 来决定
+    5.4.BlackList 1Lot滞留2       : 是指被BlackList设定的顾客对应的注文,是按照先在Trader对顾客约定完毕后,立即发送给Hedger进行
+Cover
+                                    对顾客的约定价格的逻辑,按照以下要求进行:
+                                    \projects\design\task\20081008@BlackList_1LotFire2\02)design\1.xls->1LOT滞留2判断逻辑
+6.紧急决计:
+    6.1.决计/同期/滞留            : 对顾客的约定价格的方式,对顾客的约定价格=按照顧客約定タイプ設定 来决定
+    6.2.BlackList 同期            : 是指其它的顾客都进行滞留的情况下,被BlackList设定的顾客对应的注文是按照同期模式交易的
+                                    Slippage比较的时候,按照顧客約定タイプ設定的来进行,约定价格按照以下:
+                                    顾客Ask时 且 系统当前的对顾价格>=(CP约定价格+AskAdjustment) ，顾客约定价格 = 系统当前的对顾
+价格;
+                                    顾客Ask时 且 系统当前的对顾价格< (CP约定价格+AskAdjustment) ，顾客约定价格 = (CP约定价格
++AskAdjustment);
+                                    顾客Bid时 且 系统当前的对顾价格<=(CP约定价格-BidAdjustment) ，顾客约定价格 = 系统当前的对顾
+价格;
+                                    顾客Bid时 且 系统当前的对顾价格> (CP约定价格-BidAdjustment) ，顾客约定价格 = (CP约定价格
+-BidAdjustment);
+                                    AskAdjustment: BACKYARD的"スプレッド設定"的Variable的ASK值;
+                                    BidAdjustment: BACKYARD的"スプレッド設定"的Variable的BID值;
+    6.3.BlackList 1Lot滞留        : 是指被BlackList设定的顾客对应的注文,是按照先在Trader对顾客约定完毕后,立即发送给Hedger进行
+Cover
+                                    Slippage比较及对顾客的约定价格,都按照顧客約定タイプ設定的来进行
+    6.4.BlackList 1Lot滞留2       : 是指被BlackList设定的顾客对应的注文,是按照先在Trader对顾客约定完毕后,立即发送给Hedger进行
+Cover
+                                    对顾客的约定价格的逻辑,按照以下要求进行:
+                                    \projects\design\task\20081008@BlackList_1LotFire2\02)design\1.xls->1LOT滞留2判断逻辑
+
+对于4,5,6的成行/一括决计/紧急决计,还有以下注意事项:
+   1.Admin画面->CP管理->顧客約定タイプ設定,以下是一个例子:
+   SpMode         OrderPrice Side NewTick Slippage Result       ExecutionPrice
+  ノーマルタイプ 105.10      Buy  105.09   1       Order Fail   
+   FX益重視タイプ 105.10     Buy  105.09   1       Order OK     105.10
+   顧客重視タイプ 105.10     Buy  105.09   1       Order OK     105.09
+   Panta和MJ正式环境目前使用的是FX益重視タイプ.保险起见,以上3中模式请分别测试.
+   2.Flash和Mobile都需要进行成行/一括决计/紧急决计的测试.因为,在Trader的程序中,Flash和Mobile的处理是不同的走向.
+
+

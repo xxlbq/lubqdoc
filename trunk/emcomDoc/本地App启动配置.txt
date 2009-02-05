@@ -1,0 +1,8 @@
+
+
+-DconfigPath=E:\\java\\eclipse-3.3-bestwiz-wp\\em-core\\conf
+-Xbootclasspath/p:E:\project\design\task_history\20080508@Terracotta\terracotta-2.6.1\lib\dso-boot\dso-boot-hotspot_win32_150_05.jar
+-Dtc.install-root="E:\project\design\task_history\20080508@Terracotta\terracotta-2.6.1" -Dtc.config="F:\terracotta-2.6.1\tc-config.xml
+-Dcom.tc.loader.system.name=Tomcat.Catalina:localhost:
+
+

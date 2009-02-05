@@ -1,0 +1,44 @@
+[2008-3-17 9:07:57] 王岩 说： 各位:
+
+对于MJ Hedger最近的调整,需要大家一起参与到测试中,因为,Hedger及AutoTrigger相关内容改动比较大,并且非常重要,影响深远.
+对相关的测试点进行了整理,请参考一下:
+\mj\04_design\detail\01)core\hedger优化\业务及测试点.xls
+测试文档的格式参考:
+\panta\04_design\detail\02)Core\滞留持仓测试\FNX-FX_PANTA_Middle_Test_hcm.xls
+测试文档存放路径:
+\mj\04_design\detail\01)core\hedger优化\第一轮测试\FNX-FX_MJ_COVER_TEST_xxx.xls
+请大家今日内先看一下,如果有问题的话,请提出,大家一起讨论.
+明日按照计划开始测试,测试的过程,类似滞留持仓一期的形式
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[10:04:22] 王岩 说： 小潘/老卢/候德光/老左/老黄:
+MJ All 45 CUSTOMER_ORDER_NO调整,请同步Panta调整的内容到MJ中
+cvs update:
+\00_General\04_Plan\BWZ-FX_Middle_Dev_Schedule.xls
+
+老左/老孟/王宁:
+1.请继续进行T3,T4,T5,T6测试
+2.对于1完毕后,请进行BUG及重点内容的回归测试,请本周内结束
+
+老黄:
+1.请进行Losscut的BUG及重点内容的回归测试
+2.对于1完毕后,请进行滞留持仓测试,通过Backyard触发(T4和T5),请争取本周内结束
+
+老卢/邱岩明:
+1.请进行成行注文及LeaveOrder的BUG及重点内容的回归测试
+2.对于1完毕后,请进行滞留持仓的测试,通过Backyard触发(T4和T5),可以进行测试任务的再分配,也就是两人的合计的测试点是T4和T5,请争取本周内结束

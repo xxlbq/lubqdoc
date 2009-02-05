@@ -1,0 +1,15 @@
+[15:33:50] dealer&GW.文艺 说：  IP address 
+middle1 10.15.2.161 
+middle2 10.15.2.162 
+middle3 10.15.2.163 
+gw 10.15.2.164 
+TC 10.15.2.165 
+MAIN 10.15.2.166 
+INFO 10.15.2.167 
+register 10.15.2.168 
+front mobile 10.15.2.169 
+ajax cti 10.15.2.170 
+admin&batch 10.15.2.171 
+jboss 10.15.2.172
+[15:34:00] dealer&GW.文艺 说： root/bestwiz
+[15:34:37] dealer&GW.文艺 说： 以后dealer的开发请使用此环境

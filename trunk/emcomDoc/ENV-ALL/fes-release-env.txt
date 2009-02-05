@@ -1,0 +1,72 @@
+FES 系统－大连Release环境  
+1) FES front http://10.15.2.87:8000/JNLP/fes.front.formal.jnlp 
+   
+2) FES 管理画面 http://10.15.2.87:8080 
+   
+3) FES Mobile http://10.15.2.87:8090 
+   
+4) FES 口座开设 http://10.15.2.87:8000/register/ 
+   
+ 
+
+ 00001008        MKsu0001     593c9b4a9390551d53e5cacf28ebd638
+
+
+
+root betwiz1
+
+
+
+
++====================+
+ FES release 的服务器环境
++====================+
+
+  Front http://10.15.2.87:8000/JNLP/fes.front.formal.jnlp   
+Front Register http://10.15.2.87:8000/register/   
+mobile http://10.15.2.87:8090   
+Backyard http://10.15.2.87:8080
+[2008-2-1 13:46:15] ┖◎＿◎┙卢宝强 | Louis 说： OK
+[2008-2-1 13:46:20] MIDDLE.黄成明 说： Ok
+[2008-2-1 13:46:21] 王岩 说：  PHfx0001/1111111111111/01001004
+[2008-2-1 13:46:27] 左林 说： OK
+[2008-2-1 13:46:34] MIDDLE.王寧 说： OK
+[2008-2-1 13:46:36] 王岩 说： Backyard:   admin/fnx111111
+[2008-2-1 13:51:50] 孟凡锦 说： 管理者IDあるいはパスワードが登録情報と一致しません。
+[2008-2-1 13:52:56] MIDDLE.黄成明 说： realtime 做不成功.
+
+middle 10.15.2.88  ssh 登录不上去.
+[2008-2-1 13:54:38] 王岩 说：  root bestwiz
+[2008-2-1 13:58:20] 王岩 说： admin/11111111
+[2008-2-1 13:58:25] 王岩 说： backyard
+[2008-2-1 14:00:21] MIDDLE.王寧 说： 有，fes release的用户名吗？
+[2008-2-1 14:01:46] 王岩 说： front: PHfx0001/4H3Yz7kA/01001004
+admin:admin/11111111
+server:root bestwiz
+[2008-2-1 14:02:17] MIDDLE.王寧 说： front: PHfx0001/4H3Yz7kA/01001004
+
+不好用。
+[2008-2-1 14:02:45] MIDDLE.黄成明 说：  PHfx0001/4H3Yz7kA/01001004 我登了.
+
+
+
+
+
+[14:59:24] 王岩 说： [14:40:52] fes.王正强 说：
+
+ customerId: 00001002
+ LOGINID:    MHfx0001
+ pass:          22222222（8个2）
+
+
+
+[14:40:57] fes.王正强 说： LOGINID:    MKsu0003
+pass:       R5OeN7s8
+
+[14:53:37] 雷善开 说： 00001002Master2MHfx00011
+00001007Master2MHfx00021
+00001010Master0MKsu00031
+00001011Master2MHsu00011
+00002911Master0MKiw00011
+01001004Platina2PHfx0001
+[14:59:30] 王岩 说： 如果密码不对,用1试验一下

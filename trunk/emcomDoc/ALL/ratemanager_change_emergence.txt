@@ -1,0 +1,16 @@
+[15:55:13] ┖◎＿◎┙卢宝强 | Louis 说： ratemanager  这种情况：
+
+2008-06-11 16:46:27,928 INFO  
+[ratemanager.bussiness.RateConfidenceChecker#processRatesConfidence:178] : Change inEmgerency 
+Status Send to CpRateCache : 
+CpSpotRateInfo:[FxPriceId=null,CurrencyPair=GBP/AUD,CounterpartyId=LB,MessageTime=2008-06-11 
+16:35:31:468,JST,ReceiveTime=null,usualable=false,inManualStatus2,inEmgerencyStatus1,--Bid:Band 
+[0] 
+PriceId=null,Rate=-1,Tradable=false;ContractCurrency=AUD,LowerAmount=0,UpperAmount=0;CounterCurrenc
+y=GBP,LowerAmount=0,UpperAmount=0;--Ask:Band [0] 
+PriceId=null,Rate=-1,Tradable=false;ContractCurrency=AUD,LowerAmount=0,UpperAmount=0;CounterCurrenc
+y=GBP,LowerAmount=0,UpperAmount=0;]
+[15:55:44] ┖◎＿◎┙卢宝强 | Louis 说： 上次 记得好像是 哪个地方的设置问题吧？
+[15:56:01] ┖◎＿◎┙卢宝强 | Louis 说： 记不住了。
+[15:59:33] MIDDLE.邱岩明 说： jhfStatusContrl.getUnusualWaitTime
+[15:59:50] ┖◎＿◎┙卢宝强 | Louis 说： OK,3ku

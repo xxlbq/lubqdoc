@@ -1,0 +1,30 @@
+MJ 系统－大连Release环境  
+1) MJ front http://10.15.2.190:8080/ 
+   
+2) MJ 管理画面 http://10.15.2.190:18080/ 
+mobile         http://10.15.2.190:8880/
+   
+3) MJ 口座开设 http://10.15.2.190/register/ 
+
+
+I0000001/111111111111/00000887
+
+00000142        Ita00017     593c9b4a9390551d53e5cacf28ebd638  0  
+
+
+http://10.15.2.190:18080/jhf_mj_admin 
+
+
+
+[15:09:39] MIDDLE.王寧 说： MJ Release :
+http://10.15.2.190:8080
+I0000001/222222222222/00000887
+http://10.15.2.190:18080/
+10.15.2.190 mj-service-tomcat
+10.15.2.191 mj-service-jboss
+10.15.2.192 mj-service-db/gw
+10.15.2.193 mj-service-middle
+10.15.2.194 mj-service-batch
+
+用户名/密码：root/mj-service
+

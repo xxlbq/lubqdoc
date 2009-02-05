@@ -1,0 +1,17 @@
+1.Jboss标志切换,SQL恢复的方法:
+UPDATE MAIN.JHF_JMS_VENDOR SET  STATUS=1;
+UPDATE MAIN.JHF_JMS_PROVIDER SET  USING_VENDOR=1;
+
+SELECT * FROM MAIN.JHF_JMS_PROVIDER;
+SELECT * FROM MAIN.JHF_JMS_VENDOR;
+
+2.10.15.2.32:
+[jhf-dev@jboss ~]$ su - deploy-dev
+Password: bestwiz
+[deploy-dev@jboss ~]$ ls
+conf  config  crontabDeployer.sh  deployerForFx.sh  log  restartApp.sh  setConfig.sh  startApp.sh  stopApp.sh  
+test.sh
+[deploy-dev@jboss ~]$ sh restartApp.sh mj
+重新启动,MJ DEV环境,所有服务,包括Jboss
+
+请尝试用1,或者2的方法来对应

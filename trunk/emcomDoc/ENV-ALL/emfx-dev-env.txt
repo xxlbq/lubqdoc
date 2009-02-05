@@ -1,0 +1,63 @@
+
+
+
+
+
+
+front     http://172.18.1.51:8080/
+
+
+
+front mobile     http://172.18.1.51:18080/jhf_emfx/
+
+
+
+[11:15:15] 左林 说：  front/mobile 172.18.1.51 
+ajax/cti 172.18.1.52
+backyard/batch/register 172.18.1.53
+MAIN 172.18.1.54
+INFO 172.18.1.55
+gw/activemq 172.18.1.56
+middle1 172.18.1.57
+middle2 172.18.1.58
+middle3 172.18.1.59
+ 172.18.1.60
+tc 172.18.1.61
+[10:59:58] iceblood 说： EMFX 开发的IP
+
+
+
+
+
+usr:  Buyaogai/666666666666/00000059     MD5 CODE:[bc177a7a9c7df69c248647b4dfc6fd84] pwd:666666666666
+
+后台   middle 服务器 root/111111
+
+
+
+00000120       Ito00003     666666666666  0    
+
+
+
+
+
+
+
+ CUSTOMER_ID     GROUP_ID     LOGIN_CONSTRAINT     LOGIN_ID     LOGIN_PASSWORD                   
+ --------------  -----------  -------------------  -----------  -------------------------------- 
+ 90000088        DEFAULT      0                    EMFX0088     593c9b4a9390551d53e5cacf28ebd638 
+
+
+90000007
+
+
+
+
+
+
+
+-DconfigPath=E:\\java\\eclipse-3.3-bestwiz-wp\\em-core\\conf
+-Xbootclasspath/p:D:\\soft-setup\\terracotta-2.7.2\\lib\\dso-boot\\dso-boot-hotspot_win32_160_06.jar
+-Dtc.install-root=D:\\soft-setup\\terracotta-2.7.2
+-Dtc.config=E:\\java\\eclipse-3.3-bestwiz-wp\\em-core\\conf\\tc-config.xml
+-Dcom.tc.loader.system.name=Tomcat.Catalina:localhost:/flexweb

@@ -1,0 +1,20 @@
+[2008-12-9 9:27:21] dealer&GW.文艺 说： ■ Panta dealer(系统部、文艺)  
+  
+ IP address 
+
+
+
+
+middle1 10.15.2.161
+middle2 10.15.2.162
+middle3 10.15.2.163
+gw 10.15.2.164
+TC 10.15.2.165
+MAIN 10.15.2.166
+INFO 10.15.2.167
+register 10.15.2.168
+front mobile 10.15.2.169
+ajax cti 10.15.2.170
+admin&batch 10.15.2.171
+jboss 10.15.2.172
+dealerserver 10.15.2.173

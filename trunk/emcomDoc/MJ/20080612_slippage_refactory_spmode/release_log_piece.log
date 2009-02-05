@@ -1,0 +1,102 @@
+
++=================================+
+成行
++=================================+
+
+
+2008-06-20 15:11:33,530 INFO  [trader.listener.OrderRequestListener#mainProcess:176] :  
+OrdReqThreadNo:[OrdReqThreadNo_2],OrderBindInfo:[priceId=20080617MKPD000000796985,currencyPair=USD/CHF,productId=C024,orde
+rId=20080617ORD00010532,tradeId=20080617TRAD00010532,customerId=00000887,side=1,mode=0,amount=10000,OrderBindId=2008061700
+006223,TradeBidPrice=null,TradeAskPrice=1.2669,timequoteId=null,mobileFlag=false,Slippage=0.0001,Type=12,inManualStatus=0M
+arketOpenPrice=false],limitOrderMap=null,stopOrderFlag=0]
+2008-06-20 15:11:52,659 INFO  [core.service.CoreService#canRateTrade:3047] : canRateTrade(): 
+orderBindId=2008061700006223|orderId=20080617ORD00010532|customerId=00000887|newRate=1.2668|orderprice=1.2669|newRatePrice
+Id=20080617MKPD000000797007|orderBindPriceId=20080617MKPD000000796985|side=1|executionType=12|slippage=0.0001|currencyPair
+=USD/CHF|spMode:2
+2008-06-20 15:11:53,426 INFO  [core.service.CoreService#SpModeSelect:3194] :  betterForCustomerSpMode() return value :true
+2008-06-20 15:11:53,427 INFO  [trader.listener.OrderRequestListener#mainProcess:498] : [Trader Order Normal 
+Mode]2008061700006223/USD/CHF/0
+2008-06-20 15:11:53,427 INFO  [trader.listener.OrderRequestListener#sendToCover:128] : Send To Cover Start:
+2008-06-20 15:11:55,094 INFO  [trader.listener.OrderRequestListener#sendToCover:147] :  send to cover : coverRequestInfo  
+= 
+cn.bestwiz.jhf.core.jms.bean.CoverRequestInfo[amount=10000,tradeAskPrice=1.2668,tradeBidPrice=null,side=1,,mode=0currencyP
+air=USD/CHF,orderBindId=2008061700006223,tradeDate=null,exectionType=12,priceId=20080617MKPD000000797007MarketOpenPrice=fa
+lse,orderid=20080617ORD00010532],limitOrderMap=null,stopOrderFlag=0
+
+
+
+
+
+
+
+
++=================================+
+mobile
++=================================+
+2008-06-20 15:13:27,400 INFO  [trader.listener.OrderRequestListener#mainProcess:176] :  
+OrdReqThreadNo:[OrdReqThreadNo_5],OrderBindInfo:[priceId=20080617MKPD000000797400,currencyPair=EUR/USD,productId=M409,orde
+rId=20080617ORD00010604,tradeId=20080617TRAD00010604,customerId=00000142,side=1,mode=1,amount=60000,OrderBindId=2008061700
+006304,TradeBidPrice=null,TradeAskPrice=1.4356,timequoteId=null,mobileFlag=true,Slippage=0,Type=12,inManualStatus=0MarketO
+penPrice=false],limitOrderMap=null,stopOrderFlag=0]
+2008-06-20 15:13:27,496 INFO  [trader.listener.OrderRequestListener#mainProcess:379] : 
+orderBindId:2008061700006304,old(priceId:20080617MKPD000000797400|askPrice:1.4356|bidPrice:null|isMobileFlag:true|side:1),
+new[priceId:20080617MKPD000000797400|askPrice:1.4356|bidPrice:1.2351]
+2008-06-20 15:13:27,496 INFO  [trader.listener.OrderRequestListener#mainProcess:455] : [Trader Order Stay Position 
+Mode]2008061700006304/EUR/USD/1
+
+
+
+
+
++=================================+
+紧急决计
++=================================+
+
+
+2008-06-20 15:19:20,419 INFO  [trader.listener.OrderRequestListener#mainProcess:176] :  
+OrdReqThreadNo:[OrdReqThreadNo_6],OrderBindInfo:[priceId=20080617MKPD000000798343,currencyPair=EUR/USD,productId=M409,orde
+rId=20080617ORD00010534,tradeId=20080617TRAD00010534,customerId=00000142,side=-1,mode=1,amount=60000.00,OrderBindId=200806
+1700006225,TradeBidPrice=1.2327,TradeAskPrice=null,timequoteId=null,mobileFlag=false,Slippage=0.9999,Type=100,inManualStat
+us=0MarketOpenPrice=false],limitOrderMap=null,stopOrderFlag=0]
+2008-06-20 15:19:20,536 INFO  [core.service.CoreService#canRateTrade:3047] : canRateTrade(): 
+orderBindId=2008061700006225|orderId=20080617ORD00010534|customerId=00000142|newRate=1.2327|orderprice=1.2327|newRatePrice
+Id=20080617MKPD000000798343|orderBindPriceId=20080617MKPD000000798343|side=-1|executionType=100|slippage=0.9999|currencyPa
+ir=EUR/USD|spMode:0
+2008-06-20 15:19:20,536 INFO  [core.service.CoreService#SpModeSelect:3180] :  defaultSpMode() return value :true
+2008-06-20 15:19:20,536 INFO  [trader.listener.OrderRequestListener#mainProcess:455] : [Trader Order Stay Position 
+Mode]2008061700006225/EUR/USD/1
+2008-06-20 15:19:20,605 INFO  [core.custtrade.FillOrderServiceImpl#fillOrder:371] : fillOrder Core Times : 2 
+(millseconds)20080617ORD00010534
+2008-06-20 15:19:20,606 INFO  [core.custtrade.FillOrderServiceImpl#fillOrder:377] : fillOrder begin Transaction Times : 1 
+(millseconds)20080617ORD00010534
+
+
+
+
++=================================+
+一括
++=================================+
+
+
+
+2008-06-20 15:20:12,007 INFO  [trader.listener.OrderRequestListener#mainProcess:176] :  
+OrdReqThreadNo:[OrdReqThreadNo_7],OrderBindInfo:[priceId=20080617MKPD000000798392,currencyPair=EUR/USD,productId=A009,orde
+rId=null,tradeId=null,customerId=00000142,side=-1,mode=1,amount=20000,OrderBindId=2008061700006226,TradeBidPrice=1.2329,Tr
+adeAskPrice=null,timequoteId=null,mobileFlag=false,Slippage=0.0002,Type=11,inManualStatus=0MarketOpenPrice=false],limitOrd
+erMap=null,stopOrderFlag=0]
+2008-06-20 15:20:12,164 INFO  [core.service.CoreService#canRateTrade:3047] : canRateTrade(): 
+orderBindId=2008061700006226|orderId=null|customerId=00000142|newRate=1.2329|orderprice=1.2329|newRatePriceId=20080617MKPD
+000000798392|orderBindPriceId=20080617MKPD000000798392|side=-1|executionType=11|slippage=0.0002|currencyPair=EUR/USD|spMod
+e:0
+2008-06-20 15:20:12,165 INFO  [core.service.CoreService#SpModeSelect:3180] :  defaultSpMode() return value :true
+2008-06-20 15:20:12,165 INFO  [trader.listener.OrderRequestListener#mainProcess:455] : [Trader Order Stay Position 
+Mode]2008061700006226/EUR/USD/1
+2008-06-20 15:20:12,204 INFO  [core.custtrade.FillOrderServiceImpl#fillOrder:371] : fillOrder Core Times : 1 
+(millseconds)20080617ORD00010535
+2008-06-20 15:20:12,205 INFO  [core.custtrade.FillOrderServiceImpl#fillOrder:377] : fillOrder begin Transaction Times : 0 
+(millseconds)20080617ORD00010535
+2008-06-20 15:20:12,206 INFO  [core.dao.LockHelper#customerForUpdate:151] : ==== LockHelper.lockCustomer() Start: 00000142
+2008-06-20 15:20:12,215 INFO  [core.dao.LockHelper#customerForUpdate:163] : ==== LockHelper.lockCustomer() End: 00000142
+
+
+

@@ -1,0 +1,32 @@
+■MJ测试:
+http://web.mj.net/jhf
+Cba00001/111111111111/00000473
+http://admin.mj.net/
+Admin/11111111
+手动汇率:
+
+
+
+╭∩╮（︶︿︶）╭∩╮鄙视你！
+
+
+
+
+
+
+ 00000239    BieYongA     11111111111
+
+
+
+MJ 前台 http://fxtest.bestwiz.cn/jhf_mj_web/
+   
+MJ 管理 http://fxtest.bestwiz.cn/jhf_mj_admin/   
+MJ Mobile http://fxtest.bestwiz.cn/jhf_mj_mobile/   
+MJ 口座开设 http://fxtest.bestwiz.cn/jhf_mj_web/register/   
+MJ 手动汇率 http://10.15.3.170:8082/jhf_mj_admin/   
+MJ 数据库 MAIN:10.15.3.167  INFO:10.15.3.174  
+
+
+
+http://fxtest.bestwiz.cn/
+

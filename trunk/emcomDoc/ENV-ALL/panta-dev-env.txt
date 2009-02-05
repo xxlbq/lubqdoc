@@ -1,0 +1,45 @@
++====================+
+ PANTA 开发环境
++====================+
+
+root/bestwiz
+10.15.2.200 
+front:
+http://10.15.2.200:8080/jhf_panta/
+
+
+ CUSTOMER_ID     LOGIN_ID     LOGIN_PASSWORD                   
+ --------------  -----------  -------------------------------- 
+ 00000101        I3900001     bc177a7a9c7df69c248647b4dfc6fd84 
+ 00003242        I3800001     bc177a7a9c7df69c248647b4dfc6fd84
+
+
+panta-service
+
+
+
+
+http://10.15.2.205:8080/jhf_panta_admin
+http://10.15.2.205:8187/jhf_panta_jms_admin
+
+
+http://10.15.2.205:8187/jhf_panta_jms_admin/
+
+  (linux:root 111111)
+admin/11111111
+10.15.2.201 middle1
+10.15.2.202 middle2
+10.15.2.203 gw&jboss
+10.15.2.204 batch
+10.15.2.205 admin
+10.15.2.206 main_m
+10.15.2.207 main_s
+10.15.2.208 info
+10.15.2.209 apache
+
+Main_Master:
+/usr/local/mysql/bin/mysql -h10.15.2.206 -uMAIN -pPrG7lv2Y -A MAIN
+Main_Slave:
+/usr/local/mysql/bin/mysql -h10.15.2.207 -uMAIN -pPrG7lv2Y -A MAIN
+Info:
+/usr/local/mysql/bin/mysql -h10.15.2.208 -uINFO -pPrWsk2iw -A INFO

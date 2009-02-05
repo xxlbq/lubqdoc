@@ -1,0 +1,54 @@
+
++====================+
+ PANTA 测试环境
++====================+
+
+1) Panta front http://fxtest.bestwiz.cn/jhf_panta_web/    (172.18.3.101)
+
+
+
+
+usr:  Buyaogai/666666666666/00000059     MD5 CODE:[bc177a7a9c7df69c248647b4dfc6fd84] pwd:666666666666
+
+后台   middle 服务器 root/111111
+
+
+
+00000120       Ito00003     666666666666  0    
+
+
+
+
+
+
+/usr/local/mysql/bin/mysql -uroot -pbestwiz2oo8   ，
+
+【MAIN master】/usr/local/mysql/bin/mysql -uMAIN -pPrG7lv2Y -h10.15.2.35
+
+
+【INFO master】/usr/local/mysql/bin/mysql -uINFO -pPrWsk2iw -h10.15.2.36 
+
+
+-------------------------------------------------------------------------------------
+2) Panta 管理画面 http://admin-fx.dalian:8080/jhf_panta_admin/      (172.18.3.141)
+
+   发手动汇率     http://10.15.2.239:8187/jhf_panta_jms_admin/
+-------------------------------------------------------------------------------------
+   
+3) Panta Mobile   http://mobile.min-fx.dalian
+-------------------------------------------------------------------------------------
+   
+4) Panta Ajax     http://min-fx.dalian/ajax/
+-------------------------------------------------------------------------------------
+   
+5) Panta 口座开设 http://min-fx.dalian/register/
+-------------------------------------------------------------------------------------
+   
+6) Panta CTI      http://cti.panta.dalian/
+-------------------------------------------------------------------------------------
+   
+DB : 172.18.3.173-main /172.18.3.183-info
+[MAIN] user:MAIN   pwd :PrG7lv2Y   db:MAIN
+[INFO] user:INFO   pwd :PrWsk2iw   db:INFO
+
+-------------------------------------------------------------------------------------

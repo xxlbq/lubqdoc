@@ -1,0 +1,21 @@
+Terracotta服务器的启动与停止
+#cd /usr/local/terracotta
+#bin/start-tc-server.sh -f tc-config.xml (启动)
+#bin/stop-tc-server.sh (停止)
+
+
+
+
+
+
+
+/usr/local/terracotta/bin
+
+sh start-tc-server.sh -f ../tc-config.xml &
+
+
+
+
+
+
+nohup /usr/local/terracotta/bin/start-tc-server.sh -f /usr/local/terracotta/tc-config.xml &

@@ -1,0 +1,8 @@
+user  /home/user/.bashrc
+
+所有人 都起作用  /etc/bashrc
+
+
+
+
+alias showPrice='cat /jhfapp/app/trader/trader1/logs/trader.log|grep'

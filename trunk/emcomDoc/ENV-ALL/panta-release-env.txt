@@ -1,0 +1,46 @@
+
+
+
+
+
+
+
+PANTA Release:
+Front  http://10.15.2.51:8080/jhf_panta_web/  Iis00001/111111111111 /00000109
+Front Register  http://10.15.2.51:8080/jhf_panta_web/register 
+mobile  http://10.15.2.51:8080/jhf_panta_mobile Isu00001/111111111111 
+ajax  http://10.15.2.57:8080/ajax/ ajax/panta-ajax; Isu00001/111111111111 
+Backyard  http://10.15.2.57:8080/jhf_panta_admin/  admin/11111111
+
+10.15.2.51 panta-service-tomcat  front
+10.15.2.53 panta-service-jboss   jboss
+10.15.2.54 panta-service-db      MAIN/DB
+10.15.2.55 panta-service-middle  Middle
+10.15.2.56 panta-service-batch   batch
+10.15.2.57 panta-service         Backyard/ajax
+[2008-4-25 21:00:45] 王岩 说： panta release ip变更了
+
+
+panta_service
+
+
+
+
+
+
+
+
+
+Panta 系统－大连Release环境  
+1) Panta front http://10.15.2.195:8080/jhf_panta_web/    00000128  IHI00001   666666666666  
+bc177a7a9c7df69c248647b4dfc6fd84
+   
+2) Panta 管理画面 http://10.15.2.195:18080/
+   
+3) Panta Mobile http://10.15.2.195:8080/jhf_panta_mobile 
+   
+4) Panta Ajax http://10.15.2.195:28080/ajax/
+   
+5) Panta 口座开设 http://10.15.2.195:8080/register 
+   
+ 
