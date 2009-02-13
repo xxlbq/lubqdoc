@@ -12,6 +12,12 @@ front mobile     http://172.18.1.51:18080/jhf_emfx/
 
 
 
+
+http://172.18.1.53:8081/jhf_emfx_jms_admin/senJmsToGw.do
+
+手动汇率   ： http://172.18.1.53:8081/jhf_emfx_jms_admin
+
+
 [11:15:15] 左林 说：  front/mobile 172.18.1.51 
 ajax/cti 172.18.1.52
 backyard/batch/register 172.18.1.53
@@ -50,7 +56,7 @@ usr:  Buyaogai/666666666666/00000059     MD5 CODE:[bc177a7a9c7df69c248647b4dfc6f
 
 90000007
 
-
+pwd:666666666666666
 
 
 
@@ -61,3 +67,6 @@ usr:  Buyaogai/666666666666/00000059     MD5 CODE:[bc177a7a9c7df69c248647b4dfc6f
 -Dtc.install-root=D:\\soft-setup\\terracotta-2.7.2
 -Dtc.config=E:\\java\\eclipse-3.3-bestwiz-wp\\em-core\\conf\\tc-config.xml
 -Dcom.tc.loader.system.name=Tomcat.Catalina:localhost:/flexweb
+
+
+===== 字体测试多国语言版 ==== 中国字体版本===== Font Of En   version  =====

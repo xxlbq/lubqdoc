@@ -23,7 +23,7 @@ usr:  Buyaogai/666666666666/00000059     MD5 CODE:[bc177a7a9c7df69c248647b4dfc6f
 
 /usr/local/mysql/bin/mysql -uroot -pbestwiz2oo8   ，
 
-【MAIN master】/usr/local/mysql/bin/mysql -uMAIN -pPrG7lv2Y -h10.15.2.35
+【MAIN master】/usr/local/mysql/bin/mysql -uMAIN -pPrG7lv2Y -h10.15.2.35 -A MAIN
 
 
 【INFO master】/usr/local/mysql/bin/mysql -uINFO -pPrWsk2iw -h10.15.2.36 
