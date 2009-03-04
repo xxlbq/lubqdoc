@@ -18,3 +18,15 @@ ajax cti 10.15.2.170
 admin&batch 10.15.2.171
 jboss 10.15.2.172
 dealerserver 10.15.2.173
+
+
+
+
+
+
+新规Dealer帐号的方法,参考以下:
+http://10.15.2.205:8080/jhf_panta/
+admin/admin/JzrWfDhB
+Settings->DealerAccounts->ADD New Dealer,填写相关的login信息就可以了,密码会发送到你的Mail中
+例如:
+wangyan/fmTRjSTh
