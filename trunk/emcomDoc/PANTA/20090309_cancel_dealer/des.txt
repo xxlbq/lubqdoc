@@ -1,0 +1,29 @@
+王岩 9:20  
+ 由于Dealer课题的取消,所以,cvs相关代码版本需要进行调整:
+
+0.停止Panta Head的代码开发
+1.Panta Head 需要创建Branch备份代码->BR-PANTA-DEALER-STOP
+2.使用Panta 02.15来覆盖Panta Head版本的代码
+3.启动Panta Head的代码开发
+4.在03.11日之前,同步完毕03.28 UP的课题的所有代码到Panta Head
+5.在03.11 0点创建03.28 UP使用的Branch
+6.Panta Dev环境,设计组刘云飞负责删除掉Dealer相关的变更
+7.Panta Test环境的数据库,使用02.28的备份,进行恢复
+8.03.11进行03.28 UP的课题的相关的数据库的变更的调整及程序的布署,及对应的Rollover
+9.测试组在03.23之前,测试完毕03.28 UP的课题
+10.表分解的课题,在03.23进行版本的创建及Test环境的布署及测试,04.11 UP
+11.原有的Dealer环境进行恢复,Dealer开发使用这样环境进行
+
+其中0-2已经执行完毕,请大家开始执行3,将03.28UP的课题的代码同步到HEAD上.明晚会创建Branch作为UP的版本
+
+具体需要同步的课题,如下:
+middle 90 SimpleTreeCache调整Lock的方式,使用ReentrantReadWriteLock方式(fes之前已经调整了)
+middle 98 ,TrailingStop和OPM的ReversionNum的调整
+all 163,零维护课题的脚本发送KickoutCustomerInfo消息->老卢,MARGIN_CUT添加判断->老黄
+all 179,手动汇率,没有设定Losscutabl
+all 181,调整汇率消息的序列化接口
+all 183,添加数据库连接属性useLocalSessionState=true,减少查询无关的SQL
+TC For Trader课题,OPM Review后的代码调整
+
+以下2个课题,本周三再开始同步到HEAD上:
+all 185表分解的课题,和MQ的课题,本周三再开始同步到HEAD上,现在不能做 

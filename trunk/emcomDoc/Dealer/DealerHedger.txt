@@ -1,0 +1,51 @@
+
+
+@初始化
+			// 给trader发送交易结果
+			TradeResultSender = SimpleSender
+					.getInstance(DestinationConstant.TradeResultTopic);
+
+			// 发送hedge消息给backyard
+			DealerFireResponseSender = SimpleSender
+					.getInstance(DestinationConstant.DealerFireCoverResponseTopic);
+
+			// 发送汇率请求的相应信息给dealer
+			QuoteResponseSender = SimpleSender
+					.getInstance(DestinationConstant.DealQuoteResponseTopic);
+
+			// 从config文件中取得JMS配置的信息
+			cpSendersMap = DealerHedgerJMSConfig.getInstance()
+					.getDealerHedgerJMSRule();
+
+
+
+
+
+@开始方法
+
+	public void startProcess() {
+		// add dl
+		DealerOrderService.getInstance().run();
+
+		// Hedger驻留持仓模块启动
+		DealerAutoTriggerService.getInstance().run();
+
+		// Hedger驻留模式的紧急cover模块(backyard触发)(Dealer)
+		DealerFireCoverService.getInstance().run();
+
+		// gw 交易响应启动，监听gw的响应信息(Dealer)
+		DealerOrderResponseService.getInstance().run();
+
+		// gw的quote响应,监听gw的quote响应信息 没有讯价 这个模块停止不用启动
+		DealerQuoteResponseService.getInstance().run();
+
+		// dealer向gw的quote请求启动,监听dealer的quote请求消息
+		DealerQuoteRequestService.getInstance().run();
+	}
+
+
+
+
+
+
+
