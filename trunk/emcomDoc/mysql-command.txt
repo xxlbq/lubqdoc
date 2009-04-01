@@ -1,0 +1,27 @@
+
+
+
+
+BACKYARD.„¢•Ô±ó 11:31
+[root@localhost emfx]# mysql -h10.4.9.144 -uMAIN -pPrG7lv2Y MAIN -A -e"show tables like 
+'%ALIVE%'"
++--------------------------+
+| Tables_in_MAIN (%ALIVE%) |
++--------------------------+
+| JHF_ALIVE_CONTRACT       | 
+| JHF_ALIVE_CONTRACT_BK    | 
+| JHF_ALIVE_ORDER          | 
+| JHF_ALIVE_ORDER_BK       | 
++--------------------------+
+[root@localhost emfx]# 
+[root@localhost emfx]# 
+[root@localhost emfx]# mysql -h10.4.9.140 -uMAIN -pPrG7lv2Y MAIN -A -e"show tables like 
+'%ALIVE%'"
++--------------------------+
+| Tables_in_MAIN (%ALIVE%) |
++--------------------------+
+| JHF_ALIVE_CONTRACT       | 
+| JHF_ALIVE_CONTRACT_BK    | 
+| JHF_ALIVE_ORDER          | 
+| JHF_ALIVE_ORDER_BK       | 
++--------------------------+

@@ -17,13 +17,31 @@ http://10.15.2.200:8080/jhf_panta/
 panta-service
 
 
-
+Q34991 
 
 http://10.15.2.205:8080/jhf_panta_admin
 http://10.15.2.205:8187/jhf_panta_jms_admin
 
 
 http://10.15.2.205:8187/jhf_panta_jms_admin/
+
+
+
+王岩，老左，小潘：
+
+panta maringcut web 化的课题，现在 dev 环境已经部署并运行了。
+部署方式与 middle 其它程序有些区别，需要单独部署:
+
+deployerunifx panta dev mweb
+
+现在 201,202 都启动了一个. 
+201处理偶数customerId , 202 处理奇数的。
+
+http://10.15.2.201:8080/jhf_panta_mweb/test.html 
+http://10.15.2.202:8080/jhf_panta_mweb/test.html 
+可以得到服务调用方式的简单说明和一个简单的test。
+
+
 
   (linux:root 111111)
 admin/11111111
