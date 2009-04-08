@@ -1,0 +1,42 @@
+各位：emfx新搭建了一套用于验证10号 release的版本（3/15）的环境：URL 如下
+flex     https://10.4.9.111/index.do
+flexmobile   http://10.4.9.111:18080/
+flexcti  http://10.4.9.112:18080/index.do?
+
+customerId=90000001&need=1,2,3,4,5,6,7,8,9,10,11,12,13&themes=Sugar&user=admin&pw=1bbd886460827015e5d605ed44252251
+admin    http://10.4.9.114:8080/
+reg    http://10.4.9.113:8080/
+admin_jms http://10.4.9.114:58080/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+flex     https://210.83.214.168/index.do
+flexmobile   http://210.83.214.168:8081/
+flexcti  http://210.83.214.168:8082/index.do?customerId=90000001&need=1,2,3,4,5,6,7,8,9,10,11,12,13&themes=Sugar&user=admin&pw=1bbd886460827015e5d605ed44252251
+admin    http://210.83.214.168:8083/
+reg    http://210.83.214.168:8084/ 
+
+日方访问IP
+
+
+
+flex     https://210.83.214.168/index.do
+flexmobile   http://210.83.214.168:8081/
+flexcti  http://210.83.214.168:8082/index.do?customerId=90000001&need=1,2,3,4,5,6,7,8,9,10,11,12,13&themes=Sugar&user=admin&pw=1bbd886460827015e5d605ed44252251
+admin    http://210.83.214.168:8083/
+reg    http://210.83.214.168:8084/
+admin_jms http://210.83.214.168:8085/
