@@ -35,13 +35,6 @@ tc 172.18.1.61
 
 
 
-
-
-
-
-
-
-
  CUSTOMER_ID     GROUP_ID     LOGIN_CONSTRAINT     LOGIN_ID     LOGIN_PASSWORD                   
  --------------  -----------  -------------------  -----------  -------------------------------- 
  90000088        DEFAULT      0                    EMFX0088     593c9b4a9390551d53e5cacf28ebd638 

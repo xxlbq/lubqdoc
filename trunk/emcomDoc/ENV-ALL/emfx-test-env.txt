@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+
+
+mysql -h10.4.9.84 -uMAIN -pPrG7lv2Y MAIN -A MAIN
+
+
