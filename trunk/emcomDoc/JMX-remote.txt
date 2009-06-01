@@ -1,0 +1,22 @@
+
+
+±¾µØÆô¶¯ jconsole  
+
+C:\Documents and Settings\lubq>jconsole 
+service:jmx:rmi:///jndi/rmi://localhost:8787/ToolsWithJmxViewer
+
+C:\Documents and Settings\lubq>jconsole 
+service:jmx:rmi:///jndi/rmi://10.15.2.202:6357/MarginService-1
+
+jconsole service:jmx:rmi:///jndi/rmi://10.15.2.201:6357/MarginService-1
+jconsole service:jmx:rmi:///jndi/rmi://10.15.2.201:6357/MarginService-0
+jconsole service:jmx:rmi:///jndi/rmi://172.18.3.111:6357/MarginService-1
+C:\Documents and Settings\lubq>
+
+
+
+jconsole service:jmx:rmi:///jndi/rmi://172.18.3.152:6357/Margincut1
+jconsole service:jmx:rmi:///jndi/rmi://172.18.3.152:6357/MarginService-1
+
+
+

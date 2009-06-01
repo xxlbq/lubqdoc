@@ -5,8 +5,19 @@
 
 
 
+Iee00002
+
+00007702
+
+1111111111111111111111111
 
 
-mysql -h10.4.9.84 -uMAIN -pPrG7lv2Y MAIN -A MAIN
+
+
+
+
+
+
+mysql -h10.4.9.84 -uMAIN -pPrG7lv2Y -A MAIN
 
 

@@ -21,6 +21,45 @@ usr:  Buyaogai/666666666666/00000059     MD5 CODE:[bc177a7a9c7df69c248647b4dfc6f
 
 
 
+
+新的panta test 环境服务地址。
+Front&apache(2.2.6) 10.4.9.221
+Front Rate 10.4.9.222
+Front Ajax 10.4.9.223
+Backyard&Batch 10.4.9.224
+DB Main(10.15.1.55) 10.4.9.225
+DB Info(10.15.1.56) 10.4.9.226
+DB slave 10.4.9.227
+report_ws 10.4.9.228
+actmq/ldap/GW/register 10.4.9.229
+Middle1 10.4.9.230
+Middle2 10.4.9.231
+Middle3 10.4.9.232
+Front DB 10.4.9.234/235
+Middle slave 10.4.9.233
+LVS Master/Actmq 10.4.9.236/237
+LVS Slave 10.4.9.241/237
+Front MAIN DB 10.4.9.238
+frontsns 10.4.9.239
+frontsns 10.4.9.240
+snsdb slave 10.4.9.242
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /usr/local/mysql/bin/mysql -uroot -pbestwiz2oo8   ，
 
 【MAIN master】/usr/local/mysql/bin/mysql -uMAIN -pPrG7lv2Y -h10.15.2.35 -A MAIN

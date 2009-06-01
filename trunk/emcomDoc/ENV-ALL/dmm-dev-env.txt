@@ -8,8 +8,39 @@
 
 
 
-
+DMM00007
 90000007
 
 pwd:666666666666666
 
+
+
+
+
+
+
+
+
+
+
+
+SNS  url
+
+
+ http://10.15.2.213:8080/swf/snsflex.html  
+
+
+
+
+
+
+
+
+
+
+
+
+
+			if( null != snsFatherOrder ){
+				snsList.add(snsFatherOrder);
+			}
