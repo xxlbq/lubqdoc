@@ -1,0 +1,178 @@
+X-Account-Key: account2
+X-UIDL: 1153715797.1876.bestwiz.cn,S=8927
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 10000000
+Return-Path: <kay@fonox.jp>
+Delivered-To: fengcj@bestwiz.cn
+Received: (qmail 1873 invoked by uid 89); 24 Jul 2006 12:36:34 +0800
+Received: from unknown (HELO mail.fonox.jp) (59.106.22.235)
+  by bestwiz.cn with SMTP; 24 Jul 2006 12:36:34 +0800
+Received: (qmail 2845 invoked from network); 24 Jul 2006 13:36:28 +0900
+Received: from unknown (HELO ?192.168.1.165?) (202.212.173.126)
+  by 0 with SMTP; 24 Jul 2006 13:36:28 +0900
+Date: Mon, 24 Jul 2006 13:36:25 +0900
+From: SATO Keita <kay@fonox.jp>
+To: <fengcj@bestwiz.cn>
+Subject: =?ISO-2022-JP?B?Q1AbJEJAXEIzGyhCSS9GGyRCPnBKcyRLNFgbKEI=?=
+ =?ISO-2022-JP?B?GyRCJDckXiQ3JEYbKEI=?=
+Cc: kay@fonox.jp,
+ jhf@bestwiz.cn,
+ ml-fx@fonox.jp
+Message-Id: <20060724131828.669D.KAY@fonox.jp>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="------_44C44A14CE6304EDF3F8_MULTIPART_MIXED_"
+Content-Transfer-Encoding: 7bit
+X-Mailer: Becky! ver. 2.21.03 [ja]
+
+--------_44C44A14CE6304EDF3F8_MULTIPART_MIXED_
+Content-Type: text/plain; charset="ISO-2022-JP"
+Content-Transfer-Encoding: 7bit
+
+Fengさん
+
+お疲れ様です、佐藤です。
+
+表題の件、今回接続するカウンターパーティの接続I/F情報が
+届きましたのでお知らせします。
+
+開発キットダウンロードURL： https://dbfxb2b.fxmarkets.com/fxratesapi/
+※Basic認証用アカウント情報は別途お知らせします。
+
+○開発環境への設定情報
+"setProperty"メソッドで以下を設定してください。
+
+fxApi.setProperty("user.name", "B2BUSER174"); 
+fxApi.setProperty("server.id", "dbag"); 
+fxApi.setProperty("realm.url", "nsps://data-uat1-autobahnfx.db.com:9001"); 
+
+fxApi.setProperty("keystore.url", "data-uat1-autobahnfx.db.com.jks"); 
+fxApi.setProperty("keystore.password", "password"); 
+fxApi.setProperty("keystore.alias", "TEST"); 
+
+開発キットのサンプルではconfigファイルから読み取る形となっております。初期
+状態ではモックモードとなっておりますが、etc/FxApiSample.propertiesを以下の
+ように変更すれば開発環境に接続できるようになります。
+user.name=B2BUSER174
+server.id=dbag
+realm.url=nsps://data-uat1-autobahnfx.db.com:9001
+keystore.url=data-uat1-autobahnfx.db.com.jks
+keystore.password=password
+keystore.alias=TEST
+
+○証明書
+添付してある data-uat1-autobanfx.db.com.jks ファイルをご使用ください。パス
+の通るディレクトリに置いてください。
+
+○ネットワーク
+上記のURL（data-uat1-autobahnfx.db.com）に9001番のポートで通信ができる必要
+があります。
+
+○モックモード
+"setProperty"メソッドで設定するパラメータによりサーバと通信を行わないモッ
+クモードを利用することもできます。サンプルでは初期状態はモックモードになっ
+ております。これを用いて初期の開発等を迅速に行うことができます。なお、この
+モードはあくまでも開発の効率化のためであり、完全に本番環境をシミュレートす
+るUAT用というわけではないことをご理解ください。
+
+○設定通貨ペア
+AUDJPY
+CADJPY
+CHFJPY
+EURJPY
+GBPJPY
+NZDJPY
+USDJPY
+EURUSD
+GBPUSD
+
+よろしくお願いいたします。
+
+FONOX Co,.ltd. --------------------------
+☆
+☆ 東京都港区麻布台1-11-3 麻布台第1ビル7階
+☆ 電話：03-5575-3951   FAX   ：03-5575-3952
+☆ 携帯：090-1105-1292  Skype：kay-dh
+☆
+
+--------_44C44A14CE6304EDF3F8_MULTIPART_MIXED_
+Content-Type: application/octet-stream;
+ name="data-uat1-autobahnfx.db.com.jks"
+Content-Disposition: attachment;
+ filename="data-uat1-autobahnfx.db.com.jks"
+Content-Transfer-Encoding: base64
+
+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
+zeddJVb0NINmdJ32H5/HIwl0Cg==
+--------_44C44A14CE6304EDF3F8_MULTIPART_MIXED_--
+
+
+
