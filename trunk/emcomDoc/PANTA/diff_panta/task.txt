@@ -1,0 +1,361 @@
+  cs.panta.informationcs.panta.questioncs.panta.tickemfx-serviceemfx-test-topicemfxpressuretestemfx-cs-infofx-testenv-topicmj-service-topicmj-test-topicopen-mj-topicpanta-service.topicpanta-test-topicservice-emergency-topicsv.panta.infomationtrading-pantaaboutmjquestionbestwiz.masterdalian-mj-servicedesignflexdesignmastersdesigntestbackyarddalian-emfx-servicedalian-panta-servicefrontmiddletransbatchdl-fx-testdalian-fes-servicedealerdl-test-server-deploygwqadev-pci-dldev-pcidmm-servicedmm_svcdmm-test-topicdmm-dealerdmm-emcdmm-cs-infomationdalian-dmm-serviceLDAP-IDsugardevsugartasksugarinfrasugarbugcompieredevehrfes-service-topicpanta-tool.topictradersfx_servicetradersfx-test-servicetraders-test-topicdalian-traders-service 2009-07-132009-07-102009-07-092009-07-082009-07-072009-07-062009-07-042009-07-032009-07-022009-07-012009-06-302009-06-292009-06-262009-06-252009-06-242009-06-232009-06-222009-06-202009-06-192009-06-172009-06-162009-06-152009-06-122009-06-112009-06-102009-06-092009-06-082009-06-062009-06-052009-06-042009-06-032009-06-022009-06-012009-05-282009-05-272009-05-262009-05-252009-05-232009-05-222009-05-212009-05-202009-05-192009-05-182009-05-152009-05-142009-05-132009-05-122009-05-112009-05-092009-05-082009-05-072009-05-062009-05-052009-05-042009-04-302009-04-292009-04-282009-04-272009-04-252009-04-242009-04-232009-04-222009-04-212009-04-202009-04-172009-04-162009-04-152009-04-142009-04-132009-04-112009-04-102009-04-092009-04-082009-04-072009-04-032009-04-022009-04-012009-03-312009-03-302009-03-282009-03-272009-03-252009-03-232009-03-202009-03-192009-03-182009-03-172009-03-162009-03-142009-03-132009-03-122009-03-112009-03-102009-03-092009-03-062009-03-052009-03-042009-03-032009-03-022009-02-282009-02-272009-02-262009-02-252009-02-242009-02-232009-02-202009-02-192009-02-182009-02-172009-02-162009-02-142009-02-132009-02-122009-02-112009-02-102009-02-092009-02-062009-02-04 
+ DATE 
+ TIME 
+ JABBER ID 
+ MESSAGE 
+middle [2009-07-13 (JST)]
+DATE TIME JABBER ID MESSAGE 
+
+
+
+2009-07-13 11:33:59 yanwang CommonFX课题,以Panta HEAD为基础,同MJ,EM,DMM,TRADERS 的HEAD版本进行对比.
+整理出各个系统的差异代码点,及调整的方法,最终的目的是把Panta HEAD做成适应所有系统的代码,最大化
+差异代码点,请整理到design askCommonFx@Comm0270)designcode_diffmiddle.xls 
+
+
+2009-07-13 11:34:08 yanwang CommonFX课题,以Panta HEAD为基础,同MJ,EM,DMM,TRADERS 的HEAD版本进行对比.
+整理出各个系统的差异代码点,及调整的方法,最终的目的是把Panta HEAD做成适应所有系统的代码,最大化
+差异代码点,请整理到design askCommonFx@Comm0270)designcode_diffmiddle.xls 
+
+
+2009-07-13 11:34:09 yanwang 老卢(dev),老黄(review)
+cn.bestwiz.jhf.core.custtrade,改动量:一般
+cn.bestwiz.jhf.core.dao,改动量:多
+cn.bestwiz.jhf.core.dao.exception,改动量:少
+cn.bestwiz.jhf.core.dao.util,改动量:少
+cn.bestwiz.jhf.core.orderqueue,改动量:少
+
+老邱(dev),小潘(review)
+cn.bestwiz.jhf.core.ratecache,改动量:少
+cn.bestwiz.jhf.core.service,改动量:一般
+cn.bestwiz.jhf.core.mail,改动量:少
+cn.bestwiz.jhf.core.configcache,改动量:一般
+cn.bestwiz.jhf.core.Constants,改动量:无
+cn.bestwiz.jhf.core.cpratecache改动量:少
+cn.bestwiz.jhf.core.cache 改动量:无
+fxCacheClear.xml
+
+小江(dev),小潘(review)
+cn.bestwiz.jhf.core.bo.contructor,改动量:多
+
+许阳(dev),老邱(review)
+cn.bestwiz.jhf.core.bo.enums,改动量:多
+cn.bestwiz.jhf.core.bo.exceptions,改动量:少
+
+老黄(dev),小潘(review)
+cn.bestwiz.jhf.core.formula,改动量:一般
+
+姚琳(dev),小潘(review)
+cn.bestwiz.jhf.core.bo.bean,改动量:一般
+
+小潘(dev),老邱(review)
+cn.bestwiz.jhf.core.bo.App,改动量:少
+cn.bestwiz.jhf.core.bo.params,改动量:少
+cn.bestwiz.jhf.core.control,改动量:少
+cn.bestwiz.jhf.core.cptrade,改动量:少
+cn.bestwiz.jhf.core.dltrade,改动量:少
+cn.bestwiz.jhf.core.idgenerate,改动量:少
+cn.bestwiz.jhf.core.jms,改动量:少
+cn.bestwiz.jhf.core.jmx,改动量:少
+cn.bestwiz.jhf.core.tools,改动量:少
+cn.bestwiz.jhf.core.util,改动量:一般
+cn.bestwiz.jhf.core.conf,改动量:少
+ehcacheMain.xml
+ehcacheInfo.xml
+ehcacheBack.xml
+
+另外,Middle直接关联的工程,也请整理代码差异:
+Trader工程,ewp->姚琳,losscut->小潘,margincut->小潘,mail->老邱,opm->小江,riskControl->小潘,ros->老卢,rpmmail->许阳,trader->老卢,tso->许阳
+Hedger,cpRateWriter->许阳,Hedger->王宁
+Info->许阳
+Rate->老邱
+Mweb->小潘
+GW->老黄 
+2009-07-13 11:34:17 yanwang 文档请及时提交CVS,便于Review 
+2009-07-13 11:34:20 yanwang 老左:以上内容,请及时跟踪 
+2009-07-13 11:34:21 yanwang 老卢(dev),老黄(review)
+cn.bestwiz.jhf.core.custtrade,改动量:一般
+cn.bestwiz.jhf.core.dao,改动量:多
+cn.bestwiz.jhf.core.dao.exception,改动量:少
+cn.bestwiz.jhf.core.dao.util,改动量:少
+cn.bestwiz.jhf.core.orderqueue,改动量:少
+
+老邱(dev),小潘(review)
+cn.bestwiz.jhf.core.ratecache,改动量:少
+cn.bestwiz.jhf.core.service,改动量:一般
+cn.bestwiz.jhf.core.mail,改动量:少
+cn.bestwiz.jhf.core.configcache,改动量:一般
+cn.bestwiz.jhf.core.Constants,改动量:无
+cn.bestwiz.jhf.core.cpratecache改动量:少
+cn.bestwiz.jhf.core.cache 改动量:无
+fxCacheClear.xml
+
+小江(dev),小潘(review)
+cn.bestwiz.jhf.core.bo.contructor,改动量:多
+
+许阳(dev),老邱(review)
+cn.bestwiz.jhf.core.bo.enums,改动量:多
+cn.bestwiz.jhf.core.bo.exceptions,改动量:少
+
+老黄(dev),小潘(review)
+cn.bestwiz.jhf.core.formula,改动量:一般
+
+姚琳(dev),小潘(review)
+cn.bestwiz.jhf.core.bo.bean,改动量:一般
+
+小潘(dev),老邱(review)
+cn.bestwiz.jhf.core.bo.App,改动量:少
+cn.bestwiz.jhf.core.bo.params,改动量:少
+cn.bestwiz.jhf.core.control,改动量:少
+cn.bestwiz.jhf.core.cptrade,改动量:少
+cn.bestwiz.jhf.core.dltrade,改动量:少
+cn.bestwiz.jhf.core.idgenerate,改动量:少
+cn.bestwiz.jhf.core.jms,改动量:少
+cn.bestwiz.jhf.core.jmx,改动量:少
+cn.bestwiz.jhf.core.tools,改动量:少
+cn.bestwiz.jhf.core.util,改动量:一般
+cn.bestwiz.jhf.core.conf,改动量:少
+ehcacheMain.xml
+ehcacheInfo.xml
+ehcacheBack.xml
+
+另外,Middle直接关联的工程,也请整理代码差异:
+Trader工程,ewp->姚琳,losscut->小潘,margincut->小潘,mail->老邱,opm->小江,riskControl->小潘,ros->老卢,rpmmail->许阳,trader->老卢,tso->许阳
+Hedger,cpRateWriter->许阳,Hedger->王宁
+Info->许阳
+Rate->老邱
+Mweb->小潘
+GW->老黄 
+2009-07-13 11:34:28 yanwang 文档请及时提交CVS,便于Review 
+2009-07-13 11:34:30 yanwang 老左:以上内容,请及时跟踪 
+2009-07-13 11:34:35 yanwang 以上,有疑问或者不确定的问题,请提出来大家讨论 
+2009-07-13 11:34:43 yanwang 以上,有疑问或者不确定的问题,请提出来大家讨论 
+2009-07-13 11:34:50 xinyangpan ok 
+2009-07-13 11:35:09 yanwang 文档整理的截止时间是下周三,希望大家尽量往前敢争取在本周内结束. 
+2009-07-13 11:35:11 yanwang 文档整理的截止时间是下周三,希望大家尽量往前敢争取在本周内结束. 
+2009-07-13 11:35:31 yanwang 设计组会在7/15,7/18,7/23这几个时间点进行查看，努力及时给出调整意见。 
+2009-07-13 11:35:36 yishanjiang OK 
+2009-07-13 11:35:50 ningwang OK 
+2009-07-13 11:35:52 ningwang OK 
+2009-07-13 11:36:03 baoqianglu ok 
+2009-07-13 11:36:15 chengminghuang ok 
+2009-07-13 11:36:19 chengminghuang ok 
+2009-07-13 11:36:23 chengminghuang ok 
+2009-07-13 11:36:24 yangxu ok 
+2009-07-13 11:36:25 chengminghuang test 
+2009-07-13 11:36:26 chengminghuang ok 
+2009-07-13 11:36:26 yangxu ok 
+2009-07-13 11:36:26 chengminghuang test 
+2009-07-13 11:36:34 yanwang 1.首先在Panta项目上,进行共通版本的开发,UP完之后,依次顺序的同步到其它系统上,
+到最后所有系统的Common部分的代码完全一致,重新建立CVS结构,正式采用共通版本模式开发
+2.Core中的代码,在Panta上要做成最大化,以适应所有系统,Core的目录结构进行拆分和删除,具体参考设计文档中的说明
+design askCommonFx@Comm0270)designmiddle.xls
+3.其他的工程中,业务差异点,通过Common框架进行嵌入和控制,比如:Formula各系统的差异点,Hedger GiveUP的差异点等
+4.DAO中的代码,只保留绝对共用的代码,其他的代码,移动到各自App的对应dao目录中,本次由老卢统一进行Middle相关模块的调整.
+Front和Backyard他们自己移动.采用文件删除的方法,哪里有编译错误,就调整那里
+4.本次共通版本开发,十分有意义,改动内容十分多,十分重要,十分危险,大家必须十分小心!!!
+5.开发日程:7个工作日开发,4个工作日代码Review,5个工作日开发人员Dev环境集成测试.
+总体日程:3周开发和内部测试+3周测试人员测试.08.29 UP
+6.以上内容,做好后,我们以后将会节省非常多的人力和精力,时间会被花费在更有意义的事情上,而不是像原来的那样被同步代码所浪费掉 
+2009-07-13 11:36:43 linyao 有没有需要忽略的课题内容？ 
+2009-07-13 11:36:46 yanwang 以上是CommonFX课题的开发过程 
+2009-07-13 11:36:47 yanwang 以上是CommonFX课题的开发过程 
+2009-07-13 11:36:54 yanwang 无 
+2009-07-13 11:36:55 yanwang 无 
+2009-07-13 11:37:03 linyao 哦 
+2009-07-13 11:37:13 yanwang 所以差异代码,必须全部整理出来 
+2009-07-13 11:37:18 yanwang 所以差异代码,必须全部整理出来 
+2009-07-13 11:37:43 linyao ok 
+2009-07-13 11:37:57 linyao ok 
+2009-07-13 11:38:08 yanwang 关于DAO中的处理,老卢及其他各位,请注意 ! 
+2009-07-13 11:38:34 baoqianglu OK 
+2009-07-13 11:43:55 yanwang 原来那个业务差异点整理的目录,换了,大家注意:
+design askCommonFx@Comm0270)design unction_diffdiff_middle.xls
+design askCommonFx@Comm0270)design unction_diffdiff_gateway.xls.xls 
+2009-07-13 11:44:05 yanwang design askCommonFx@Comm0270)design unction_diffdiff_gateway.xls 
+2009-07-13 11:44:08 chengminghuang 好. 
+2009-07-13 11:44:45 linzuo ok 
+2009-07-13 11:47:56 yanwang Code Diff 那个文档整理完毕后,目标是:下周能直接参考文档进行代码的开发及其他人员的审核及为以后测试做出依据
+因此,这个文档非常重要,大家务必谨慎小心,否则,后果自负 
+2009-07-13 11:51:29 baoqianglu OK 
+2009-07-13 11:54:01 yanmingqiu OK 
+2009-07-13 11:54:08 yangxu ok 
+2009-07-13 11:54:12 linyao ok 
+2009-07-13 14:43:43 yanwang 本次code diff 要具体到差异的每行差异的代码 ,也就是有差异的方法里面的存在差异的那几行代码,要copy到文档中,这就是修改的具体内容了.这样才有明确差异对比.
+这个大家注意下 
+2009-07-13 14:43:56 baoqianglu ok 
+2009-07-13 14:44:06 linyao ok 
+2009-07-13 14:46:27 yangxu ok 
+2009-07-13 14:51:19 chengminghuang ok 
+2009-07-13 14:54:51 xinyangpan ok 
+2009-07-13 15:45:26 yanwang 邱福军:
+
+design askCommonFx@Comm0270)design unction_diff/diff_gateway.xls
+以上是老黄整理的gw相关代码的差异点,请进行Review 
+2009-07-13 15:45:43 yanwang 本周内结束 
+2009-07-13 15:45:52 yanwang 进度,请在每天的TaskReport中填写 
+2009-07-13 15:48:08 fujunqiu O 
+2009-07-13 18:21:46 linzuo 王宁,
+"deal的时候，net的数据插入表JHF_ALIVE_NETTED_EXECUTION.route有误，应该为：7，实际插入了5
+请修正"
+
+以下项目需要调整.
+1.mj head/0705
+2.trs head
+3.emfx head/07.05
+
+emfx,mj,代码调整完,开发测试通过,部署到测试环境. 
+2009-07-13 18:23:46 baoqianglu 老左 traders stay2 滞留 课题 内部测试完毕 文档提交至 
+
+===============================================================================
+/project/traders/08_service/middle/stayplaceTest/JHF_Traders_InternalTest_lubq.xls,v <-- JHF_Traders_InternalTest_lubq.xls 
+2009-07-13 18:26:27 linzuo OK 
+2009-07-13 18:49:12 ningwang 王宁,
+"deal的时候，net的数据插入表JHF_ALIVE_NETTED_EXECUTION.route有误，应该为：7，实际插入了5
+请修正"
+
+以下项目需要调整.
+1.mj head/0705
+2.trs head
+3.emfx head/07.05
+
+emfx,mj,代码调整完,开发测试通过,部署到测试环境.
+－－－－－－－－－－－－－－－－
+1，2，3 已经同步完毕。
+DMM没有上滞留2课题，没有同步，panta head 没有同步 
+2009-07-13 18:52:18 yanwang panta head middle 114 08.01 UP 
+2009-07-13 19:04:21 ningwang 老左/王岩：
+
+MJ DEV 环境测试：
+
+NET_EXECUTION_ID ROUTE NETTED_AMOUNT ACTIVE_FLAG INPUT_DATE UPDATE_DATE EXECUTION_DATETIME CURRENCY_PAIR EXECUTION_DATE TRIGGER_KEY TRIGGER_VALUE 
+-------------------- -------- ---------------- -------------- -------------------- -------------------- --------------------- ---------------- ----------------- -------------- ------------------------ 
+20090713CPEX00144101 7 200000 1 2009-7-13 下午7:03:13 2009-7-13 下午7:03:13 2009-7-13 下午7:03:13 USD/JPY 20090713 FireCover ASSIGN_EXECUTIONID_COVER 
+
+netroute修改OK。 
+2009-07-13 19:04:33 yanwang 好的 
+2009-07-13 19:04:43 ningwang panta head middle 114 08.01 UP
+－－－－
+OK 
+
+ DATE 
+ TIME 
+ JABBER ID 
+ MESSAGE 
+middle [2009-07-10 (JST)]
+DATE TIME JABBER ID MESSAGE 
+2009-07-10 10:05:14 yanmingqiu ok 
+2009-07-10 11:09:02 yangxu 老左：
+all 26 CHART机能加强的课题 
+traders dev 测试文档提交 
+2009-07-10 11:10:26 linzuo ok 
+2009-07-10 12:09:52 yanwang test 
+2009-07-10 12:09:57 yanwang test 
+2009-07-10 12:16:21 yanwang Traders FX 系统,今天早上SOD后,正式对顾客OPEN.运行正常.截止到目前为止顾客的约定数量168件 
+2009-07-10 12:16:52 xinyangpan :-) 
+2009-07-10 12:17:09 yishanjiang <brawo> 
+2009-07-10 12:17:15 baoqianglu =D> 
+2009-07-10 12:17:36 deguanghou =) 
+2009-07-10 12:17:53 linyao <brawo> 
+2009-07-10 12:17:56 yangxu <brawo> 
+2009-07-10 12:18:16 chengminghuang (: 
+2009-07-10 15:00:36 linzuo emfx 开发环境有人在用手动汇率? 
+2009-07-10 15:01:34 yanmingqiu 我用了 
+2009-07-10 15:08:22 yishanjiang 王岩/老左/老黄:
+
+
+
+=========================================
+老卢/王宁/小江/小潘/姚琳/王宁/老黄/老左:
+对于特定的注文種別的lot不进行滞留，另外进行管理
+项 目：PANTA,MJ,EMFX
+开 发 组: MIDDLE,BACKYARD,FRONT,REPORT
+文档位置：design askStayPositon@Comm0298)designStayPositionR001.xls
+(新添加根据新规/决计来区分滞留1和2,改动点Core,EWP,OPM,Front)
+design askStayPositon@Comm0298)designStayPositionR002.xls
+设计人员：张屹立
+优 先 级：高
+traders all 22,08.01 UP
+=========================================
+TRADERS代码提交，review文档提交，开发环境测试完毕，测试文档提交
+
+
+老卢/江一山/姚琳/小潘/王宁/老左:
+mj all 273,滞留场所2的课题,请同步到MJ
+=========================================
+MJ测试环境测试完毕，测试文档提交
+
+--------------------------------------------------------------------------------
+
+老卢/王宁/江一山/老黄/老左:
+em all 13,JHF_ALIVE_ORDER相关表中追加IP_ADDRESS,及Tick的课题,请同步到EM
+
+
+老卢/江一山/姚琳/小潘/王宁/老左:
+em all 42,滞留场所2的课题,请同步到EM
+=========================================
+EM测试环境测试完毕，测试文档提交 
+2009-07-10 16:08:56 linyao to 老黄/老左/王岩：
+
+Panta All #230
+
+时间注文存在的过期问题的解决
+项 目：ALL
+开 发 组: FRONT,MIDDLE
+文档位置：design askTimeorderProblem@Comm0293)designdesign.xls
+设计人员：李岩
+优 先 级：高
+
+============================================
+EWP开发完成，代码、review文档已提交。 
+2009-07-10 16:09:25 chengminghuang 恩. 
+2009-07-10 16:13:11 linyao sh deployerunifx panta dev middle? 
+2009-07-10 17:46:47 linyao to 老黄/老左/王岩：
+
+Panta All #230
+
+时间注文存在的过期问题的解决
+项 目：ALL
+开 发 组: FRONT,MIDDLE
+文档位置：design askTimeorderProblem@Comm0293)designdesign.xls
+设计人员：李岩
+优 先 级：高
+
+============================================
+EWP Panta开发环境内部测试完成、测试文档已提交。projectpanta 
+2009-07-10 18:01:11 yanwang ok 
+2009-07-10 18:09:53 yanwang 大家今天都早点回去吧,Happy Weekend 
+2009-07-10 18:10:01 yishanjiang <ok> 
+2009-07-10 18:10:09 xinyangpan :-D 
+2009-07-10 18:10:16 yishanjiang 同happy 
+2009-07-10 18:10:19 chengminghuang (-: 
+2009-07-10 18:10:23 yangxu <kwiatek> 
+2009-07-10 18:10:40 linyao (-: 
+2009-07-10 18:10:46 ningwang *thumbs up* 
+2009-07-10 18:11:50 baoqianglu 哦 也。。 
+2009-07-10 18:12:56 yanmingqiu 老左
+em all 33
+dmm all 34
+BestFeed和Spread逻辑调整
+开发环境内部测试完成、测试文档已提交 
+2009-07-10 18:15:16 linzuo OK 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
