@@ -1,0 +1,218 @@
+
+
+
+
+
+
+王岩 10:34
+CommonFX课题,以Panta HEAD为基础,同MJ,EM,DMM,TRADERS 的HEAD版本进行对比.
+整理出各个系统的差异代码点,及调整的方法,最终的目的是把Panta HEAD做成适应所有系统的代码,最大化
+差异代码点,请整理到\design\task\CommonFx@Comm0270\03)design\code_diff\middle.xls
+
+老卢(dev),老黄(review)
+cn.bestwiz.jhf.core.custtrade,改动量:一般
+cn.bestwiz.jhf.core.dao,改动量:多
+cn.bestwiz.jhf.core.dao.exception,改动量:少
+cn.bestwiz.jhf.core.dao.util,改动量:少
+cn.bestwiz.jhf.core.orderqueue,改动量:少
+
+
+
+
+
+
+
+老邱(dev),小潘(review)
+cn.bestwiz.jhf.core.ratecache,改动量:少
+cn.bestwiz.jhf.core.service,改动量:一般
+cn.bestwiz.jhf.core.mail,改动量:少
+cn.bestwiz.jhf.core.configcache,改动量:一般
+cn.bestwiz.jhf.core.Constants,改动量:无
+cn.bestwiz.jhf.core.cpratecache改动量:少
+cn.bestwiz.jhf.core.cache 改动量:无
+fxCacheClear.xml
+
+
+
+
+
+
+小江(dev),小潘(review)
+cn.bestwiz.jhf.core.bo.contructor,改动量:多
+
+
+
+
+
+
+许阳(dev),老邱(review)
+cn.bestwiz.jhf.core.bo.enums,改动量:多
+cn.bestwiz.jhf.core.bo.exceptions,改动量:少
+
+
+
+
+
+
+老黄(dev),小潘(review)
+cn.bestwiz.jhf.core.formula,改动量:一般
+
+
+
+
+
+
+姚琳(dev),小潘(review)
+cn.bestwiz.jhf.core.bo.bean,改动量:一般
+
+
+
+
+
+
+小潘(dev),老邱(review)
+cn.bestwiz.jhf.core.bo.App,改动量:少
+cn.bestwiz.jhf.core.bo.params,改动量:少
+cn.bestwiz.jhf.core.control,改动量:少
+cn.bestwiz.jhf.core.cptrade,改动量:少
+cn.bestwiz.jhf.core.dltrade,改动量:少
+cn.bestwiz.jhf.core.idgenerate,改动量:少
+cn.bestwiz.jhf.core.jms,改动量:少
+cn.bestwiz.jhf.core.jmx,改动量:少
+cn.bestwiz.jhf.core.tools,改动量:少
+cn.bestwiz.jhf.core.util,改动量:一般
+cn.bestwiz.jhf.core.conf,改动量:少
+ehcacheMain.xml
+ehcacheInfo.xml
+ehcacheBack.xml
+
+
+
+
+
+另外,Middle直接关联的工程,也请整理代码差异:
+Trader工程,ewp->姚琳,losscut->小潘,margincut->小潘,mail->老邱,opm->小江,riskControl->小潘,ros->老卢,rpmmail->许阳,trader->老卢,tso->许阳
+Hedger,cpRateWriter->许阳,Hedger->王宁
+Info->许阳
+Rate->老邱
+Mweb->小潘
+GW->老黄
+文档请及时提交CVS,便于Review
+
+老左:以上内容,请及时跟踪
+
+以上,有疑问或者不确定的问题,请提出来大家讨论
+
+
+
+
+
+
+
+王岩 10:35
+文档整理的截止时间是下周三,希望大家尽量往前敢争取在本周内结束.
+ 设计组会在7/15,7/18,7/23这几个时间点进行查看，努力及时给出调整意见。
+
+
+
+
+
+
+王岩 
+1.首先在Panta项目上,进行共通版本的开发,UP完之后,依次顺序的同步到其它系统上,
+  到最后所有系统的Common部分的代码完全一致,重新建立CVS结构,正式采用共通版本模式开发
+2.Core中的代码,在Panta上要做成最大化,以适应所有系统,Core的目录结构进行拆分和删除,具体参考设计文档中的说明
+  \design\task\CommonFx@Comm0270\03)design\middle.xls
+3.其他的工程中,业务差异点,通过Common框架进行嵌入和控制,比如:Formula各系统的差异点,Hedger GiveUP的差异点等
+4.DAO中的代码,只保留绝对共用的代码,其他的代码,移动到各自App的对应dao目录中,本次由老卢统一进行Middle相关模块的调整.
+  Front和Backyard他们自己移动.采用文件删除的方法,哪里有编译错误,就调整那里
+4.本次共通版本开发,十分有意义,改动内容十分多,十分重要,十分危险,大家必须十分小心!!!
+5.开发日程:7个工作日开发,4个工作日代码Review,5个工作日开发人员Dev环境集成测试.
+  总体日程:3周开发和内部测试+3周测试人员测试.08.29 UP
+6.以上内容,做好后,我们以后将会节省非常多的人力和精力,时间会被花费在更有意义的事情上,而不是像原来的那样被同步代码所浪费掉
+
+
+
+
+
+
+
+姚琳 
+有没有需要忽略的课题内容？
+
+
+
+
+
+
+王岩 
+以上是CommonFX课题的开发过程
+无
+
+
+
+
+
+
+姚琳 10:37
+哦
+
+
+
+
+
+王岩 
+所以差异代码,必须全部整理出来
+
+
+
+
+
+姚琳 10:38
+ok
+
+
+
+
+
+王岩 
+关于DAO中的处理,老卢及其他各位,请注意 !
+
+
+
+
+
+
+卢宝强 
+OK
+
+
+
+
+
+
+王岩 10:44  
+ 原来那个业务差异点整理的目录,换了,大家注意:
+\design\task\CommonFx@Comm0270\03)design\function_diff\diff_middle.xls
+\design\task\CommonFx@Comm0270\03)design\function_diff\diff_gateway.xls.xls
+\design\task\CommonFx@Comm0270\03)design\function_diff\diff_gateway.xls  
+ 
+ 黄成明   
+ 好.  
+ 
+ 左林   
+ ok  
+ 
+ 王岩 10:48  
+ Code Diff 那个文档整理完毕后,目标是:下周能直接参考文档进行代码的开发及其他人员的审核及为以后测试做出依据
+因此,这个文档非常重要,大家务必谨慎小心,否则,后果自负  
+
+
+
+
+
+
+
+
+
+

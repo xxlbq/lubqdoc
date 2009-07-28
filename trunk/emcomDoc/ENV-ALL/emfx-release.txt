@@ -1,4 +1,4 @@
- Front/Mobile 10.4.9.101
+Front/Mobile 10.4.9.101
 Register/activemq slave 10.4.9.102
 activemq/tc 10.4.9.103
 Main 10.4.9.104

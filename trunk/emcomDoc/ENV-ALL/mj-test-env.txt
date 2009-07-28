@@ -17,6 +17,18 @@ Admin/11111111
  00000239    BieYongA     11111111111
 
 
+Ixi00001/12个1             00004277
+
+
+
+DB  /usr/local/mysql/bin/mysql -uMAIN -pbestwiz -A MAIN -h10.15.2.72
+
+
+
+
+
+
+
 
 MJ 前台 http://fxtest.bestwiz.cn/jhf_mj_web/
    

@@ -117,6 +117,13 @@ $ mysqlbinlog binlog.000001 >  /tmp/statements.sql
 
 
 
+
+
+
+
+
+
+
 IT168 服务器学院】七、更改MySQL目录
 
 　　MySQL默认的数据文件存储目录为/var/lib/mysql。假如要把目录移到/home/data下需要进行下面几步：

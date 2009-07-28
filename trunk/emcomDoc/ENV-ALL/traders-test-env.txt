@@ -1,0 +1,7 @@
+
+LOGIN ID:00000888
+
+CUSTOMER ID :00000062
+
+
+/usr/local/mysql/bin/mysql -uMAIN -pPrG7lv2Y -h10.4.9.198-A MAIN

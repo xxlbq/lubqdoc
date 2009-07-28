@@ -1,3 +1,26 @@
+
+
+ hibernate.connection.url=jdbc:mysql://10.15.2.221,10.15.2.221/MAIN?useUnicode=true&useLocalSessionState=true&autoReconnect=true&failOverReadOnly=false&roundRobinLoadBalance=true&characterEncoding=ms932
+
+hibernate.connection.url=jdbc:mysql://10.15.2.226,10.15.2.226/INFO?useUnicode=true&useLocalSessionState=true&autoReconnect=true&failOverReadOnly=false&roundRobinLoadBalance=true&zeroDateTimeBehavior=convertToNull&characterEncoding=ms932
+ 
+
+
+
+Panta Dev MAIN:
+hibernate.connection.url=jdbc:mysql://10.15.2.206,10.15.2.206/MAIN?useUnicode=true&useLocalSessionState=true&autoReconnect=true&failOverReadOnly=false&roundRobinLoadBalance=true&characterEncoding=ms932
+
+Panta Dev INFO:
+hibernate.connection.url=jdbc:mysql://10.15.2.208,10.15.2.208/INFO?useUnicode=true&useLocalSessionState=true&autoReconnect=true&failOverReadOnly=false&roundRobinLoadBalance=true&zeroDateTimeBehavior=convertToNull&characterEncoding=ms932
+
+Panta Dev 环境的MAIN和INFO的数据库IP 变成以上那样了.大家注意下.
+
+
+
+
+
+
+
 +====================+
  PANTA 开发环境
 +====================+
@@ -96,3 +119,30 @@ Main_Slave:
 /usr/local/mysql/bin/mysql -h10.15.2.207 -uMAIN -pPrG7lv2Y -A MAIN
 Info:
 /usr/local/mysql/bin/mysql -h10.15.2.208 -uINFO -pPrWsk2iw -A INFO
+
+
+
+某日，心血来潮欲上网，遂网查知，当今网林乃两大高手共掌天下，一谓网通，二曰电信。
+吾等小民，皆抱价廉物美之心，故比之。以2m/年为例
+
+网通 1300金， 另加开通费300金 ，固定电话安装，每月25金(必安，年300金)
+电信 800金 
+
+高下立见。
+
+然如此巨差，何也？
+吾于某同僚言之，其亦已用电信半年余，谓曰：电信宽带 血受！（此君已为吾列入终身黑名单中）
+如上诸诸，加之网通电话接线员NB态度，电信MM的甜美声音。遂入电信门。噩梦从此开始鸟~~~~~~~~~
+
+
+每天19：00开始 至 22：00 网速奇慢无比，3分钟一小断，5分钟一大断。（娱网棋牌1000多经验，断的现在连10分的都快进不去了。）
+从5月份开始到现在 一直在维修，态度好的让你受不了，就是没什么实际效果。
+
+
+不知道大连圈里有没有东方时空的卧底？此时不出手，更待何时？
+
+
+
+
+
+
