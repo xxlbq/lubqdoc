@@ -1,0 +1,12 @@
+> 开发、系统部各位：
+> 现在所有的测试环境和开发环境的middle启动模式已经修改了。
+> 原来所有的脚本在
+> /jhfapp/app/bin
+> 现在全部挪到：
+> /jhfapp/app/shell
+> 并且启动和停止模式已经修改，比如停止其中一个服务（TradeRateAgent）：
+> cd /service #进入守护目录
+> svc -d TradeRateAgent #停止进程
+> svc -u TradeRateAgent #启动进程
+> 在一般情况下，如果要重启服务，只需要kill掉一种一个进程，那个进程就会
+> 	自动重新起来

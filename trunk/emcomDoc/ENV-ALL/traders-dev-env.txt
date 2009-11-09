@@ -1,13 +1,32 @@
 
 
 
-ÓôøÕ•≥©`•…  	00060065
-ø⁄◊˘§Œ∑NÓê* 	ÇÄ»À
-•Ì•∞•§•ÛID* 	FFF00066
 
 
 
-111111111111
+
+
+
+
+-host 10.15.2.176 -mode ALL -orderTime 4 -rateinterval 1000 -order 2 -ordernum 1 -rate 1 -starttime 13:00 -type EMFX -ccpair EUR/JPY -loginthread 2 -orderType 1
+
+
+
+
+
+
+
+°æcustomerid£∫00060065°ø
+loginId£∫   FFF00066
+pwd£∫		111111111111
+
+°æcustomerid£∫00060095°ø
+loginId£∫   jiangys
+pwd£∫		111111111111
+
+°æcustomerid£∫00060099°ø
+loginId£∫   hujf2
+pwd£∫		111111111111
 
 
 

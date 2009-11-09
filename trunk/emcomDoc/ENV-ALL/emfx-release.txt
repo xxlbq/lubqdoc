@@ -28,7 +28,7 @@ iet00006
 
 +==========================
 
-
+/usr/local/mysql/bin/mysql -uMAIN -p123456 -h10.4.9.104 -A MAIN
 
 
 
