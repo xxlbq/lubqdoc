@@ -12,25 +12,6 @@ Iya00007/12*1
 
 
 
-
- hibernate.connection.url=jdbc:mysql://10.15.2.221,10.15.2.221/MAIN?useUnicode=t
-rue&useLocalSessionState=true&autoReconnect=true&failOverReadOnly=false&roundRob
-inLoadBalance=true&characterEncoding=ms932
-
-hibernate.connection.username=MAIN
-hibernate.connection.password=PrG7lv2Y
-hibernate.connection.url=jdbc:mysql://10.15.2.221,10.15.2.221/MAIN?useUnicode=tr
-ue&useLocalSessionState=true&autoReconnect=true&failOverReadOnly=false&roundRobi
-nLoadBalance=true&characterEncoding=ms932
-
-
-hibernate.connection.url=jdbc:mysql://10.15.2.226,10.15.2.226/INFO?useUnicode=tr
-ue&useLocalSessionState=true&autoReconnect=true&failOverReadOnly=false&roundRobi
-nLoadBalance=true&zeroDateTimeBehavior=convertToNull&characterEncoding=ms932
- 
-
-
-
 Panta Dev MAIN:
 hibernate.connection.url=jdbc:mysql://10.15.2.206,10.15.2.206/MAIN?useUnicode=tr
 ue&useLocalSessionState=true&autoReconnect=true&failOverReadOnly=false&roundRobi

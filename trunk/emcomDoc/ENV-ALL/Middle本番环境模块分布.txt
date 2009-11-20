@@ -1,0 +1,138 @@
+EMS±¾·¬:
+192.168.99.151/ratemanager
+192.168.98.142/rateagent
+192.168.98.172/ratemanager Slave/rateagent Slave
+192.168.99.152/chartgenerator/ewp/losscut1->192.168.99.176
+192.168.98.127/cpratewriter/ros/opm3/opm4
+192.168.99.154/trader1/hedger1
+192.168.99.159/Trader2/Hedger2
+192.168.98.148/MarginCut1
+192.168.99.160/MarginCut2
+192.168.98.149/MarginCut3
+192.168.98.171/MarginCut4
+192.168.98.147/rpmmail/trailingstop2/losscut2->192.168.98.154
+192.168.98.146/trailingstop1/opm1/opm2->192.168.98.155
+192.168.99.233/autotrigger1,autotrigger2
+192.168.99.234/autotrigger3,autotrigger4
+192.168.98.135/whitelabel4dmm/SendMail/RiskControl
+192.168.98.84/trader3
+192.168.98.85/trader4
+192.168.98.187/trader5/trader6
+192.168.98.188/whitelabel4emt
+GW-DB
+192.168.99.201
+GW-BC 
+192.168.99.202
+GW-FEED
+192.168.99.203
+GW-CITI
+192.168.99.204
+GW-GS
+192.168.98.176
+Dresdner
+192.168.98.177
+jpMorgan
+192.168.98.178
+RateAnalysis
+192.168.98.166
+TRBST
+192.168.99.205
+
+MJ±¾·¬:
+10.99.1.151/RateManager
+10.99.1.105/TradeRateAgent
+10.99.1.153/Losscut2
+10.99.1.154/Trader1/Hedger1
+10.99.1.110/TrailingStop/RpmMail/Ewp
+10.99.1.108/ChartGeneratorServer/ros/riskcontrol
+10.99.1.158/Trader2/Hedger2
+10.99.1.106/OPM1->10.99.0.135
+10.99.1.152/Losscut1
+10.99.1.107/Opm2->10.99.1.114
+10.99.0.112/MarginCut1
+10.99.0.113/MarginCut2 
+10.99.0.117/MarginCut3
+10.99.1.119/MarginCut4
+10.99.1.109/SendMail/CpRateWriterServer
+lg0 115,10.99.0.115/AutoTrigger1,2,10.99.1.173/174(slave)
+lg0 116,10.99.0.116/AutoTrigger3,4
+lg0 136/admin
+10.99.1.201(DB)
+10.99.1.202(BC)
+10.99.1.203(GS)
+10.99.1.204(DR)
+
+TRS±¾·¬:
+10.5.30.1  RateMger_M/RAgent_S
+10.5.30.2  RateMger_S/RAgent_M
+10.5.30.3  Trader1
+10.5.30.4  Trader2
+10.5.30.5  Trader3
+10.5.30.6  Trader4
+10.5.30.7  Trader5
+10.5.30.8  Trader6
+10.5.30.9  Opm1
+10.5.30.10 Opm2
+10.5.30.11 MarginCut1
+10.5.30.12 MarginCut2
+10.5.40.13 Losscut1
+10.5.30.14 Losscut2
+10.5.30.15 CprateWirter
+10.5.30.16 ROS/TrailStop/SendMail
+10.5.30.17 Ewp/ChartGenerator/RPM
+10.5.30.18 Hedger1
+10.5.30.19 Hedger2
+10.5.30.20 AutoTrigger1
+10.5.30.21 AutoTrigger2
+10.5.30.23 WhiteLabel
+GW-DB	10.5.30.55
+GW-BC	10.5.30.56
+GW-CT	10.5.30.57
+GW-GS	10.5.30.58
+GW-DR	10.5.30.59
+
+DMM±¾·¬
+RateManager(M)/RateAgent(S)   10.1.0.2 lg 2
+RateAgent(M)/RateManager(S)   10.1.0.3
+Ewp/ChartGenerator            10.1.0.4
+CpRateWriter                  10.1.0.5
+Trader1                       10.1.0.6
+Trader2                       10.1.0.7
+RPM/TrailStop/ROS/Sendmail    10.1.0.8
+Hedger1                       10.1.0.9
+Hedger2                       10.1.0.10
+autotrigger1,autotrigger2     10.1.0.11
+autotrigger3,autotrigger4     10.1.0.12
+LossCut1                      10.1.0.13
+LossCut2                      10.1.0.14
+Opm1                          10.1.0.15
+Opm2                          10.1.0.16
+MarginCut1                    10.1.0.17
+MarginCut2                    10.1.0.18
+Trader3                       10.1.0.19
+Trader4                       10.1.0.20
+Trader5                       10.1.0.21
+Trader6                       10.1.0.32
+
+Gateway
+GW-SA	 d-gw2	 10.1.0.34
+GW-EMSCP d-gw6	 10.1.0.38
+GW-PTBST 10.1.0.39(ÐéÄâ:10.1.1.34)
+GW-FEED  10.1.0.37
+
+DMMÐéÄâ
+10.1.1.2/RateManager/TradeRateAgent
+10.1.1.3/TradeRateAgent/RateManager
+10.1.1.4/EwpServer/ChartGeneratorServer/AutoTriggerServer2/LosscutServer2
+10.1.1.5/CpRateWriterServer/LosscutServer1/HedgerServer1
+10.1.1.6/TraderServer1/OpmServer1
+10.1.1.7/TraderServer2/OpmServer2
+10.1.1.8/RpmMailServer/TrailingStopServer/RosServer/SendMailServer
+10.1.1.10/HedgerServer2/AutoTriggerServer1
+10.1.1.19/MARGINCUT-TOMCAT1
+10.1.1.20/MARGINCUT-TOMCAT2 
+
+GateWay:
+GW-EMSCP            10.1.1.33
+GW-PTBST            10.1.1.34
+GW-DMM              10.1.1.33 
