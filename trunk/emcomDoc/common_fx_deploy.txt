@@ -1,0 +1,93 @@
+deployer@deploy shell]$ 
+[deployer@deploy shell]$ 
+[deployer@deploy shell]$ 
+[deployer@deploy shell]$ deploycommonfx panta devcom gw
+java version "1.6.0_06"
+Java(TM) SE Runtime Environment (build 1.6.0_06-b02)
+Java HotSpot(TM) Client VM (build 10.0-b22, mixed mode)
+Please choice common module version:
+#####################################
+0.HEAD COMMON
+1.
+2.
+3.
+4.
+5.
+#####################################
+Please input [0-5] default "1", other version please input "-1" 0
+Please choice diff module version:
+#####################################
+0.PANTA
+1.
+2.
+3.
+4.
+5.
+#####################################
+Please input [0-5] default "1", other version please input "-1" 0
+Deployer "PANTA" version start...[yes/No] yes
+Cvsup "PANTA" source code...done.
+Compiling panta core...done.
+Compiling panta bugrate...done.
+Compiling panta gws...done.
+All compile done.
+Do you update panta devcom gw JAR? [Yes/no]yes
+Stop panta gw 10.15.2.203...done.
+Update panta gw 10.15.2.203...done.
+Update panta gw config 10.15.2.203...scp: /jhfapp/app/conf//jhf-datalog-config.xml: Permission denied
+done.
+Start panta gw 10.15.2.203...done.
+Do you backup JAR to "/home/deployer/scripts/releases/2009-07-28_17.21.18.panta.devcom.gw/" [Yes/no] no 
+Skip backup.
+Deploy "panta devcom gw PANTA" done.
+Log file "/home/deployer/scripts/logs/panta.devcom.gw.compile.log.2009-07-28_17.21.18".
+[deployer@deploy shell]$ 
+[deployer@deploy shell]$ 
+[deployer@deploy shell]$ 
+[deployer@deploy shell]$ 
+[deployer@deploy shell]$ 
+[deployer@deploy shell]$ 
+[deployer@deploy shell]$ 
+[deployer@deploy shell]$ 
+[deployer@deploy shell]$ deploycommonfx panta devcom middle
+java version "1.6.0_06"
+Java(TM) SE Runtime Environment (build 1.6.0_06-b02)
+Java HotSpot(TM) Client VM (build 10.0-b22, mixed mode)
+Please choice common module version:
+#####################################
+0.HEAD COMMON
+1.
+2.
+3.
+4.
+5.
+#####################################
+Please input [0-5] default "1", other version please input "-1" 0
+Please choice diff module version:
+#####################################
+0.PANTA
+1.
+2.
+3.
+4.
+5.
+#####################################
+Please input [0-5] default "1", other version please input "-1" 0
+Deployer "PANTA" version start...[yes/No] yes
+Cvsup "PANTA" source code...done.
+Compiling panta core...done.
+Compiling panta hedger...done.
+Compiling panta info...done.
+Compiling panta ratecontrol...done.
+Compiling panta trader...done.
+Compiling panta mweb...done.
+All compile done.
+Do you update panta devcom middle JAR? [Yes/no]yes
+Stop panta middle...10.15.2.201 10.15.2.202 done.
+GW &  Middle的部署脚本可以正常使用了  
+ 
+ 王宁 17:26  
+ ok  
+ 
+ 王岩   
+ Front和Backyard等的部署脚本,调试中 

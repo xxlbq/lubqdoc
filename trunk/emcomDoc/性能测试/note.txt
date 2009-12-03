@@ -1,0 +1,7 @@
+design/task_history/20080716@SysPerfTest/mock 
+
+
+
+-host 10.15.2.176   -mode ALL -orderTime 4 -rateinterval 1000 -order 2 -ordernum 1 -rate 2 -starttime 13:00 -type EMFX -ccpair EUR/JPY -loginthread 2 -orderType 0
+
+–‘ƒ‹≤‚ ‘≥Ã–Ú

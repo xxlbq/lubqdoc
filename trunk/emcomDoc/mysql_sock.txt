@@ -1,0 +1,46 @@
+建立完成，请使用如下命令在MAIN上登录：
+mysql -u root -p --socket=/usr/local/mysql2/var/mysql.sock
+
+
+wangyan 写道:
+> 刘宏光/丁一:
+> 请在Test环境的MAIN服务器上,新安装个Mysql,Port区分
+> 并且配置文件中添加以下参数:
+> innodb_lock_wait_timeout=30
+> interactive_timeout=30
+> wait_timeout=30
+>
+> 金金:
+> 请在这个新的mysql上执行SQL.
+>
+> 老邱:
+> 请对应调整HA的Conf文件.
+
+            <user>HA</user>
+            <password>PrG7lv2Y</password>
+PORT:3307
+[root@mj-M-db1 ~]# mysql -u HA -p -h 10.4.9.225 --port 3307
+Enter password: 
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 23
+Server version: 5.0.33-log Source distribution
+
+Type 'help;' or '\h' for help. Type '\c' to clear the buffer.
+
+mysql> show tables;
+ERROR 1046 (3D000): No database selected
+m
+[root@mj-M-db1 mysql2]# pwd
+/usr/local/mysql2
+[root@mj-M-db1 mysql2]# vi my.cnf 
+
+
+
+
+
+
+
+
+
+
+D:\cvsroot\design\task\CommonFx@Comm0270\03)design\panta

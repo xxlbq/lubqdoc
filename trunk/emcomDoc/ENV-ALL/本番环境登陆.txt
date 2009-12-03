@@ -1,0 +1,13 @@
+Panta本番,ssh入口方式:
+admin.min-fx.tv
+wangyan/wangyan520.
+
+比如:192.168.99.151/ratemanager
+lg 151
+
+比如:192.168.98.84/trader3
+lg0 84
+
+192.168.98.128 MAIN Slave
+lg0 128
+mysql -A MAIN -uwangyan -h192.168.98.128 -pwangyan520.
