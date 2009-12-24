@@ -38,3 +38,25 @@ mary        f        1978-12-12
 commy     f       1970-09-02
 可以使用命令装文件文件"mysql.txt"装载到mytable表中
 mysql>LOAD DATA     LOCAL INFILE "g:\\code\\mysql.txt'     INTO     TABLE mytable;
+
+
+
+
+
+数据导出 /usr/local/mysql/bin/mysqldump -h10.15.2.206 -uwangyan -pemcom2oo9  --where="CURRENCY_PAIR=USD/JPY AND EXECUTION_TYPE=1 AND 
+SIDE=1 AND ORDER_STATUS=1"  MAIN JHF_ALIVE_ORDER >/tmp/data.log
+
+
+
+
+
+【停止】
+/usr/local/mysql/bin/mysqladmin shutdown -h10.15.2.206 -uwangyan -pemcom2oo9
+
+
+
+touch /var/lock/subsys/local
+
+【启动】
+/usr/local/mysql/bin/mysqld_safe --user=mysql &
+/usr/local/mysql2/bin/mysqld_safe --defaults-file=/usr/local/mysql2/my.cnf --socket=/usr/local/mysql2/var/mysql.sock --user=mysql &

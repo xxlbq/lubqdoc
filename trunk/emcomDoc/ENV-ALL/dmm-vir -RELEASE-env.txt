@@ -21,7 +21,7 @@ mysql>
 
 
 
-mysql -h10.4.9.74 -uMAIN -pPrG7lv2Y -A MAIN 
+mysql -h10.4.9.74 -uMAIN -pdmm -A MAIN 
 
 
 
