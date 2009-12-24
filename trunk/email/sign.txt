@@ -1,0 +1,10 @@
+%CURSOR
+
+Yours sincerely. 				
+*---------------------------------------------*
+name	:Â¬±¦Ç¿
+e-mail	:%FROMADDR
+mobile  :13478938562
+msn		:xxlbq@hotmail.com
+date	:%DATE
+*---------------------------------------------*
