@@ -1,0 +1,7 @@
+wget [参数] URL ，如：在提示符下输入wget -c ftp://61.132.72.33/1202/gugong/01.avi  即可。假设该FTP存在密码，假设密码为password,用户名为user,你只需要
+将以上命令改成wget -c ftp://user:password@61.132.72.33/1202/gugong/01.avi 即可。
+
+
+
+
+

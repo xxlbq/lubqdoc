@@ -1,0 +1,2 @@
+root@lbq-desktop:~# cat /etc/issue 
+Ubuntu 9.10 \n \l
