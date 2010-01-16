@@ -1,0 +1,30 @@
+chown -R  root:root eclipse
+
+
+
+这里PATH是你存放eclipse-SDK-3.3-linux-gtk.tar.gz的目录，解压后，在/usr/java目录下就有了eclipse这个目录
+
+接下来，我来为eclipse创建一个图形界面快速启动项（类似于windows下的桌面快捷方式），右击图形界面——〉选择"新建启动器(New Launcher)"——〉名称（Name）
+输入Eclipse——〉命令（Command）选择Eclipse解压目录/usr/java /eclipse——〉图标（Icon）可以选择Eclipse的图标——〉点击确定完成，然后你就可以双击图形
+界面中的快速启动来启动你的 eclipse了，当然也可以在shell下执行eclipse根目录下的执行文件来启动eclipse！
+
+
+
+
+往 “应用程序”菜单添加一个快捷方式
+你可以在 桌面上右键 －》 创建启动器 的办法来建一个快捷方式，
+然后复制到/usr/share/applications 里面去，不过好像没有什么方式指定 类型。
+其实里ls 一下可以看到/usr/share/applications都是些后缀名为 desktop的文件了，
+参考其他的，建议自己建立一个也不难，这个就是用于Eclipse的
+
+widebright@widebright:/usr/share/applications$ cat Eclipse-3.5.desktop
+[Desktop Entry]
+Encoding=UTF-8
+Name=Eclipse 3.5
+Exec="/home/widebright/桌面/widebright/软件安装包/Eclipse3.5/eclipse/eclipse"
+Icon=/home/widebright/桌面/widebright/软件安装包/Eclipse3.5/eclipse/eclipse.png
+Categories=Development;Java;IDE
+Version=1.0
+StartupNotify=true
+Type=Application
+Terminal=0
