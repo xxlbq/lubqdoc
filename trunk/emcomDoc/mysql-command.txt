@@ -25,3 +25,13 @@ BACKYARD.„¢•Ô±ó 11:31
 | JHF_ALIVE_ORDER          | 
 | JHF_ALIVE_ORDER_BK       | 
 +--------------------------+
+
+
+
+
+
+
+flush privileges;
+
+CREATE USER 'MAIN'@'10.15.4.117' IDENTIFIED BY 'bestwiz'; 
+GRANT ALL ON * . * TO 'MAIN'@'10.15.4.117';

@@ -1,3 +1,15 @@
+11527
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -20,10 +32,10 @@
 
 
 
+/usr/local/mysql/bin/mysqladmin  shutdown -uzhangwc -pemcom2oo9
 
 
-
-
+/usr/local/mysql/bin/mysqld_safe ¨Cuser=mysql &
 
 *========================================*
 *=========*   mysql shutdown   *=========*
