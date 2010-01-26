@@ -1,0 +1,8 @@
+ /usr/local/mysql/bin/mysql -uMAIN -pbestwiz -h192.168.1.4 -A MAIN; 
+
+
+GRANT ALL PRIVILEGES ON INFO.* TO 'INFO'@'192.168.1.%' IDENTIFIED BY 'bestwiz' WITH GRANT OPTION;
+
+
+
+/usr/local/mysql/bin/mysql -uINFO -pbestwiz -h192.168.1.4  -A INFO < /home/lbq/DBdata/PANTA_TEST_INFO.SQL
