@@ -1,3 +1,16 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
 ■MJ测试:
 http://web.mj.net/jhf
 Cba00001/111111111111/00000473
@@ -14,7 +27,9 @@ Admin/11111111
 
 
 
-00000239    BieYongA     11111111111
+┌──────────────────┐
+│00000239    BieYongA     11111111111│
+└──────────────────┘
 
 
 Ixi00001/12个1             00004277
@@ -27,6 +42,11 @@ DB  /usr/local/mysql/bin/mysql -uMAIN -pbestwiz -A MAIN -h10.4.9.12
 
 
 
+┌────┐
+│通用用户│
+└────┘
+
+/usr/local/mysql/bin/mysql -uzhangwc -pemcom2oo9 -h10.4.9.12 
 
 
 

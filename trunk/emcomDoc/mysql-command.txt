@@ -3,8 +3,7 @@
 
 
 BACKYARD.劉曉斌 11:31
-[root@localhost emfx]# mysql -h10.4.9.144 -uMAIN -pPrG7lv2Y MAIN -A -e"show tables like 
-'%ALIVE%'"
+[root@localhost emfx]# mysql -h10.15.2.206 -uMAIN -pPrG7lv2Y MAIN -e"show tables like '%ALIVE%'"
 +--------------------------+
 | Tables_in_MAIN (%ALIVE%) |
 +--------------------------+
@@ -35,3 +34,13 @@ flush privileges;
 
 CREATE USER 'MAIN'@'10.15.4.117' IDENTIFIED BY 'bestwiz'; 
 GRANT ALL ON * . * TO 'MAIN'@'10.15.4.117';
+
+
+
+
+(2010-01-25 16:53:32) 于海江: 
+while : ;do mysql -h10.15.2.206 -uMAIN -pPrG7lv2Y -A MAIN -e"show processlist;" |grep jp-test-middl02 |wc -l;sleep 1;done
+(2010-01-25 16:54:28) 于海江: 
+for x in `seq 100`;do mysql -h10.15.2.206 -uMAIN -pPrG7lv2Y -A MAIN -e"show processlist;" |grep jp-test-middl02 |wc -l;sleep 1;done
+
+
