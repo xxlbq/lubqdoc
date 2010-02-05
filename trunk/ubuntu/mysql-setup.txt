@@ -142,10 +142,12 @@ OPTION;
 GRANT SELECT,INSERT,UPDATE,DELETE ON MAINDB.* TO MAIN@'192.168.1.%' identified by 'bestwiz';
 GRANT ALL PRIVILEGES  ON INFO.* TO INFO@'192.168.1.%' identified by 'bestwiz';
 
+GRANT ALL PRIVILEGES  ON INFO.* TO '%'@'localhost' identified by 'bestwiz';
+FLUSH PRIVILEGES;
 
 mysql --user=root -p
 
-
+FLUSH PRIVILEGES;
 
 
 【建立用户】CREATE USER
@@ -312,3 +314,26 @@ CREATE DATABASE db_name
 ALTER DATABASE db_name
     [[DEFAULT] CHARACTER SET charset_name]
     [[DEFAULT] COLLATE collation_name]
+
+
+
+
+
+
+
+==================================================================
+[mysql 自动启动]
+
+7.设置MySQL的环境变量：
+cd //回到你的用户目录。 
+cp .bashrc .bashrc_bak //备份.bashrc 聚R Q ?
+gedit ~/.bashrc 
+在最后加入：export PATH=/opt/mysql/bin:$PATH
+然后在终端输入：source ~/.bashrc //使刚修改的起作用
+env //查看环境变量
+mysql
+上面的修改只针对某一用户，你还可以用另外一种办法：在/etc/profile添加PATH路径后，注销一次再echo应该就可以了
+
+8.设置MYSQL自动启动：
+sudo cp /opt/mysql/share/mysql/mysql.server /etc/rc2.d/S20mysql
+

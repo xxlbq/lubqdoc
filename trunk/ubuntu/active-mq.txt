@@ -1,0 +1,48 @@
+
+root@lbq-desktop:/usr/local/activemq/master/bin# chmod +x activemq
+root@lbq-desktop:/usr/local/activemq/master/bin# 
+root@lbq-desktop:/usr/local/activemq/master/bin# 
+root@lbq-desktop:/usr/local/activemq/master/bin# activemq &
+
+
+
+root@lbq-desktop:/usr/local/activemq/master/conf# vi activemq.xml 
+
+
+
+    <bean id="mysql-ds" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+        <property name="driverClass" value="com.mysql.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:mysql://192.168.1.4/activemq?relaxAutoCommit=true"/>
+        <property name="user" value="activemq"/>
+        <property name="password" value="activemq"/>
+        <property name="initialPoolSize" value="1"/>
+        <property name="minPoolSize" value="1"/>
+        <property name="maxPoolSize" value="20"/>
+        <property name="acquireIncrement" value="2"/>
+        <property name="maxIdleTime" value="35"/>
+        <property name="idleConnectionTestPeriod" value="10"/>
+        <property name="maxStatements" value="100"/>
+    </bean>
+
+
+
+
+
+
+GRANT ALL PRIVILEGES  ON activemq.* TO '%'@'192.168.1.4' identified by 'activemq';
+FLUSH PRIVILEGES;
+
+
+
+
+sudo apt-get install tcsh 
+
+
+
+
+
+
+
+java -classpath .\apache-activemq-4.1-incubator.jar;example\bin ProducerTool  tcp://192.168.3.142:61616 test.mysubject
+
+
