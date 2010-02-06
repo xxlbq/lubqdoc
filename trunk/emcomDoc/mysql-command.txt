@@ -41,6 +41,14 @@ GRANT ALL ON * . * TO 'MAIN'@'10.15.4.117';
 (2010-01-25 16:53:32) 于海江: 
 while : ;do mysql -h10.15.2.206 -uMAIN -pPrG7lv2Y -A MAIN -e"show processlist;" |grep jp-test-middl02 |wc -l;sleep 1;done
 (2010-01-25 16:54:28) 于海江: 
-for x in `seq 100`;do mysql -h10.15.2.206 -uMAIN -pPrG7lv2Y -A MAIN -e"show processlist;" |grep jp-test-middl02 |wc -l;sleep 1;done
+for x in `seq 100`;do mysql -h10.15.2.206 -uMAIN -pPrG7lv2Y -A MAIN -e"show processlist;" |grep jp-test-middl02 |wc -l;sleep 
+1;done
+
+
+
+
+
+
+netstat -ant|grep 3306|grep '10.15.4.117'|wc -l
 
 

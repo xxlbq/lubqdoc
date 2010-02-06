@@ -7,7 +7,7 @@
  90000088        DEFAULT      0                    DMM00088     593c9b4a9390551d53e5cacf28ebd638 
 
 
-
+msorry         111111111111           00001302
 
 
 2,
@@ -44,9 +44,3 @@ SNS  url
 
 
 
-
-
-
-			if( null != snsFatherOrder ){
-				snsList.add(snsFatherOrder);
-			}

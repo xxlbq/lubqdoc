@@ -8,7 +8,7 @@ show master status;
 -----slave
 
 slave stop;
-CHANGE MASTER TO MASTER_HOST="10.15.2.206",MASTER_LOG_FILE='jp-test-maindb_M-bin.000039',MASTER_LOG_POS=243020342;
+CHANGE MASTER TO MASTER_HOST="10.15.2.165",MASTER_LOG_FILE='MAIN-bin.000026',MASTER_LOG_POS=554115188;
 slave start;
 
 show slave status\G;
@@ -47,7 +47,8 @@ mysql -uroot -pbestwiz2oo8 -A MAIN
 
 
 
-  151  /usr/local/mysql/bin/mysqldump   -h10.4.9.225 --default-character-set=cp932 MAIN JHF_CUSTOMER | /usr/local/mysql/bin/mysql 
+  151  /usr/local/mysql/bin/mysqldump   -h10.4.9.225 --default-character-set=cp932 MAIN JHF_CUSTOMER | 
+/usr/local/mysql/bin/mysql 
 -uwangyan -p --default-character-set=cp932 MAIN
 
 
@@ -57,6 +58,26 @@ mysql -uroot -pbestwiz2oo8 -A MAIN
 
 
 JHF_CUSTOMER   JHF_PERSONAL    JHF_ARTIFICIAL
+
+
+
+
+
+
+
+
+
+
+
+
+-- 导出master 表
+
+/usr/local/mysql/bin/mysqldump -uzhangwc -pemcom2oo9 -S /home/mysql_MAIN/mysql.sock MAIN JHF_CUSTOMER > /tmp/JHF_CUSTOMER.sql
+
+
+-- 导入slave 表
+
+
 
 
 

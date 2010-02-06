@@ -20,3 +20,10 @@ UPDATE JHF_CUSTOMER_STATUS SET LOGIN_PASSWORD = '593c9b4a9390551d53e5cacf28ebd63
 
 
 /usr/local/mysql/bin/mysql -uzhangwc -pemcom2oo9 -S /home/mysql_MAIN/mysql.sock -A MAIN;
+
+
+
+
+
+--- MAIN - ROOT
+mysql -uroot -psys2oo9emcom -A -S /home/mysql_MAIN/mysql.sock --default-character-set=cp932 MAIN
