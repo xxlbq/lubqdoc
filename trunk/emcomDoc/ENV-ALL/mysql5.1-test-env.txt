@@ -1,0 +1,40 @@
+(2010-02-22 10:03:59) 系统部.王慧宁: 
+panta cyc        
+        
+front 10.15.2.106 p4 3.06  1GB 80G  机房A旁 
+front_rate 10.15.2.107 p4 3.06  2GB 80G  机房A旁 
+ajax 10.15.2.108 P4 2.8G  1GB 80G  机房A旁 
+middle1 10.15.2.109 P4 2.8G  2GB 80G  机房A旁 
+middle3 10.15.2.110 Pentium(R) Dual-Core  CPU E5300  @ 2.6GHz  4GB 320G  大会议室 
+backyard_batch 10.15.2.111 Intel(R) Pentium(R) Dual  CPU  E2140  @ 1.60GHz  2GB 80G  小会议室 
+main_master info his bactch 10.15.2.115 Pentium(R) Dual-Core  CPU E5300  @ 2.6GHz  4GB 320G  小会议室 
+middle_salvedb 10.15.2.116 Pentium(R) Dual-Core  CPU E5300  @ 2.6GHz  4GB 320G  小会议室 
+gw_mq 10.15.2.117 Pentium(R) Dual-Core  CPU E5300  @ 2.6GHz  4GB 320G  小会议室 
+front_slavedb 10.15.2.120 Pentium(R) Dual-Core  CPU E5300  @ 2.6GHz  4GB 320G  大会议室 
+middle2 10.15.2.136  Intel(R) Pentium(R) D CPU 3.40GHz  2GB 160G  小会议室 
+ 10.15.2.112 Intel(R) Pentium(R) Dual  CPU  E2140  @ 1.60GHz    2G 80G  小会议室 
+front :   https://10.15.2.106/        
+mobile: http://10.15.2.106:18080/index.do        
+ajax:    https://10.15.2.108/        
+admin: http://10.15.2.111/        
+cti :  
+http://10.15.2.108:18080/index.do?customerId=00078286&need=1,2,3,4,5,6,7,8,9,10,11,12,13,15,16&themes=Sugar&user=admin&pw=dbd63d6b94
+a8d3f66aa5412fd220ba08        
+
+
+
+sam-dev@adv.emcom.jp<sam-dev@adv.emcom.jp>
+
+
+00000120       Ito00003     666666666666  0    
+
+
+
+
+
+
+
+
+
+
+

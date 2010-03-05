@@ -52,3 +52,24 @@ for x in `seq 100`;do mysql -h10.15.2.206 -uMAIN -pPrG7lv2Y -A MAIN -e"show proc
 netstat -ant|grep 3306|grep '10.15.4.117'|wc -l
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+================ =================
+
+
+[root@jp-test-maindb_M ~]# while : ;do mysql -h10.15.2.206 -uzhangwc -pemcom2oo9 -A MAIN -e"show processlist;" |grep "em-return.dhcp.adv.emcom.jp" |wc -l;sleep 1;done
+
+
+
+
+netstat -ant|grep 3306|grep '10.15.2.202'|wc -l  

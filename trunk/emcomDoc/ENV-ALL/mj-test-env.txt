@@ -6,7 +6,7 @@
 
 
 
-
+/usr/local/mysql/bin/mysql -uroot -psys2oo9emcom
 
 
 
