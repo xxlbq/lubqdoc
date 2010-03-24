@@ -1,0 +1,39 @@
+I have created test environments for you to connect to. Details are below.
+*For all sessions:*
+       IP: 199.53.21.73
+       Port: 33035
+       Start and stop times of CS FIX engines (New York time):
+       Weekly: Start Sunday 17:10, stop Friday 17:05
+       Daily: stop 17:05, start 17:10
+       Message sequence number reset times: 17:06pm Mon-Fri
+       Heartbeat interval: 60 seconds
+*Emcom:*
+
+       TargetCompID (Credit Suisse): CSTEST
+       SenderCompID (Client): CSFX-EMCOM-TEST, CSFX-EMCOM-TEST2
+       The following 2 values are only used in NewOrderSingle messages:
+       ClientID(FIX tag 109): csfx-emcom-user
+       Account(FIX tag 1): CSFX_EMCOM
+*DMM:*
+       TargetCompID (Credit Suisse): CSTEST
+       SenderCompID (Client): CSFX-DMM-TEST, CSFX-DMM-TEST2
+       The following 2 values are only used in NewOrderSingle messages:
+       ClientID(FIX tag 109): csfx-dmm-user
+       Account(FIX tag 1): CSFX_DMM
+*MJ:*
+       TargetCompID (Credit Suisse): CSTEST
+       SenderCompID (Client): CSFX-MJ-TEST, CSFX-MJ-TEST2
+       The following 2 values are only used in NewOrderSingle messages:
+       ClientID(FIX tag 109): csfx-mj-user
+       Account(FIX tag 1): CSFX_MJ
+
+
+
+
+
+
+http://224.cachefile23.rayfile.com/fd85/zh-cn/preview/f45d18cc1c936e0dc5ca648668c175c8/preview.mp3
+
+
+
+http://224.cachefile23.rayfile.com/fd85/zh-cn/preview/f45d18cc1c936e0dc5ca648668c175c8/preview.mp3

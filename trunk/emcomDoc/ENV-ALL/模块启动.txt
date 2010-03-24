@@ -9,7 +9,7 @@
 > svc -d TradeRateAgent #停止进程
 > svc -u TradeRateAgent #启动进程
 > 在一般情况下，如果要重启服务，只需要kill掉一种一个进程，那个进程就会
-> 	自动重新起来
+>  自动重新起来
 
 
 
@@ -62,3 +62,37 @@ CP076=${AA_JARS}/flex-messaging-remoting.jar
 
 
 \:${CP060}\:${CP061}\:${CP062}\:${CP063}\:${CP064}\:${CP065}\:${CP066}\:${CP067}\:${CP068}\:${CP069}\:${CP070}\:${CP071}\:${CP072}\:${CP073}\:${CP074}\:${CP075}\:${CP076}
+
+
+
+
+
+
+
+
+
+
+
+
+ln -s /jhfapp/app/shell/runTraderServer4.sh run
+
+
+     if(pdt.getStayPlace() == 滞留3){
+       do right things  。。。。
+     }
+     else if(pdt.getStayPlace() == StayTypeEnum.STAY_TYPE_2_ENUM.getValue()){
+
+      m_orderDao.createHedgeCusttrade(BigDecimal.valueOf(
+         CustTradeTypeEnum.CUST_FIRE_COVER_ENUM.getValue()), 
+         orderBean, excutionBean.getExecutionId());
+     }else{
+      if( null == pdt.getTriggerId()){
+       m_orderDao.createHedgeCusttrade(BigDecimal.valueOf(
+         CustTradeTypeEnum.CUST_STORE_ORDER_ENUM.getValue()), 
+         orderBean, excutionBean.getExecutionId());
+      }else{
+       m_orderDao.createHedgeCusttradeFor1Lot(BigDecimal.valueOf(
+         CustTradeTypeEnum.CUST_STORE_ORDER_ENUM.getValue()), 
+         orderBean, excutionBean.getExecutionId(),pdt.getTriggerId());
+      }
+     }
