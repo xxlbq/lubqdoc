@@ -1,0 +1,71 @@
+[补充确认]对于Slippage比较和约定价格的方式,按照货币对在admin画面进行设定,trader进行check
+
+#   JHF_STATUS_CONTRL,新增加字段SP_MODE,用于Slippage及顾客约定价格模式选择
+#   #0 默认使用,#1 重视FX的利益,#2重视顾客的利益
+
+【MJ型：对应  JHF_STATUS_CONTRL 字段SP_MODE   #2 重视顾客的利益】
+-------------------------------------
+OrderPrice=105.10
+Side=Buy
+NewTick=105.09
+Slippage=1
+Result:Order Fail
+如果NewTick对顾客有利,则直接Return.如果对顾客不利,则判断Slippage,如果通过,则使用NewTick进行约定
+-------------------------------------
+补充确认：
+OrderPrice=105.10
+Side=Buy
+NewTick=105.10
+Slippage=1
+Result:Order OK
+ExecutionPrice=105.10 (NewTick约定)
+-------------------------------------
+
+
+
+
+【Panta型：对应  JHF_STATUS_CONTRL 字段SP_MODE   #1 重视FX的利益 】
+-------------------------------------
+OrderPrice=105.10
+Side=Buy
+NewTick=105.09
+Slippage=1
+Result:Order OK
+ExecutionPrice=105.10
+Fx Profit=1pips
+如果NewTick对顾客有利,则直接用OrderPrice进行约定.如果对顾客不利,则判断Slippage,如果通过,则使用
+NewTick进行约定
+-------------------------------------
+补充确认：
+OrderPrice=105.10
+Side=Buy
+NewTick=105.10
+Slippage=1
+Result:Order OK
+ExecutionPrice=105.10 (以orderPrice 约定)
+-------------------------------------
+
+
+
+
+
+【新型：对应  JHF_STATUS_CONTRL 字段SP_MODE   #0 默认使用 】
+-------------------------------------
+OrderPrice=105.10
+Side=Buy
+NewTick=105.09
+Slippage=1
+Result:OK
+ExecutionPrice=105.09 
+如果NewTick对顾客有利,则直接用NewTick进行约定.如果对顾客不利,则判断Slippage,如果通过,则使用NewTick
+进行约定
+-------------------------------------
+补充确认：
+OrderPrice=105.10
+Side=Buy
+NewTick=105.10
+Slippage=1
+Result:Order OK
+ExecutionPrice=105.10 (以orderPrice 约定)
+-------------------------------------
+
