@@ -2,6 +2,28 @@
 
 
 
+
+https://10.4.9.71/wizard.do
+
+
+
+1-8
+
+111111111111
+
+
+
+12345678
+============================
+00000006
+
+
+donot
+
+111111111111
+
+
+
 [root@DMM-demo-MAINDB ~]# mysql -A
 Logging to file '/var/log/mysql_client.log'
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -44,17 +66,6 @@ admin Ã»¶¯
 
 
 
-
-
-
-
-============================
-00000006
-
-
-donot
-
-111111111111
 
 
 ===============================

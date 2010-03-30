@@ -1,0 +1,2 @@
+[root@CFD-demo-Rollover ~]# history -c
+[root@CFD-demo-Rollover ~]# history -w

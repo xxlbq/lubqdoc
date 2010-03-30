@@ -1,0 +1,8 @@
+王宁/小波:   
+\panta\04_design\function\05)CP\Central短資\fetch 
+这次central短资(ctts) fetch式样,我已经放在以上目录中了,请先研究下. 
+就是在原来已经有的GW Ctts的代码工程的基础上,再增加个Fetch功能的代码实现.
+
+日方说主要参考以下2个文档:
+EMCOM様向け取引取込説明_打合せ後追記版_cn.doc
+接続仕様書_cn.doc(只是18,19页本次有用,其他的都是原来的Rate和Cover的式样)
