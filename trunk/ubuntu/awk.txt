@@ -140,19 +140,50 @@ sed -i s/JOB_START_TIME=21:15/JOB_START_TIME=00:00/g /performance/opmconf[2-5]/t
 sed -i s/JOB_START_TIME=21:15/JOB_START_TIME=00:00/g /performance/opmconf*/test_opm_order.properties    
  grep 'JOB_START_TIME' /performance/opmconf*/test_opm_order.properties 
 
-
-==== real sh   ===================
-grep 'JOB_START_TIME' /performance/conf*/test_opm_order.properties    
-
-
-sed -i s/JOB_START_TIME=12:10/JOB_START_TIME=21:15/g /performance/conf*/test_opm_order.properties
-
  ==== loss sh   ===================
 sed -i s/JOB_START_TIME=00:00/JOB_START_TIME=21:15/g /performance/lossconf1*/test_loss_order.properties
  grep 'JOB_START_TIME' /performance/lossconf1*/test_loss_order.properties  
 
 
 
+ ==== front   slave ip sh   ===================
+
+ grep 'hibernate.connection.url' /jhfapp/app/conf/hibernate_main.properties 
+
+sed -i s/10.15.2.51,10.15.2.51/10.15.2.51,10.15.2.222/g /jhfapp/app/conf/hibernate_main.properties
+
+
+ ==== opm   slave ip sh   ===================
+ grep 'hibernate.connection.url' /jhfapp/app/trader/opm*/conf/hibernate_main.properties 
+
+
+sed -i s/10.15.2.51,10.15.2.51/10.15.2.51,10.15.2.222/g /jhfapp/app/trader/opm*/conf/hibernate_main.properties 
+
+
+
+ ==== loss   slave ip sh   ===================
+
+grep 'hibernate.connection.url' /jhfapp/app/trader/losscut/conf/hibernate_main.properties 
+sed -i s/10.15.2.51,10.15.2.51/10.15.2.51,10.15.2.222/g /jhfapp/app/trader/losscut/conf/hibernate_main.properties 
+
+ ==== margin   slave ip sh   ===================
+
+
+grep 'hibernate.connection.url' /jhfapp/app/trader/margincut/conf/hibernate_main.properties 
+
+sed -i s/10.15.2.51,10.15.2.51/10.15.2.51,10.15.2.222/g /jhfapp/app/trader/margincut/conf/hibernate_main.properties 
+
+
+
+
+
+
+
+==== real sh   ===================
+grep 'JOB_START_TIME' /performance/conf*/test_opm_order.properties    
+
+
+sed -i s/JOB_START_TIME=12:10/JOB_START_TIME=21:15/g /performance/conf*/test_opm_order.properties
 
 
 
@@ -176,9 +207,12 @@ grep 'USER_FETCH_SIZE' /performance/realtime*/test_login.properties
 
 
 sed -i 's#jdbc\:mysql\:#jdbc\:mysql\:replication\:#g' hibernate_main.properties hibernate_unique.properties ; 
-sed -i 's#\?.*\=ms932#\?useUnicode\=true\&characterEncoding\=ms932\&useLocalSessionState\=true\&useOldAliasMetadataBehavior\=true#' hibernate_main.properties hibernate_unique.properties ;
+sed -i 's#\?.*\=ms932#\?useUnicode\=true\&characterEncoding\=ms932\&useLocalSessionState\=true\&useOldAliasMetadataBehavior\=true#' 
+hibernate_main.properties hibernate_unique.properties ;
 sed -i 's#jdbc\:mysql\:#jdbc\:mysql\:replication\:#g' hibernate_info.properties ; 
-sed -i 's#\?.*\=ms932#\?useUnicode\=true\&characterEncoding\=ms932\&useLocalSessionState\=true\&useOldAliasMetadataBehavior\=true\&zeroDateTimeBehavior\=convertToNull#' hibernate_info.properties
+sed -i 
+'s#\?.*\=ms932#\?useUnicode\=true\&characterEncoding\=ms932\&useLocalSessionState\=true\&useOldAliasMetadataBehavior\=true\&zeroDateT
+imeBehavior\=convertToNull#' hibernate_info.properties
 
 
 
