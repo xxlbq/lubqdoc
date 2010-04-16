@@ -1,0 +1,1 @@
+mysqldump MAIN JHF_SYS_MAIL_ACTION  --where "MAIL_ACTION_ID IN ('LOSSCUT9001','LOSSCUT9002')"  > a.sql
