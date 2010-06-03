@@ -14,9 +14,12 @@ TIMEOUTclose = 0
 [root@Click_71 ~]#whereis stunnel
 stunnel: /usr/sbin/stunnel /etc/stunnel /usr/share/man/man8/stunnel.8.gz
 (2010-04-15 11:27:50) 于海江: 
+
 /usr/sbin/stunnel
+
 (2010-04-15 11:28:01) 于海江: 
 [root@Click_71 ~]#ps auxwww |grep stunnel
+
 root      8017  0.0  0.0  61120   700 pts/0    R+   04:23   0:00 grep stunnel
 root     21581  0.0  0.0 108972  2488 ?        Ss   Apr10   0:05 /usr/sbin/stunnel
 

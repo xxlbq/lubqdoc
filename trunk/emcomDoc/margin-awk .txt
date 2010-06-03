@@ -1,0 +1,49 @@
+ tail -f /jhfapp/app/trader/margincut/logs/margincut.log -n200 |grep 'MarginExecutor\[Normal\]' |grep 'triggerToSleepMod' |grep 'timeused'
+
+
+[root@jp-test-middl01 ~]# cat filldata001.txt |wc -l                     
+6006
+[root@jp-test-middl01 ~]# cat filldata001.txt |awk '{a=a+$1}END{print (a/NR)}'  
+29.4149
+
+
+
+
+
+
+
+
+
+
+
+====== 1 ===  sql no cache ====
+
+[root@jp-test-middl01 ~]# cat /jhfapp/app/trader/margincut/logs/margincut.log  |grep 'fillData commit' |wc -l
+10649
+
+[root@jp-test-middl01 ~]# cat /jhfapp/app/trader/margincut/logs/margincut.log  |grep 'fillData commit' |awk -F'commit use time=' '{print $2}' > filldata001.txt
+
+[root@jp-test-middl01 ~]# cat  filldata001.txt |wc -l
+10649
+
+[root@jp-test-middl01 ~]# cat filldata001.txt |awk '{a=a+$1}END{print a}'
+372707
+
+[root@jp-test-middl01 ~]# cat filldata001.txt |awk '{a=a+$1}END{print (a/NR)}' 
+34.9992
+
+
+
+====== 2 ===  old ====
+
+[root@jp-test-middl01 ~]# cat /jhfapp/app/trader/margincut/logs/margincut.log  |grep 'fillData commit' |wc -l
+10649
+
+
+[root@jp-test-middl01 ~]# cat  filldata002.txt |wc -l 
+10649
+
+[root@jp-test-middl01 ~]# cat /jhfapp/app/trader/margincut/logs/margincut.log  |grep 'fillData commit' |awk -F'commit use time=' '{print $2}' > filldata002.txt 
+
+[root@jp-test-middl01 ~]#  cat filldata002.txt |awk '{a=a+$1}END{print (a/NR)}'                         
+34.1257

@@ -1,9 +1,6 @@
 
 
 
-
-wan
-
 ÓôøÕ•≥©`•…  	00000059
 ø⁄◊˘§Œ∑NÓê* 	ÇÄ»À
 •Ì•∞•§•ÛID* 	171900
@@ -14,7 +11,7 @@ wan
 /usr/local/mysql/bin/mysql -uMAIN -pTrSyY0Gz -A MAIN -h10.4.9.181
 
 
-/usr/local/mysql/bin/mysql -uMAIN -pbestwiz -h10.4.9.181 -A MAIN
+/usr/local/mysql/bin/mysql -uroot -pbestwiz -A MAIN
 
 
 

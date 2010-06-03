@@ -1,0 +1,193 @@
+
+===========》》》》》》》》core
+
+
+/cn/bestwiz/jhf/trader/forcecut/bean/McutFcutInfo.java
+/project/UniFX/src/common/core/src/cn/bestwiz/jhf/core/service/CoreService.java
+/project/UniFX/src/common/core/src/cn/bestwiz/jhf/core/jms/DestinationConstant.java
+/project/UniFX/src/common/core/src/cn/bestwiz/jhf/core/bo/bean/AccountInfo.java
+/project/UniFX/src/common/core/src/cn/bestwiz/jhf/core/bo/enums/ExecutionTypeEnum.java
+/project/UniFX/src/common/core/src/cn/bestwiz/jhf/core/custtrade/FillOrderServiceImpl.java
+/project/UniFX/src/common/core/src/cn/bestwiz/jhf/core/formula/business/ParseContract.java
+/project/UniFX/src/common/core/src/cn/bestwiz/jhf/core/formula/business/ContractResult.java
+/project/UniFX/src/common/core/src/cn/bestwiz/jhf/core/dao/middle/ForcecutDao
+
+/project/UniFX/src/common/core/src/cn/bestwiz/jhf/core/formula/RootFormulaFactory.java
+/project/UniFX/src/common/core/src/cn/bestwiz/jhf/core/formula/FormulaFactory.java,
+/project/UniFX/src/common/core/src/cn/bestwiz/jhf/core/dao/middle/TradeDao.java
+/project/UniFX/src/common/core/src/cn/bestwiz/jhf/core/formula/pojo/FormulaData.java
+/project/UniFX/src/common/core/src/cn/bestwiz/jhf/core/formula/provider/impl/DataProvider4General.java
+/project/UniFX/src/common/core/src/cn/bestwiz/jhf/core/formula/diff/business/FormulaDiffBusiness4Panta.java
+
+
+/project/UniFX/src/common/core/src/cn/bestwiz/jhf/core/bo/enums/MarginDeficientStatusEnum.java
+/project/UniFX/src/common/core/src/cn/bestwiz/jhf/core/bo/enums/StatuTypeEnum.java
+/project/UniFX/src/common/core/src/cn/bestwiz/jhf/core/jms/DestinationConstant.java
+
+
+
+
+/project/UniFX/src/common/core/src/cn/bestwiz/jhf/core/bo/enums/MailActionIdEnum.java
+/project/UniFX/src/common/core/src/cn/bestwiz/jhf/core/bo/enums/AppPropertyKey.java
+
+/project/UniFX/src/common/core/src/cn/bestwiz/jhf/core/custtrade/DefiCustomerCache.java
+/project/UniFX/src/common/core/src/cn/bestwiz/jhf/core/custtrade/DeficientService.java
+
+/project/UniFX/src/common/trader/src/cn/bestwiz/jhf/trader/util/dao/CommonMainDao.java
+/project/UniFX/src/common/trader/src/cn/bestwiz/jhf/trader/forcecut/processor/CancelOrderService.java
+===========》》》》》》》》trader
+
+/project/UniFX/src/common/trader/src/cn/bestwiz/jhf/trader/trader/dao/TraderDao.java
+/project/UniFX/src/common/trader/src/cn/bestwiz/jhf/trader/util/dao/ForceCutDao.java
+/project/UniFX/src/common/trader/src/cn/bestwiz/jhf/trader/trader/DeficientListener.java
+/project/UniFX/src/common/trader/src/cn/bestwiz/jhf/trader/main/ForceCutServerStartup.java
+
+/project/UniFX/src/common/trader/src/cn/bestwiz/jhf/trader/trader/business/TradeService.java
+/project/UniFX/src/common/trader/src/cn/bestwiz/jhf/trader/trader/DefaultOrderService.java
+
+/project/UniFX/src/common/trader/src/cn/bestwiz/jhf/trader/forcecut/ForceCutService.java
+/project/UniFX/src/common/trader/src/cn/bestwiz/jhf/trader/forcecut/bean/DeficientStatus.java
+
+/project/UniFX/src/common/trader/src/cn/bestwiz/jhf/trader/forcecut/util/MailSener.java
+
+/project/UniFX/src/common/trader/src/cn/bestwiz/jhf/trader/forcecut/util/ForceCutOrderTools.java
+/project/UniFX/src/common/trader/src/cn/bestwiz/jhf/trader/forcecut/util/ForceCutConfig.java
+
+
+/project/UniFX/src/common/trader/src/cn/bestwiz/jhf/trader/forcecut/checker/ForceChecker.java
+/project/UniFX/src/common/trader/src/cn/bestwiz/jhf/trader/forcecut/checker/DeficientOnChangeService.java
+
+/project/UniFX/src/common/trader/src/cn/bestwiz/jhf/trader/forcecut/processor/ProcessorContainer.java
+/project/UniFX/src/common/trader/src/cn/bestwiz/jhf/trader/forcecut/processor/Processor.java
+/project/UniFX/src/common/trader/src/cn/bestwiz/jhf/trader/forcecut/processor/ProcessorFactory.java
+
+/project/UniFX/src/common/trader/src/cn/bestwiz/jhf/trader/forcecut/processor/ForceCutProcessor.java
+/project/UniFX/src/common/trader/src/cn/bestwiz/jhf/trader/forcecut/processor/ForceCutOpenOrderAndSettleOrder.java
+/project/UniFX/src/common/trader/src/cn/bestwiz/jhf/trader/forcecut/processor/CancelOrderService.java
+
+
+/project/UniFX/src/common/trader/src/cn/bestwiz/jhf/trader/trader/job/OrderRequestJob.java
+/project/UniFX/src/common/trader/src/cn/bestwiz/jhf/trader/trader/business/TradeChecker.java
+
+/project/UniFX/src/common/trader/src/cn/bestwiz/jhf/trader/trader/business/ForceCutOrderProcessor.java
+
+/project/UniFX/src/common/trader/src/cn/bestwiz/jhf/trader/util/dao/CommonInfoDao.java
+
+
+-----------------------------------------------------------------------------
+/project/UniFX/src/common/core/conf/panta/jms-configuration.xml
+/project/UniFX/src/common/core/conf/panta/forcecut.properties
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//	/**
+//	 * 
+//	 * 
+//	 * amountType  #1 入金 ， #2 出金取消， #3 决计持仓
+//	 * 
+//	 */
+//	public AccountInfo obtainAccountInfo(String customerId, int amountType,
+//			BigDecimal amount ,boolean useCache) throws ServiceException {
+//		
+//		AccountInfo ai = null;
+//		BigDecimal currentDepositDeficient = null;
+//		switch (amountType) {
+//		case 1:
+//			ai = obtainAccountInfo(customerId , manager.getRateProvider().getRateMap() , true);
+//			if( null == ai.getCurrentDepositDeficient()){
+//				currentDepositDeficient = ai.getLastDateDepositDeficient();
+//			}else{
+//				currentDepositDeficient = ai.getCurrentDepositDeficient();
+//			}
+//			ai.setCurrentDepositDeficient(currentDepositDeficient.add(amount).add(new BigDecimal(ai.getPositionMarginTotal())));
+//			break;
+//		case 2:
+//			
+//			ai = obtainAccountInfo(customerId , manager.getRateProvider().getRateMap() , false);
+//			if( null == ai.getCurrentDepositDeficient()){
+//				currentDepositDeficient = ai.getLastDateDepositDeficient();
+//			}else{
+//				currentDepositDeficient = ai.getCurrentDepositDeficient();
+//			}
+//			ai.setCurrentDepositDeficient(currentDepositDeficient);
+//			break;
+//		case 3:
+//			ai = obtainAccountInfo(customerId , manager.getRateProvider().getRateMap() , false);
+//			ai.setCurrentDepositDeficient(currentDepositDeficient);
+//			break;
+//		default:
+//			ai = obtainAccountInfo(customerId , manager.getRateProvider().getRateMap() , true);
+//			break;
+//		}
+//		
+//		return ai;
+//	}

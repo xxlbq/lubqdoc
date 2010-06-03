@@ -1,0 +1,112 @@
+
+
+
+
+mysql> select hostname,min(date_time) MINT , (select max(date_time) from opm where keyword ='PerformanceTestTime ' GROUP BY 
+opm.hostname order by 1 ) MAXT from opm where keyword ='PerformanceTestTime ' GROUP BY 1 order by 1;
++-----------+--------------------------+--------------------------+
+| hostname  | MINT                     | MAXT                     |
++-----------+--------------------------+--------------------------+
+| c-middle8 |  2010-01-23 22:02:03,594 |  2010-01-23 22:02:08,561 | 
++-----------+--------------------------+--------------------------+
+1 row in set (0.00 sec)
+
+
+
+
+
+
+mysql> select (extract(day_microsecond  from '2010-01-23 22:02:08.561') - extract(day_microsecond  from '2010-01-23 22:02:03.594')) DIV 
+1000 AS DIFF;  
++------+
+| DIFF |
++------+
+| 4967 | 
++------+
+1 row in set (0.00 sec)
+
+
+
+
+
+mysql> select hostname,min(date_time) MINT , (select max(date_time) from opm where keyword ='PerformanceTestTime ' GROUP BY 
+opm.hostname order by 1 ) MAXT , (extract(day_microsecond from trim(max(date_time))) - extract(day_microsecond from 
+trim(min(date_time)))) DIV 1000 
+AS USED  from opm where keyword ='PerformanceTestTime ' GROUP BY 1 order by 1;                                   
++-----------+--------------------------+--------------------------+---------+
+| hostname  | MINT                     | MAXT                     | USED    |
++-----------+--------------------------+--------------------------+---------+
+| c-middle8 |  2010-01-23 22:02:03,594 |  2010-01-23 22:02:08,561 | 5000000 | 
++-----------+--------------------------+--------------------------+---------+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+select hostname,min(date_time) MINT , (select max(date_time) from opm where keyword ='PerformanceTestTime ' GROUP BY  opm.hostname 
+order by 1 ) MAXT , (extract(day_microsecond from trim(max(date_time))) - extract(day_microsecond from trim(min(date_time)))) DIV 1000  
+AS USED  from opm where keyword ='PerformanceTestTime ' GROUP BY 1 order by 1;
+
++-----------+---------------------------+---------------------------+------+
+| hostname  | MINT                      | MAXT                      | USED |
++-----------+---------------------------+---------------------------+------+
+| c-middle8 |  2010-01-23 22:02:03.594  |  2010-01-23 22:02:08.561  | 4967 | 
++-----------+---------------------------+---------------------------+------+
+1 row in set (0.01 sec)
+
+
+
+
+
+select hostname,max(date_time) from opm where type ='PerformanceTestTime ' GROUP BY
+1 order by 1;
+
+
+
+
+
+
+
+
+
+select hostname,min(date_time) from opm where type ='usedtime' GROUP BY
+1 order by 1;
+select hostname,max(date_time) from opm where type ='send' GROUP BY 1
+order by 1;
+select hostname,COUNT(*) from opm where type ='send' GROUP BY 1 order by 1;
+
+
+select max(data) from trader;
+select hostname,COUNT(*) from trader GROUP BY 1 order by 1;
+select hostname,min(date_time) from trader GROUP BY 1 order by 1;
+select hostname,max(date_time) from trader GROUP BY 1 order by 1;
+
+
+
+
+
+
+
+
++----------+-------------------------++-------------------------++----------+											
+|	hostname	|	min(date_time)	||	max(date_time)	||	COUNT(*)	|			
++----------+-------------------------++-------------------------++----------+											
+|	opm1	|	2010-1-13	11:25:59,814	||	2010-1-13	11:26:00,901	||	60	|	1194
+|	opm2	|	2010-1-13	11:25:59,827	||	2010-1-13	11:26:01,214	||	65	|	1517
+|	opm3	|	2010-1-13	11:25:59,832	||	2010-1-13	11:26:01,221	||	65	|	1523
+|	opm4	|	2010-1-13	11:25:59,822	||	2010-1-13	11:26:00,897	||	60	|	1204
+|	opm5	|	2010-1-13	11:25:59,858	||	2010-1-13	11:26:01,560	||	68	|	1859
+|	opm6	|	2010-1-13	11:25:59,850	||	2010-1-13	11:26:01,243	||	64	|	1544
+|	opm7	|	2010-1-13	11:25:59,869	||	2010-1-13	11:26:01,244	||	68	|	1546
+|	opm8	|	2010-1-13	11:25:59,817	||	2010-1-13	11:26:00,903	||	50	|	1205
++----------+-------------------------++-------------------------++----------+											
+

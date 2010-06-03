@@ -1,0 +1,36 @@
+
+
+
+normal ---> deficient
+
+
+1.更新jhfcustomerstatus  新规买 不可，新规卖 不可，出金不可
+2.插入jhfmargindificientinfo 表 ，如果已经存在记录 ========== BIG MISTAKE ====== RECORD  EXIST ! =====
+3.更新jhfmarginaccount表，  更新条件   marginDeficientStatus = 0  更新为   1  ,如果状态不正确 should  update to ["+newValue+ "] ,but it wasn't ["+oldValue+"]")
+4.出金    处理中 → 取消; 预约中 → 取消
+5.forcecut取消  新规的 order
+
+
+
+deficient ---> normal
+
+1.读取 JhfMarginDeficientInfo 表 ，更新JhfCustomerStatus表
+2.更新JhfMarginAccount表 更新条件   marginDeficientStatus = 1  更新为   0    如果状态不正确 should  update to ["+newValue+ "] ,but it wasn't ["+oldValue+"]")
+3.更新 JhfMarginDeficientInfo  marginDeficientStatus更新 为 0
+
+
+
+
+
+
+
+forcecut ---> normal
+1.读取 JhfMarginDeficientInfo 表 ，更新JhfCustomerStatus表
+2.更新 JhfMarginDeficientInfo  marginDeficientStatus更新 为 0
+3.更新JhfMarginAccount表 更新条件   marginDeficientStatus = 3  更新为   0    如果状态不正确 should  update to ["+newValue+ "] ,but it wasn't ["+oldValue+"]")
+
+
+
+
+
+
