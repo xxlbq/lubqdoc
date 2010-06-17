@@ -22,7 +22,7 @@ FrontDB	10.4.9.92/93	Intel(R) Pentium(R) 4 CPU 3.06GHz	2G	80G		Ó¢¼«»ú·¿
 
 
 
-
+luwj@adv.emcom.jp
 
 /usr/local/mysql/bin/mysql -uzhangwc -pemcom2oo9 -S /home/mysql_MAIN/mysql.sock -A MAIN;
 
