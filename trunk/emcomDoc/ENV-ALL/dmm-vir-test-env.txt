@@ -1,0 +1,45 @@
+
+
+
+
+
+
+SAM fx vir						 
+ 
+	IP address	CPU	MEM	HD		Place 
+Flex/Mobile/cti	10.4.9.81	Pentium(R) Dual-Core  CPU E5200  @ 2.50GHz	2G	160G		英极机房 
+Backyard/Batch	10.4.9.82	Pentium(R) Dual-Core  CPU E5200  @ 2.50GHz	2G	160G		英极机房 
+INFO/HISTORY	10.4.9.83	Pentium(R) Dual-Core  CPU E5200  @ 2.50GHz	2G	160G		英极机房 
+Actmq/GW/Rpc	10.4.9.84	Pentium(R) Dual-Core  CPU E5200  @ 2.50GHz	2G	160G		英极机房 
+Middle slave db	10.4.9.85	Pentium(R) Dual-Core  CPU E5200  @ 2.50GHz	2G	160G		英极机房 
+MAIN/HA	10.4.9.86/87	Pentium(R) Dual-Core  CPU E5200  @ 2.50GHz	4G	250G		英极机房 
+middle1	10.4.9.88	Pentium(R) Dual-Core  CPU E5200  @ 2.50GHz	4G	250G		英极机房 
+middle2	10.4.9.89	Pentium(R) Dual-Core  CPU E5200  @ 2.50GHz	4G	250G		英极机房 
+middle3	10.4.9.90	Pentium(R) Dual-Core  CPU E5200  @ 2.50GHz	4G	250G		英极机房 
+MAIN slave	10.4.9.91	Intel(R) Pentium(R) 4 CPU 3.00GHz	2G	80G		英极机房 
+FrontDB	10.4.9.92/93	Intel(R) Pentium(R) 4 CPU 3.06GHz	2G	80G		英极机房 
+
+
+
+
+luwj@adv.emcom.jp
+
+/usr/local/mysql/bin/mysql -uzhangwc -pemcom2oo9 -S /home/mysql_MAIN/mysql.sock -A MAIN;
+
+
+mysql -h10.4.9.154 -uMAIN -pPrG7lv2Y -A MAIN 
+
+
+
+UPDATE JHF_CUSTOMER_STATUS SET LOGIN_PASSWORD = '593c9b4a9390551d53e5cacf28ebd638' WHERE CUSTOMER_ID = '00001018 ' ;
+
+  
+
+┌───────────────┐
+│Ies00005  	   00001018   111111111111│
+└───────────────┘
+
+
+
+
+
