@@ -142,7 +142,7 @@ OPTION;
 GRANT SELECT,INSERT,UPDATE,DELETE ON MAINDB.* TO MAIN@'192.168.1.%' identified by 'bestwiz';
 GRANT ALL PRIVILEGES  ON INFO.* TO INFO@'192.168.1.%' identified by 'bestwiz';
 
-GRANT ALL PRIVILEGES  ON INFO.* TO '%'@'localhost' identified by 'bestwiz';
+GRANT ALL PRIVILEGES  ON INFO.* TO '%'@'localhost' IDENTIFIED BY 'sys2oo9emcom' WITH GRANT ;
 FLUSH PRIVILEGES;
 
 mysql --user=root -p
