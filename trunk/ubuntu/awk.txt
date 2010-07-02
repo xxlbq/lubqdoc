@@ -178,6 +178,20 @@ sed -i s/10.15.2.51,10.15.2.51/10.15.2.51,10.15.2.222/g /jhfapp/app/trader/margi
 
 
 
+===============  opm  order s    =====================
+grep 'ORDRRS_PER_MAN=' /performance/opmconf*/test_opm_order.properties 
+
+sed -i s/ORDRRS_PER_MAN=1/ORDRRS_PER_MAN=2/g /performance/opmconf*/test_opm_order.properties 
+
+===============  margin / front   db    =====================
+cp /lubq/lib/jhf_dmm_core.jar_master /opt/tomcat/webapps/jhf_dmm_mweb/WEB-INF/lib/jhf_dmm_core.jar
+
+
+¡¾master¡¿   scp root@10.15.2.63:/lubq/lib/jhf_dmm_core.jar_master /opt/tomcat_flex/webapps/jhf_dmm_flex/WEB-INF/lib/jhf_dmm_core.jar  
+ll /opt/tomcat_flex/webapps/jhf_dmm_flex/WEB-INF/lib/jhf_dmm_core.jar 
+
+¡¾slave¡¿
+scp root@10.15.2.63:/lubq/lib/jhf_dmm_core.jar_slave /opt/tomcat_flex/webapps/jhf_dmm_flex/WEB-INF/lib/jhf_dmm_core.jar
 
 ==== real sh   ===================
 grep 'JOB_START_TIME' /performance/conf*/test_opm_order.properties    
