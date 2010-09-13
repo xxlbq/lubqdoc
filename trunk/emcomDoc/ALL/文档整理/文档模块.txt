@@ -1,5 +1,4 @@
 Trader
 Formula
-ForceCut
-LossCut
+FIN - ForceCut	
 GW-NewEdge
