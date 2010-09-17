@@ -24,19 +24,20 @@ FrontDB	10.4.9.92/93	Intel(R) Pentium(R) 4 CPU 3.06GHz	2G	80G		Ó¢¼«»ú·¿
 
 luwj@adv.emcom.jp
 
-/usr/local/mysql/bin/mysql -uzhangwc -pemcom2oo9 -S /home/mysql_MAIN/mysql.sock -A MAIN;
+/usr/local/mysql/bin/mysql -uroot -psys2oo9emcom -h10.4.9.86 -S /home/mysql_MAIN/mysql.sock -A MAIN;   
 
 
-mysql -h10.4.9.154 -uMAIN -pPrG7lv2Y -A MAIN 
+/usr/local/mysql/bin/mysql -uroot -psys2oo9emcom -h10.4.9.86 -S /home/mysql_MAIN/mysql.sock -A MAIN;   
 
 
 
-UPDATE JHF_CUSTOMER_STATUS SET LOGIN_PASSWORD = '593c9b4a9390551d53e5cacf28ebd638' WHERE CUSTOMER_ID = '00001018 ' ;
+UPDATE JHF_CUSTOMER_STATUS SET LOGIN_PASSWORD = '593c9b4a9390551d53e5cacf28ebd638' WHERE CUSTOMER_ID = '70032003 ' ;
 
   
+70032003    	Vir32003  	
 
 ©°©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©´
-©¦Ies00005  	   00001018   111111111111©¦
+70032003    	Vir32003  	
 ©¸©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¼
 
 

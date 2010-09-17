@@ -82,5 +82,11 @@ SELECT * FROM JHF_CASH_BALANCE WHERE CASH_BALANCE =0 LIMIT 5\G;
 
 
 
+update config file £¬
+only subscribe £º
+CAD/JPY,CHF/JPY,AUD/JPY,EUR/JPY,USD/JPY
+
+when we deal EUR/USD
+
 
 

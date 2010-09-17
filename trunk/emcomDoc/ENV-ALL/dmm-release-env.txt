@@ -1,5 +1,8 @@
 
-https://10.4.9.171/wizard.do
+FRONT       https://10.4.9.171/wizard.do
+
+
+backyard    http://10.4.9.178:8080/
 
 dmm release 环境front用户.
 Iea00002-Iea00005
