@@ -1,0 +1,524 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK" />
+<title>圈网 | 狼友、小姐天堂 - 话题 - 大连小姐1</title>
+<link href="/css/global_new.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" language="javascript" src="/js/util.js"></script>
+<script type="text/javascript" language="javascript" src="/js/ctlutil.js"></script>
+<script type="text/javascript" language="javascript" src="/js/string.js"></script>
+<script type="text/javascript" language="javascript" src="/js/ajax_func.js"></script>
+<script language="JavaScript" src="http://blog.niwota.com/js/photodeal.js" type="text/javascript"></script>
+<script type="text/javascript">
+//分享内容预览
+var sharePreview = '<p><strong><a href="http://www.niwota.com/submsg/3704093">大连小姐1</a></strong><br /><small class="txt_light"><br /><a href="http://blog.niwota.com/space/38790870">超级香肠</a> 发表</small></p><p><div class="clear"></div>';
+//用户分享窗口
+function getShareContent () {
+  //获取分享内容，并生成内容缩略
+  //获取内容
+  //生成缩略
+  return sharePreview;
+}
+
+function showShareWin() {
+  //initialize the UI
+  if (document.getElementById('dialog')) {
+    return;
+  }
+  var dialogWrap = document.createElement('div');
+  dialogWrap.id = 'dialogWrap';
+  var dialogWin = document.createElement('div');
+  dialogWin.id = 'dialog'
+  var dialogHead = document.createElement('div');
+  dialogHead.id = 'dialogHead'
+  var dialogBody = document.createElement('div');
+  dialogBody.id = 'dialogBody'
+  //var dialogFoot = document.createElement('div');
+  //dialogFoot.id = 'dialogFoot';
+
+  var dialogTitle = document.createElement('h3');
+  var dialogTitleText = document.createTextNode('分享');
+
+  dialogBody.innerHTML = '<dl><dt><p><strong class="txt_light">描述</strong></p></dt><dd><p><textarea id="id_sharedesc" name="shareDesc" class="input"></textarea></p></dd><dd><p><input name="btnSshare" type="button" class="button" id="btnSshare" value="确定" onclick="sendShare(3704093,11);" /><input name="btnClose" type="button" class="btn" id="btnClose" value="取消" onclick="removeDialog();" /></p></dd><dd><div class="shareArea" id="sharePreview">'+getShareContent()+'</div></dd></dl><div class="clear"></div>';
+
+  dialogTitle.appendChild(dialogTitleText);
+  dialogHead.appendChild(dialogTitle);
+
+  dialogWin.appendChild(dialogHead);
+  dialogWin.appendChild(dialogBody);
+  dialogWrap.appendChild(dialogWin);
+
+  //adjust position
+  var wrapY = document.documentElement.scrollTop + 120;
+  dialogWrap.style.top = wrapY + 'px';
+
+  //show dialog
+  document.body.appendChild(dialogWrap);
+}
+
+function removeDialog() {
+  //移除分享窗口
+  document.body.removeChild(document.getElementById('dialogWrap'));
+}
+
+function sendShare(va_id,va_type) {
+  //发送分享内容
+  var sharedesc = document.getElementById("id_sharedesc").value
+  sharedesc = sharedesc.replace(/\n/g,"<br>")
+  try {
+    send_request("POST","http://www.niwota.com/ajax/share.jsp?timestamp="+new Date().getTime()+"&id="+va_id+"&type="+va_type+"&sharedesc="+sharedesc,null,"text",handle_share)
+  }catch(E) {
+    alert(E)
+  }
+}
+
+function handle_share() {
+  try {
+    if (http_request.readyState == 4) {
+      if (http_request.status == 200) {
+        var respText = http_request.responseText
+
+        if(respText!=null) {
+          respText=trim(respText)
+        }
+
+        if(respText==0 || respText=="0" || respText==null || respText=="") {
+          alert('分享失败');
+          removeDialog();
+        } else {
+          alert('分享成功');
+          removeDialog();
+        }
+      } else {
+        alert("您所请求的页面有异常。")
+      }
+    }
+  } catch(E) {
+    alert(E)
+  }
+
+}
+</script>
+<script language="javascript" type="text/javascript">
+function resizeImg(){
+  var imgList=document.images;
+  for (var i = 0; i <imgList.length; i++) {
+    if(imgList[i].name=='faceurl'){
+      phresize(imgList[i], 70);
+    }
+  }
+}
+function copyUrl()  {
+  window.clipboardData.setData('text',window.location.href)
+  window.alert("复制成功，已经把该话题网址复制到剪贴板，可以打开QQ或者MSN的对话框，然后使用（Ctrl+V或鼠标右键）粘贴功能给你的好友")
+}
+</script>
+<script type="text/javascript" src="/func/front/htmlarea/htmlarea.js"></script>
+<script type="text/javascript" src="/func/front/htmlarea/lang/gb.js"></script>
+<script type="text/javascript" src="/func/front/htmlarea/dialog.js"></script>
+<style type="text/css">
+  @import url( /func/front/htmlarea/htmlarea.css );
+</style>
+<script type="text/javascript">
+  var editor = null;
+  function initEditor(editorid) {
+    if(editorid) {
+      editor = new HTMLArea(editorid);
+    } else {
+      editor = new HTMLArea("ta");
+    }
+    editor.generate();
+    return false;
+  }
+</script>
+
+</head>
+<body  class="topic" onload="resizeImg();initEditor()">
+<div id="pageContainer">
+  
+
+<div id="header">
+  <p id="siteLogo"><a href="http://www.niwota.com">你我他</a></p>
+  <ul id="userNav">
+  </ul>
+</div>
+
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+var pageTracker = _gat._getTracker("UA-280573-25");
+
+pageTracker._trackPageview();
+
+</script>
+
+  <div id="main">
+    <!--contentPage begin-->
+    <div id="contentPage">
+      <div class="groupHead">
+        
+<p class="logo"><a href="/quan/11700460"><img src="http://img.niwota.com/album/images/2008-01-30/1201674959218.jpg" alt="logo" height="50" border="0" /></a></p>
+
+        <h1 class="title">狼友、小姐天堂 - 话题</h1>
+      </div>
+      <div class="groupPanel">
+        <p><a href="/base/submsg.jsp?id=11700460">返回话题区</a></p>
+      </div>
+      <div class="contentBody">
+        <h2 class="title">大连小姐1</h2>
+        
+        
+
+
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" class="post">
+          <tr valign="top">
+            <td width="10%" bgcolor="#FFFFFF">
+              <a href="http://blog.niwota.com/space/38790870" target="_blank"><img name="faceurl" src="http://ppimg.niwota.com/album/images/default/user_icon_60.png" alt="超级香肠" border="0" /></a>
+              <p>&nbsp;</p>
+            </td>
+            <td width="90%" bgcolor="#FFFFFF">
+              <table width="100%" border="0" cellpadding="0" cellspacing="0" class="head">
+                <tr>
+                  <td width="72%">
+                    <p><strong><a href="http://blog.niwota.com/space/38790870" target="_blank">超级香肠</a></strong>(李锋) <small class="txt_light">2008-01-30 15:01</small></p>
+                  </td>
+                  <td width="28%">
+                    <p align="right">
+                      <small class="txt_light">
+                      	
+                        查看 (9282)
+                        回复 (3)
+                      </small><strong>1楼</strong>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <div class="content">
+                <p><p><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""></span></p><p><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">86648376&nbsp;&nbsp;36</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">。</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">100 </span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">王家桥。有地方</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""><br />13234053290</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">。</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">22</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">。</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">200</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">。天津街</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""><br />86951591&nbsp;&nbsp;18</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">岁</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">&nbsp;&nbsp; 150<br />13478574699&nbsp;&nbsp;2</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">个姐妹。</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">18/26</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">双飞</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">200<br />81728889</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">。</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">200</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">。奶子大。活好。好称最好</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">***</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">。甘井子</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""><br />81705069</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">。大纺。学生。</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">200<br />81958654</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">。</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">25</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">。盖洲街。</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">200<br />81866880</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">。</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">150-200</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">。工人村。</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">35</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">。熟女啊</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""><br />13130020310</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">。</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">27</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">广场。</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">300</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">。</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">22</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">。漂亮啊</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""><br />81886668</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">太原街</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">22</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">有地方。漂亮。</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">300<br />81986497</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">在东特住。奶子比寿桃大。</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">21</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">岁。</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">150-200<br /></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">大连几个妓女电话性息</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""><br /></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">萌萌　１３００９４７８１１１　　　　２２岁　１６５</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""><br /></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">茉茉　０４１１８１７６８０５０　　　１９岁　１７０</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""><br /></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">杨梅　０４１１８１６６８３９９　　　３０岁　１６５</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""><br /></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">叶子　０４１１８１２９８１４７　　　２３岁　１６８</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""><br /></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">电话</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""> 13332228889 </span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">人很甜属清醇型</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""> </span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">而且叫床淫荡</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""> </span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">适合猛男型狼友</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""> </span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">而且热情</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""> </span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">可口暴</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""> </span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">但拒绝肛交</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""><br /></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">水多</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""> </span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">请联系</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""> </span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">好象姓李而且只有每周</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">3 .5. 6</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">有时间</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""><br /></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">。</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">21</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">岁，长相</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">80</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">分，身材也可以，有点小太妹的感觉，</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">QQ</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">：</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">463984233</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">（本人验</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""> </span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">证过，价钱要</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">300</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">，后来讲到</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">200</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">）</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""><br /><br />2</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">。</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">19</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">岁</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">``</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">身高</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">1</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">，</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">67 </span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">体重</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">110``</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">新开路附近</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">``</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">没地方</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">`</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">包夜</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">600</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">，</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">QQ</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">：</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">381847585</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">（</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""> </span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">本人和朋友开车去网吧见过一</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""><br /></span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">次，后来看我们两个人不出来了）</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""><br /><br />3</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">。高</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">169/</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">重</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">108/</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">三围</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">:38D/21/30/</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">身材高挑</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">,</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">床上功夫极好</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">,QQ</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">：</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">414776935</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">，电话</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""> 13009477836</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">。一次</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">300</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">，一夜</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">600</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">（本人亲身验证，长的</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">70</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">分吧，身材不错）</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""><br /><br />4</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">。女</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""> 200</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">一次</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">&nbsp;&nbsp;``30</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">房间费</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""> </span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">在山东路开房间</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">``</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">胖</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""> 140</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">斤</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">` 160</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">的个</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">`19 </span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">岁</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">```</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">下</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""> </span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">面紧</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">``</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">口活也好</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">``&nbsp;&nbsp; 13478433140</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">（本人亲身验证过，长的不丑，挺可爱的，还</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""> </span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">听话）</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""><br /><br />5</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">。</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">2</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">女都</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">29</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">周岁，</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">166/115</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">。</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">167/110</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">。在家，有地方，，丰满，白皙，双飞</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">300</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">一</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""> </span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">次，</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">13889586833</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">兰心（只在</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">QQ</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">里聊过，没有打电话没有亲身验证）</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""><br /><br />6</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">。</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">2</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">女都</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">35 1</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">米</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">63 100</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">斤</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""> 1</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">米</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">62 120</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">斤</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""> </span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">没有照片</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""> </span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">没有视频</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""> </span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">双飞一共</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">200</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">元</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""> </span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">若有</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""> </span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">其他问题</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""> </span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">电话联系</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""> </span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">地方有在春柳</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""> 13704081179 </span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">（</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">QQ</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">里聊过，没有打电话没有亲</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""> </span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">身验证过）</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""><br /><br />7</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">。</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">20</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">岁，小巧玲珑行的，在开发区。</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">200</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">元，可以讲到</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">150</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">，</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">QQ</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">：</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">408477386</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">，（</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""> </span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">本人亲身验证过，小姑娘长的很可爱）</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""><br /><br />8</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">。</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">20</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">岁，身高</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">170</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">，视频见过两次，在南关岭，她有地方，</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">150</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">，长的不难看，但</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""> </span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">有点土（</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">QQ</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">里聊过，没有亲身验证）</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""><br /><br />9</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">。刘欣</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">21</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">岁</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">168</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">高</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">108</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">体丰满</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">/</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">皮肤好</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">/</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">一次</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">400</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">带口</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">/300</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">不待口</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">/</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">有诚意电话联系</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""> 84082517</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">（</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">QQ</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">里聊过）</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""><br /><br />10</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">。雪儿</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">26</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">岁，身高</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">162</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">，体重</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">100</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">，还有一个漂亮的，身高</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">168</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">，体重</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">108</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">，</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">21</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">岁</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""> </span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">双飞</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">400</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">，一个</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">300</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">没，有地方有诚意电话联系</span><span lang="EN-US" style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new="">81700804</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">铁道学院</span><span style="FONT-SIZE: 9pt; FONT-FAMILY: " mso-font-kerning:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" 1.0pt;="" 宋体;="" mso-fareast-font-family:="" roman?,?serif?;="" en-us;="" zh-cn;="" ar-sa?="" times="" new=""> </span><span style="FONT-SIZE: 9pt; FONT-FAMILY: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: " mso-hansi-font-family:="" mso-bidi-language:="" mso-fareast-language:="" mso-ansi-language:="" mso-ascii-font-family:="" en-us;="" zh-cn;="" ar-sa?="" times="" new="" roman?;="" ?times="">（哥们验证过）</span></p></p>
+                
+                  <p>
+                    <script type="text/javascript"><!--
+                    google_ad_client = "pub-8434234879563478";
+                    /* 468x60-页面中上部 */
+                    google_ad_slot = "7957704635";
+                    google_ad_width = 468;
+                    google_ad_height = 60;
+                    //-->
+                    </script>
+                    <script type="text/javascript"
+                    src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+                    </script>
+                    </p>
+                    
+              </div>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" class="foot">
+                <tr>
+                  <td width="92%">
+                    <p>
+                      <small>
+                        
+                        
+                        <a href="#reply" onclick="document.getElementById('id_replytopic').style.display='block';document.getElementById('idtopic').value='re:1楼';">回复</a> |
+
+                        
+
+                        
+                        <a href="javascript:copyUrl();">推荐给朋友</a> |
+                        <a href="javascript:void(0)" class="btnAction btnShare" onclick="showShareWin()">分享</a>
+                      </small>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+        </table>
+	<div>
+
+</div>
+        
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#B6CDD6" class="post">
+          <tr valign="top">
+            <td width="10%" bgcolor="#FFFFFF">
+              <a href="http://blog.niwota.com/space/39907430" target="_blank"><img name="faceurl" src="http://ppimg.niwota.com/album/images/default/user_icon_60.png" alt="就去爱" border="0"/></a>
+              <p>&nbsp;</p>
+            </td>
+            <td width="90%" bgcolor="#FFFFFF">
+              <table width="100%" border="0" cellpadding="0" cellspacing="0" class="head">
+                <tr>
+                  <td width="80%"><p><strong><a href="http://blog.niwota.com/space/39907430" target="_blank">就去爱</a></strong>(李伟) <small class="txt_light">2008-04-04 16:59</small></p></td>
+                  <td width="20%"><p align="right"><strong>2楼</strong></p></td>
+                </tr>
+              </table>
+              <div class="content">
+              
+              <p><p>大连的小姐好贵呀！开发区有没有身材又好又漂亮又的？</p></p>
+              </div>
+              <table width="100%" border="0" cellpadding="0" cellspacing="0" class="foot">
+                <tr>
+                  <td width="92%">
+                    <p>
+                      <small>
+                        
+                        
+                        <a href="#reply" onclick="document.getElementById('id_replytopic').style.display='block';document.getElementById('idtopic').value='re:2楼';">回复</a>
+                      </small>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#B6CDD6" class="post">
+          <tr valign="top">
+            <td width="10%" bgcolor="#FFFFFF">
+              <a href="http://blog.niwota.com/space/41353756" target="_blank"><img name="faceurl" src="http://ppimg.niwota.com/album/images/default/user_icon_60.png" alt="guanweileng" border="0"/></a>
+              <p>&nbsp;</p>
+            </td>
+            <td width="90%" bgcolor="#FFFFFF">
+              <table width="100%" border="0" cellpadding="0" cellspacing="0" class="head">
+                <tr>
+                  <td width="80%"><p><strong><a href="http://blog.niwota.com/space/41353756" target="_blank">guanweileng</a></strong>(skkdsa) <small class="txt_light">2008-06-29 03:53</small></p></td>
+                  <td width="20%"><p align="right"><strong>3楼</strong></p></td>
+                </tr>
+              </table>
+              <div class="content">
+              
+              <p><p>2什么时候出恩</p></p>
+              </div>
+              <table width="100%" border="0" cellpadding="0" cellspacing="0" class="foot">
+                <tr>
+                  <td width="92%">
+                    <p>
+                      <small>
+                        
+                        
+                        <a href="#reply" onclick="document.getElementById('id_replytopic').style.display='block';document.getElementById('idtopic').value='re:3楼';">回复</a>
+                      </small>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#B6CDD6" class="post">
+          <tr valign="top">
+            <td width="10%" bgcolor="#FFFFFF">
+              <a href="http://blog.niwota.com/space/42613371" target="_blank"><img name="faceurl" src="http://ppimg.niwota.com/album/images/default/user_icon_60.png" alt="难忘一千零一夜" border="0"/></a>
+              <p>&nbsp;</p>
+            </td>
+            <td width="90%" bgcolor="#FFFFFF">
+              <table width="100%" border="0" cellpadding="0" cellspacing="0" class="head">
+                <tr>
+                  <td width="80%"><p><strong><a href="http://blog.niwota.com/space/42613371" target="_blank">难忘一千零一夜</a></strong>(涛滔) <small class="txt_light">2008-08-27 19:47</small></p></td>
+                  <td width="20%"><p align="right"><strong>4楼</strong></p></td>
+                </tr>
+              </table>
+              <div class="content">
+              
+              <p>***俱乐部 _ 找情人、性伴侣、***__网络平台 推荐人=难忘一千零一夜<br /><a href="http://2984152.484834.com.cn/i?ID=2984152">http://2984152.484834.com.cn/i?ID=2984152</a><br />全球最大的美女图片浏览中心<br /></p>
+              </div>
+              <table width="100%" border="0" cellpadding="0" cellspacing="0" class="foot">
+                <tr>
+                  <td width="92%">
+                    <p>
+                      <small>
+                        
+                        
+                        <a href="#reply" onclick="document.getElementById('id_replytopic').style.display='block';document.getElementById('idtopic').value='re:4楼';">回复</a>
+                      </small>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        
+
+        
+
+
+
+        <table width="100%" border="0" cellpadding="2" cellspacing="1" bgcolor="#B6CDD6" >
+          <tr>
+            <th>回复话题</th>
+          </tr>
+          <tr>
+            <td bgcolor="#FFFFFF">
+              
+              <form name="lgnform" method="post" action="http://www.niwota.com/user/login_page.jsp">
+              <p>您还没有登录
+                <label>用户<input name="username" type="text" size="8" maxlength="40" value="" /></label>
+                <label>密码<input name="password" type="password" size="8" maxlength="40" onkeypress="return (event.keyCode!=13)"/></label>
+                <input type="checkbox" value="true" name="remember" checked="checked"/>记住我
+                <input type="submit" class="button" value="登 录"/>
+                <a href="http://user.niwota.com/user/register.jsp" target="_blank">注册新用户</a>
+              </p>
+              <script type="text/javascript" language="javascript">
+              add_hidden_input(document.lgnform,"doLogin","true")
+              </script>
+              </form>
+              
+            </td>
+          </tr>
+        </table>
+
+        
+      </div>
+    </div>
+    <!--contentPage end-->
+    
+
+<div id="sideBar">
+  <form id="signForm" name="loginform" method="post" action="http://www.niwota.com/user/login_page.jsp">
+  <p>
+    <label>用户名：<input type="text" name="username" class="userInput" value="" /></label>
+    <label>密　码：<input type="password" name="password" class="userInput" /></label>
+    <label><input type="checkbox" name="remember" value="true" checked="checked" />记住我</label>
+    <input type="submit" class="button" id="button" value="登录" />
+    <input type="hidden" name="doLogin" value="true"/>
+  </p>
+  </form>
+  <p><a href="http://www.niwota.com/user/getpw.jsp">忘记密码？</a></p>
+  <p><a href="http://user.niwota.com/user/register.jsp"><img src="/images/btn_signup.gif" alt="马上注册" width="100" height="30" border="0" /></a></p>
+  <hr style="height:1px;margin:5px 0px;padding:0px;background:#CCCCCC;color:#CCCCCC;border:1px;" />
+
+  <div id="globalSearch">
+    <h2><a href="http://search.niwota.com">搜索</a></h2>
+    <span id="moreSearchBtn" onmouseover="dropMenu(this);" onmouseout="hideMenu(this);"></span>
+    <ul id="moreSearch" onmouseout="hideMenu(this);" onmouseover="dropMenu(this);">
+      <li><a href="http://bendi.niwota.com/actives.jsp">找活动</a></li>
+      <li><a href="http://search.niwota.com/search_users.jsp?sex=&sage=18&eage=26&constellation=&hasPhoto=%D3%D0%D5%D5%C6%AC&province=&doSearch=true">找朋友</a></li>
+      <li><a href="http://bendi.niwota.com/groups.jsp">找圈子</a></li>
+      <li><a href="http://search.niwota.com/advance.jsp">会员高级搜索</a></li>
+    </ul>
+    <form id="searchForm" name="searchForm" method="GET" action="http://search.niwota.com/s">
+    <p><input type="text" name="q" class="keyword" /><input type="submit" class="button btnSearch" value="搜" /></p>
+    </form>
+  </div>
+
+  <div id="userPanel">
+    <ul id="panelNormal">
+      <li class="activity"><a href="http://bendi.niwota.com/actives.jsp">活动</a></li>
+      <li class="member"><a href="http://bendi.niwota.com/members.jsp">会员</a></li>
+      <li class="blog"><a href="http://www.niwota.com/user/login.jsp">博客</a></li>
+      <li class="photo"><a href="http://photo.niwota.com/hotphotos.jsp">相册</a></li>
+      <li class="cast"><a href="http://www.niwota.com/user/login.jsp">迷你博客</a></li>
+      <li class="music"><a href="http://www.niwota.com/user/login.jsp">音乐</a></li>
+      <li class="share"><a href="http://www.niwota.com/user/login.jsp">分享</a></li>
+      <li class="mobile"><a href="http://www.niwota.com/mobile/open.jsp">手机</a></li>
+      <li class="poll"><a href="http://www.niwota.com/user/friendvote.jsp">投票</a></li>
+      <li class="usersale"><a href="http://blog.niwota.com/usersale/market.jsp">好友买卖</a></li>
+    </ul>
+
+  </div>
+  <p>
+  <script type='text/javascript'>
+  cpro_client='niwota_cpr';
+  cpro_at='text_image';
+  cpro_161=4;
+  cpro_flush=4;
+  cpro_w=120;
+  cpro_h=600;
+  cpro_template='text_default_120_600';
+  cpro_cbd='#FFFFFF';
+  cpro_cbg='#FFFFFF';
+  cpro_ctitle='#0000ff';
+  cpro_cdesc='#444444';
+  cpro_curl='#444444';
+  cpro_cflush='#e10900';
+  cpro_uap=1;
+  cpro_cad=1;
+  </script>
+  <script language='JavaScript' type='text/javascript' src='http://cpro.baidu.com/cpro/ui/cp.js'></script>
+</p>
+</div>
+
+
+    <div class="clear"></div>
+  </div>
+  
+<div id="footer">
+<form action="http://search.niwota.com/s" method="GET" name="searchfrom_b" class="search">
+<p style="padding:3px 0px;margin:5px 0px;"> <img src="/images/zoom.gif" alt="zoom" width="23" height="23" align="absmiddle" />
+  <input name="q" type="text" class="keyword" id="textfield" value="会员、活动、圈子、博客" size="50" onfocus="javascript:if(this.value=='会员、活动、圈子、博客'){this.value=''}" onblur="javascript:if(this.value==''){this.value='会员、活动、圈子、博客'}"/>
+  <input type="submit" class="button" id="button" value="搜索" />
+</p>
+</form>
+<p><script type="text/javascript"><!--
+google_ad_client = "pub-8434234879563478";
+/* 468x60, 创建于 08-9-18 */
+google_ad_slot = "6274668329";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></p>
+  <p class="txt_light">niwota.com &copy;2008 <a href="http://www.miibeian.gov.cn/" target="_blank">京ICP证060542号</a> 网络安全备案号1101081446</p>
+  <ul>
+    <li><a href="http://www.niwota.com/aboutus/aboutad.htm" target="_blank">广告投放</a></li>
+    <li><a href="http://www.niwota.com/aboutus/aboutbiz.htm" target="_blank">投资合作</a></li>
+    <li><a href="http://www.niwota.com/aboutus/aboutjob.htm" target="_blank">圈网招聘</a></li>
+    <li><a href="http://www.niwota.com/aboutus/aboutindex.htm" target="_blank">关于圈网</a></li>
+    <li><a href="http://www.niwota.com/aboutus/aboutservice.htm" target="_blank">服务条款</a></li>
+    <li><a href="http://www.niwota.com/aboutus/aboutnoright.htm" target="_blank">免责声明</a></li>
+    <li><a href="http://www.niwota.com/aboutus/help.jsp">在线求助</a></li>
+  </ul>
+</div>
+
+<div id="banner-top">
+</div>
+
+</div>
+
+
+<div class="floating_bar" id="right_bar" style="position:absolute; top:0px; right:2px;">
+	<span onclick="removeFloatBanner();">关闭</span>
+	<script type="text/javascript">
+	<!--
+	google_ad_client = "pub-8434234879563478";
+	/* 120x600 摩天大楼 */
+	google_ad_slot = "6251495098";
+	google_ad_width = 120;
+	google_ad_height = 600;
+	//-->
+	</script>
+	<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+</div>
+<script type="text/javascript" src="http://blog.niwota.com/js/float_right.js"></script>
+
+
+</body>
+</html>
+
+
+
+<script language="JavaScript" type="text/javascript" src="http://spcode.baidu.com/spcode/spstyle/style1101.jsp?tn=niwota_sp&ctn=0&styleid=1101"></script>
+

@@ -1,0 +1,88 @@
+求职Linux/Unix 下的 C／C＋＋ 程序员［中英文简历］
+
+以下是我的中英文简历，文中标识（熟练）的表示进行过实用的系统设计和代码的编写。未标识（熟练）的，表示虽然阅读过很多书籍，代码，标准文档，但没有经
+过实际的项目的实践。虽然如此，但基础知识可能掌握的比较牢固。
+薪水面议，工作地点不限。工作形式兼职寒假即可开始，全职的话要明年暑假开始。由于是03级，暂无学历证书。但学校可以提供相关身份的证明。
+
+
+
+An Jiangze <gnap.an[@]gmail.com>
+Current occupation: Student
+Fundamental Skills
+
+    * Application development
+          o C(extentisive)
+          o C++/STL
+          o General development for POSIX C environments
+          o CVS code management,generic GNU souce code management and patcing tools
+          o Shell/Familiarity of RedHat/Fedora/FreeBSD shell scripts structure.
+          o Python & Perl(non-extensive). 
+    * System programming
+          o TCP/IP network (sockets) programming
+          o Raw Socket/BPF programming for POSIX environments 
+    * Systems' administration
+          o FreeBSD/RedHat usage & administration (extensive knowledge)
+          o FTP server administration (extensive knowledge)
+          o Unix-Windows integration using Samba, LDAP, Active Direcotry, Kerberos
+          o Direcotry Solutions using Sun Directory or OpenLDAP
+          o SNMP based Network/Host Monitoring 
+    * Other
+          o Very good operating knowledge of computers
+          o Experience in using for various Unix and Windows GUI environments
+          o Fluent English:CET-4,CET-6: 431
+          o Japanese(Able to surf japanese sites and read IT documents)
+          o International High IQ Society IQ test scores 139 
+
+Experiences
+
+    * Desgined and administered the direcotry service at Network Information Center of Zhongyuan Inistitute of Technology.
+    * Administered FTP server at Network Information Center of Zhongyuan Inistitute of Technology.
+    * Wrote a open1x patch for Red Gaint Network.
+    * For the project of Department of Computer Science,Zhongyuan Inistitue of Technology named Dynamical Forensic System,writing the GNU 
+tool:tlscat, a TLS-based netcat alike tool. 
+
+Projects
+
+    * Direcotry Service:Board knowledge of LDAP,ASN.1,OID,Kerberos,etc.
+    * open1x-rj-patch:In-depth understanding of 802.1x,EAP,EAPol,open1x implementaion arthitecture,principle of state machine,openssl-crypt 
+lib,packets capturing and analyzing using tcpdump/windump, etc.
+    * tlscat:In-depth understading of principle of CA,TLS/SSL,API of gnutls lib,arithitecture of the GNU NetCat Project. 
+安江泽 <gnap.an[@]gmail.com>
+目前职业: 学生
+基本技能
+
+    * 程序开发
+          o C(熟练)
+          o C++/STL
+          o POSIX C 环境下的一般开发
+          o CVS代码管理,常用GNU代码管理工具和patching工具
+          o Shell/熟悉RedHat/Fedora/FreeBSD下的SHELL脚本结构
+          o Python & Perl(不太熟练). 
+    * 系统编程
+          o TCP/IP 网络(sockets) 编程
+          o POSIX环境原始套接字/BPF编程 
+    * 系统管理
+          o FreeBSD/RedHat 使用 & 管理（熟练）
+          o FTP服务器管理（熟练）
+          o Unix-Windows 集成： Samba, LDAP, 活动目录, Kerberos
+          o Direcotry解决方案： 基于 Sun Directory 或 OpenLDAP（熟练）
+          o 基于SNMP的网络／主机监视 
+    * 其他
+          o 丰富的计算机操作知识
+          o 使用多种 Unix 和 Windows GUI 环境的经验
+          o 英语:CET四级,CET六级: 431
+          o 日语(可以浏览日文网页和阅读日文文档)
+          o 国际高智商协会IQ测试139分 
+
+实践经验
+
+    * 为中原工学院网络中心设计和管理目录服务
+    * 为中原学院管理FTP服务
+    * 编写open1x兼容锐捷网络的补丁
+    * 参加参加中原工学院《动态取证系统》，正在编写tlscat:一个GNU的，类似netcat的，使用TLS连接的工具。 
+
+项目
+
+    * 目录服务: LDAP,ASN.1,OID,Kerberos等各类知识.
+    * open1x锐捷补丁:深入理解802.1x,EAP,EAPol,open1x实现框架,状态机原理,openssl-crypt库,使用tcpdump/windump截获和分析数据包等.
+    * tlscat:深入理解CA原理,TLS/SSL,gnutls库的API,GNU NetCat的实现框架.
