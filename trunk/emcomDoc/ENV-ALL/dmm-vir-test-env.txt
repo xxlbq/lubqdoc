@@ -4,7 +4,7 @@ dmm vir test  sam Êý¾Ý¿â
 10.4.9.164
 /usr/local/mysql/bin/mysql -uroot -psys2oo9emcom -A SAM
 
- UPDATE CUSTOMER SET LOGIN_PW = '593c9b4a9390551d53e5cacf28ebd638' WHERE CUSTOMER_ID = '70058213 ' ;
+ UPDATE CUSTOMER SET LOGIN_PW = '593c9b4a9390551d53e5cacf28ebd638' WHERE CUSTOMER_ID = '70065893 ' ;
 
 
 
@@ -37,12 +37,42 @@ mysql -h10.4.9.154 -uMAIN -pPrG7lv2Y -A MAIN
 
 
 UPDATE JHF_CUSTOMER_STATUS SET LOGIN_PASSWORD = '593c9b4a9390551d53e5cacf28ebd638' WHERE CUSTOMER_ID = '70058213 ' ;
-
+UPDATE JHF_CUSTOMER_STATUS SET LOGIN_PASSWORD = '593c9b4a9390551d53e5cacf28ebd638' WHERE CUSTOMER_ID = '70058213 ' ;
+Vir65949
   
 
 ©°©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©´
 ©¦Ies00005  	   00001018   111111111111©¦
 ©¸©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¼
+
+70065893
+
+
+
+
+
+70065904   	 éL Ì«ÀÉ   	¥«¥ï¥» ¥¿¥í¥¦  	Vir65904     70065904
+
+
+
+
+$name
+
+
+
+
+
+
+
+
+
+70065893   	 ¹ù Ì«ÀÉ£ô£ô   	¥«¥¯ ¥¿¥í¥¦  	Iej00003  	
+
+
+
+
+
+
 
 
 

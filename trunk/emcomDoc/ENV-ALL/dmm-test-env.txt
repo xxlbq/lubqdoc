@@ -1,4 +1,20 @@
 
+
+
+
+新注册的帐户
+
+00093644  	00093644  	 為為 為為   	カカカ カカカ  	Iel00932  
+
+
+
+123321
+
+
+
+
+
+
  各系统测试环境的数据库用户密码变更为
 fxdev
 bestwiz 
@@ -42,51 +58,23 @@ PrG7lv2Y
 mysql -h10.4.9.115 -uMAIN -pPrG7lv2Y -A MAIN 
 
 
-
-SELECT * FROM JHF_CASH_BALANCE WHERE CASH_BALANCE =0 LIMIT 5\G;
-
-
-
-
+00092810   	 アイ アイ   	アイ アイ  	Iem07182  	               
+00092809   	 アイ アイ   	アイ アイ  	Ieb01805  	               
+00092808   	 アイ アイ   	アイ アイ  	Iez00632  	               0
+00092807   	 アイ アイ   	アイ アイ  	Ieh04793                   7
 
 
-                 CUSTOMER_ID: 00000007
-                    GROUP_ID: DEFAULT
-       WITHDRAWAL_CONSTRAINT: 0
-              ACCOUNT_STATUS: 0
-              ACCOUNT_MARGIN: 0
-         RISK_ACCOUNT_STATUS: 0
-            LOGIN_CONSTRAINT: 0
-         OPEN_BUY_CONSTRAINT: 0
-        OPEN_SELL_CONSTRAINT: 0
-        CLOSE_BUY_CONSTRAINT: 0
-       CLOSE_SELL_CONSTRAINT: 0
-        STRADDLE_OPTION_FLAG: 0
-       ACCOUNT_ACTIVE_STATUS: 0
-  ACCOUNT_ACTIVE_STATUS_DATE: 20090622
-                    LOGIN_ID: Ieq00001
-              LOGIN_PASSWORD: 81b2dd41e910bb699f20dfb828d01a5f
-          OLD_LOGIN_PASSWORD: 81b2dd41e910bb699f20dfb828d01a5f
-          ORIGINAL__PASSWORD: QWJveUNyblA=
-        PASSWORD_UPDATE_DATE: 20090622
+00093606   	 氏 太郎   	セイ タロウ  	Iel00926                   6
+00093605   	 氏 太郎   	セイ タロウ  	Iel00927  	               5
+00093604   	  太郎   	 タロウ       	Cel00009  	               4 
+00093603   	 氏 太郎   	セイ タロウ  	Iel00925                   3
+00093602   	 郭 太郎   	カク タロウ  	Ieg01627                   2
+00093601   	 郭 太郎   	カク タロウ  	Ieg01626  	               1
 
 
 
 
-
-
-
-
-
-
-
-
-
-update config file ，
-only subscribe ：
-CAD/JPY,CHF/JPY,AUD/JPY,EUR/JPY,USD/JPY
-
-when we deal EUR/USD
+123321
 
 
 

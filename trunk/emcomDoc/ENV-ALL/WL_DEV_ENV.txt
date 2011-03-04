@@ -1,0 +1,55 @@
+
+
+
+
+Cwl00002/111111/WL0002/98000002
+
+
+
+WhiteLabel相关的bean及初始化数据,已经执行完毕,请在WL Dev环境进行使用.
+
+IP:
+>>>> Front/CTI                     10.15.2.91
+>>>> BATCH/BACKYARD/report/admbat  10.15.2.93
+>>>> main/mq/gw                    10.15.2.100
+>>>> info/history                  10.15.2.97
+>>>> middle1                       10.15.2.90
+>>>> middle2                       10.15.2.92
+这个WL Dev环境,是从MJ Test环境完全复制过来的,所以,相关的Login账户的信息
+请参考MJ Test环境的数据
+
+
+
+
+
+
+
+
+
+/usr/local/mysql/bin/mysql -h10.15.2.100 -uroot -psys2oo9emcom -A MAIN
+
+
+
+
+
+WhiteLabel 课题关联各位，
+
+??? 针对WhiteLabel课题开发的  FixServer，FixClient，FixClientRCP程序已经
+
+基本开发完毕了。
+
+??? 目前部署情况如下：
+???  FixServer：10.15.2.97 /root/whitelabel/fix
+??? FixClient：10.15.2.97  /root/whitelabel/fix
+??? FixClientRCP:? http://10.15.2.97:8080/fix-rcp/fix-rcp.jnlp
+
+???  大家可以通过访问以下URL启动FixClientRCP程序。
+??? http://10.15.2.97:8080/fix-rcp/fix-rcp.jnlp
+
+???  选择以WebStart方式启动，登录信息如下：
+??? host：10.15.2.97
+??? port1：6789 (默认)
+???  port2：6790 (默认)
+
+??? 以上程序的程序会被上传到WhiteLabel的CVS分支上，上传完毕后另行通知。
+
