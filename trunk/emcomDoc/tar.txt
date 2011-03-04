@@ -1,0 +1,18 @@
+===================== 解压 ========================
+
+
+tar -cvf jhfapp_laolu.tar jhfapp
+
+
+tar -zcvf jhfapp_laolu.tar jhfapp
+
+
+===================== 解压 ========================
+恩  tar xf jhfapp.tar     就行
+
+tar -xvf  jhfapp_laolu.tar  
+
+tar zxvf  jhfapp.tar.gz 的
+
+
+
