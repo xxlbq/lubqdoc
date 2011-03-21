@@ -1,0 +1,26 @@
+■CSG启动方式
+[root@samdev2 ~]# pppdctl restart
+Stop pppd...done.
+Start pppd...done.
+
+
+
+
+
+
+
+(2011-02-10 09:18:12) 王岩: 
+[root@samdev2 ~]# su - jhfapp
+-bash-3.2$ cd /jhfapp/app/bin/
+-bash-3.2$ source setenv.sh 
+-bash-3.2$ runGWCSG.sh 
+
+
+
+hi mj_anh ,Did CSG server side has a big change ?
+
+would you like  go on this test tomorrow ? if it's not out of schedule .
+Today is special 
+I'll appreciate 
+
+
