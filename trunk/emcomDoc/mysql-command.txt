@@ -1,3 +1,11 @@
+MYSQL 启动 
+
+(2011-06-09 17:16:08) 系统部.王慧宁: 
+/usr/local/mysql/bin/mysqld_safe --user=mysql & ---》 启动
+(2011-06-09 17:18:16) 系统部.王慧宁: 
+/usr/local/mysql/bin/mysqladmin shutdown -u -p
+
+
 
 
 
