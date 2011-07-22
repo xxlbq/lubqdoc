@@ -32,7 +32,7 @@ panta_service
 
 
 Panta 系统－大连Release环境  
-1) Panta front http://10.15.2.195:8080/jhf_panta_web/    00000128  IHI00001  666666666666  
+1) Panta front http://10.15.2.195:8080/jhf_panta_web/    00000128 IHI00001  666666666666  
 bc177a7a9c7df69c248647b4dfc6fd84
    
 2) Panta 管理画面 http://10.15.2.195:18080/
