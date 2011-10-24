@@ -2,17 +2,6 @@
 
 https://samfxweb.s.emcom.dmm.com/wizard.do
 
-新注册的帐户
-
-00093644  	00093644  	 為為 為為   	カカカ カカカ  	Iel00932  
-
-
-
-123321
-
-
-
-
 
 
  各系统测试环境的数据库用户密码变更为
@@ -31,8 +20,6 @@ pwd:asumax
 Ieq00001    00000048
 
 
-Ieq00001
-00000007
 111111111111
 
 6666666666666666666666666
@@ -41,7 +28,7 @@ Ieq00001
 
 
 
-
+Iea00001  
 
 UPDATE JHF_CUSTOMER_STATUS  SET LOGIN_PASSWORD='593c9b4a9390551d53e5cacf28ebd638' WHERE CUSTOMER_ID = '00000007';
 

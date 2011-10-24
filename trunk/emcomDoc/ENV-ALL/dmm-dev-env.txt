@@ -1,34 +1,22 @@
 
 
-
+https://10.15.2.161/wizard.do
 
 
 +======================================================
 
-Iel00001        111111111111           00001302
+Iek00228       111111111111           00003101
 
 +======================================================
 
 
 
 
-UPDATE JHF_CUSTOMER_STATUS SET LOGIN_PASSWORD = '593c9b4a9390551d53e5cacf28ebd638' WHERE LOGIN_ID = 'Iea00002' ;
+UPDATE JHF_CUSTOMER_STATUS SET LOGIN_PASSWORD = '593c9b4a9390551d53e5cacf28ebd638' WHERE LOGIN_ID = 'Iel00001' ;
 
 UPDATE JHF_CUSTOMER_STATUS SET LOGIN_PASSWORD = '593c9b4a9390551d53e5cacf28ebd638' WHERE CUSTOMER_ID = '00001302' ;
 
-2,
 
-DMM00007
-90000007
-
-
-
-pwd:111111111111
-
-
-
-Ieg00001
-00003301
 
 
 

@@ -38,37 +38,12 @@ mysql -h10.4.9.154 -uMAIN -pPrG7lv2Y -A MAIN
 
 UPDATE JHF_CUSTOMER_STATUS SET LOGIN_PASSWORD = '593c9b4a9390551d53e5cacf28ebd638' WHERE CUSTOMER_ID = '70058213 ' ;
 UPDATE JHF_CUSTOMER_STATUS SET LOGIN_PASSWORD = '593c9b4a9390551d53e5cacf28ebd638' WHERE CUSTOMER_ID = '70058213 ' ;
-Vir65949
-  
-
-©°©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©´
-©¦Ies00005  	   00001018   111111111111©¦
-©¸©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¼
-
-70065893
 
 
+70065904   	 éL Ì«ÀÉ   	¥«¥ï¥» ¥¿¥í¥¦  	Vir65904     70065904  123321
 
-
-
-70065904   	 éL Ì«ÀÉ   	¥«¥ï¥» ¥¿¥í¥¦  	Vir65904     70065904
-
-
-
-
-$name
-
-
-
-
-
-
-
-
-
-70065893   	 ¹ù Ì«ÀÉ£ô£ô   	¥«¥¯ ¥¿¥í¥¦  	Iej00003  	
-
-
+https://vsamfxweb.v.emcom.dmm.com/
+vir65815/11111111/70065815
 
 
 
