@@ -279,18 +279,6 @@ cat test0001.trader[1-3].sheet|awk -F'=== Total Times :|(ms)'  '{print $2}'
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 cat /jhfapp/app/trader/opm/logs/opm.log |grep 'TradeGroupCacheImpl#get:159' |awk '{print $6}'|awk -F',' '{print $5}'
 
 
@@ -304,9 +292,14 @@ ln -s /jhfapp/app/shell/runOPM.sh run
 
 
 
+
+
+
+
+
 [copy opm log]
 
- cp /jhfapp/app/trader/opm/logs/opm.log opm1.log
+cp /jhfapp/app/trader/opm/logs/opm.log opm1.log
 scp root@10.4.9.90:/jhfapp/app/trader/opm/logs/opm.log opm2.log
 scp root@10.4.9.88:/jhfapp/app/trader/opm/logs/opm.log opm3.log 
 
@@ -336,4 +329,17 @@ cat trader[1-3].log | grep "=== Total Times :" |grep "TEST_HEAD_"  |awk  '{print
 [trade group use time]
 
 
-cat opm1.log |grep 'TradeGroupCacheImpl#get:159' |awk '{print $6}'|awk -F',' '{print $5}'   
+cat opm1.log |grep 'TradeGroupCacheImpl#get:161' |awk '{print $6}'|awk -F',' '{print $5}'   
+
+
+
+cat opm1.log |grep 'TradeGroupCacheImpl'|grep delay
+
+[trade mode]
+
+cat opm1.log |grep 'Trade Mode is CustTradePolicy'
+
+
+
+
+cat opm*.log |grep 'TradeGroupCacheImpl#get:161' |awk '{print $6}'|awk -F',' '{print $6}'  | sort -n | uniq -c 
