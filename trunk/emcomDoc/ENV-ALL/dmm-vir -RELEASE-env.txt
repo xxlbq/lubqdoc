@@ -13,7 +13,7 @@ ok
 
 
 
-https://10.4.9.71/wizard.do
+	https://10.18.22.161/wizard.do
 
       
 
