@@ -1,0 +1,1028 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest-Main-Attributes: zOO0BxAptnr7ISPm0D3fabt5WNQ=
+Created-By: 1.6.0_21 (Sun Microsystems Inc.)
+SHA1-Digest-Manifest: JjHzeMh/2IsrL2JnepRh9KkbcdY=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/ClientOrderTabl
+ e$3.class
+SHA1-Digest: D69E8ZBxsQyZcfGUEbImTmS3kKI=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/misc/view/DlgLogin.class
+SHA1-Digest: 8qV2e+jhKC6ANy07MmeEfabRJs0=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/controller/QuoteGrap
+ hController.class
+SHA1-Digest: +r1ObY89xrwcdecNAgp0W/n0Yek=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/view/QuoteSearchView
+ .class
+SHA1-Digest: RW2K6C0ZncJYMqdlQbms+ZEHMuc=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/model/SpotPanelManag
+ erModel.class
+SHA1-Digest: YkiMWIBxWohxGqHssf7/Bco0pPU=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/common/util/swt/listener/Decimal
+ VerifyListener.class
+SHA1-Digest: AI84Wvzb59+ID+vazlr3LbU2Now=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/misc/controller/DlgLoginCont
+ roller$ConnectionTask$1.class
+SHA1-Digest: /voNw/7sjaJo19jxAlJ5wgbnPsg=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/res/image/up.png
+SHA1-Digest: JD4YMAghvMM0EyCvCBXd9MF5Oug=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/SpotPanelPrice$
+ 4.class
+SHA1-Digest: jWpppfQyQLkSUL9naPUTA75t1rM=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/res/image/arrow_down_hover.png
+SHA1-Digest: KKm6TC6+nGQ8GHGjPE6wwTDht/k=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/MarketIndicator
+ $2.class
+SHA1-Digest: xqB2kGcWW2hKjocFxZ1PJ8z95gk=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/extention/application/Applicatio
+ nActionBarAdvisor.class
+SHA1-Digest: vmrmUXj5F3M3jLDNwCzsAxDGQGs=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/admin/view/TextConsole$KeyLi
+ stenerImpl.class
+SHA1-Digest: QNvb4S0BA36QePqQp6g8OcPbC+8=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/admin/view/QuoteSubscription
+ View.class
+SHA1-Digest: S63LAii7LJ6XbKCjjZyB/Csvwsg=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/SpotPanel$9.cla
+ ss
+SHA1-Digest: BoeeKToaa4rnAOZgvSz99R9UCuM=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/ClientOrderTabl
+ e$2.class
+SHA1-Digest: fgZqty+6fi0alj7T8k7VOJQN9aA=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/view/QuoteGraphView$
+ 5.class
+SHA1-Digest: MgtzqimCSgDW7PQyHWCLWVKymT8=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/common/util/swt/graphic/BufferIm
+ age.class
+SHA1-Digest: 9NcOkk8RahU6yBt+xj9fJClDjFQ=
+
+Name: lib/netty-3.2.2.final.jar
+SHA1-Digest: AS5ybiczIdULlYSxp4q2taGxNdQ=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/SpotPanel$Activ
+ ationListener.class
+SHA1-Digest: yOgQvPnf972Mv12XyFekKf9AtFo=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/OrderHistoryVie
+ w$1.class
+SHA1-Digest: ZeWteepkt7D+CkFLZlcFhUxqvFs=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/misc/controller/DlgLoginCont
+ roller$ConnectionTask.class
+SHA1-Digest: p2IV0HhWR6DNNNNMNsrGo13HJ/Q=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/view/QuoteHistoryVie
+ w$1.class
+SHA1-Digest: mllw+ivjFc9QqWQH0Na5ZUj7I5Q=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/misc/model/DlgLoginModel.cla
+ ss
+SHA1-Digest: QHcCP/lg9TDQQdu9RWeJJcV6pXs=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/model/OrderHistoryMo
+ del.class
+SHA1-Digest: XpO3m0Gl/BYZ68pt2SSr5OnghFc=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/misc/view/DlgLogin$7.class
+SHA1-Digest: rc8Q1wZfJ62yzfXxfl78s6hMS+0=
+
+Name: icons/all.png
+SHA1-Digest: KzgsuEFmF+5PupciLLEevbuGbkw=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/view/QuoteGraphView$
+ 8.class
+SHA1-Digest: BraYTMtHpaQGW9ue9slINHFFXw8=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/admin/model/SessionModel.cla
+ ss
+SHA1-Digest: eNRZTQKrpN3pJfJQncLtH38EdLw=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/res/image/spot_panel_title.png
+SHA1-Digest: LH52aXkmB0I+wiFJpBl3x7qoF9Q=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/extention/command/ClearAction.cl
+ ass
+SHA1-Digest: eFiqr7c4lkSEEeXYce228pqqmCY=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/MarketIndicator
+ $5.class
+SHA1-Digest: jXMt8pjOVsmFzqgeIz1ogv3N4eE=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/res/image/error.png
+SHA1-Digest: cXlT8TDQ2HFaDIYL0QPCFiN6tAg=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/extention/view/SpotBoardViewPart
+ .class
+SHA1-Digest: WR19eNpUWdaZRhfgwWHqZ8HFELY=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/admin/view/SessionView.class
+SHA1-Digest: SYHc7CBpCi6/fWgA+rHd975L0Wo=
+
+Name: icons/clear.png
+SHA1-Digest: NNkJ6dzLTIicwrh33s/wZwpPHfE=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/model/SpotPanelManag
+ erModel$RateCache.class
+SHA1-Digest: TIJV4G1yIecimHS38m0b7D+hwjs=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/res/image/down.png
+SHA1-Digest: 5QgbH85SbiJTxFw8yp9EtCF8nuk=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/common/util/swt/widget/ImageCanv
+ as.class
+SHA1-Digest: FRCH84onM9u0x7w6uEcK0HHsAXw=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/res/image/close_click.png
+SHA1-Digest: fWWH8jn77xT24xMprADbFxMQ0Ww=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/common/rcp/BaseViewPart.class
+SHA1-Digest: xS373Gw+6MkfhB9h/ho+9uuHEFg=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/controller/SpotPanel
+ ManagerController$RefreshTask.class
+SHA1-Digest: 6hkJCQYXGwEVHB4App36ZikgQh8=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/admin/model/QuoteSubscriptio
+ nModel.class
+SHA1-Digest: 74ww5/9kyaTul/E9GA6KGsmNMVw=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/OrderHistoryVie
+ w.class
+SHA1-Digest: yo72ZRkoFeq2rLYBBRUjjqkAdGc=
+
+Name: lib/slf4j-api-1.5.8.jar
+SHA1-Digest: sYdYM/+1GXtWwYnzUxet7riw5bs=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/admin/controller/SessionCont
+ roller$1.class
+SHA1-Digest: XAnFz6CZBQn/Bjcxy3FjB2R5UVg=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/common/util/swt/widget/ImageCanv
+ as$1.class
+SHA1-Digest: +Cq/rKRYrSiolcwtZabfOXMjRco=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/view/QuoteSearchView
+ $1.class
+SHA1-Digest: Wlaq+cxoEojCmC/i+MuksEG8dIk=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/MarketIndicator
+ $3.class
+SHA1-Digest: 9mxpGKeXzfS74X366GezpYNziWs=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/extention/command/CsvAction.clas
+ s
+SHA1-Digest: BjAghuCrUtJm9Rg9bz9ypdEqv/E=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/extention/view/SessionViewPart.c
+ lass
+SHA1-Digest: hv0bgHUqBfCDBMG+r8QBhdL2yAM=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/misc/view/DlgLogin$10.class
+SHA1-Digest: +QQkkySwcuo4cDuveJ8BoHXFWd4=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/res/image/cursor_pen.png
+SHA1-Digest: 8/YUX91LMFhlYKemUcdjqAIx+Nc=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/misc/model/NagigatorModel.cl
+ ass
+SHA1-Digest: /V00KekPID5UdqLJI4adm2Vo9Fg=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/SpotPanelManage
+ r$2.class
+SHA1-Digest: vOWTLvikBt5AFlOJ4Rrv4ZJTA1c=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/SpotBoardView$1
+ .class
+SHA1-Digest: GA3RNt35uZwmlTvRg+4pahTpMcU=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/view/QuoteTable$2.cl
+ ass
+SHA1-Digest: LzlwpaQlf7GYHUipurFEzfEc99o=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/common/util/swt/widget/ColorPick
+ er$2.class
+SHA1-Digest: lR4kXTYsixSsI5qxfUhEwRdDITU=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/common/util/validator/CommonVali
+ dator.class
+SHA1-Digest: YFYOaLJJ5Hr8E1xYACpYca7p+1I=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/res/image/spot_panel_title_inact
+ ive.png
+SHA1-Digest: f63aOQGZMtpLJKO7AAbLf2QSFD4=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/model/QuoteGraphMode
+ l$RateCache.class
+SHA1-Digest: PKNK6+8PkhNBj36NWHn2BcMC0KM=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/admin/view/ShellView$1.class
+SHA1-Digest: gxUOtP0X1bl1aY7Sg/pGYfXHipc=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/SpotPanelManage
+ r$7.class
+SHA1-Digest: Jo+037dyTpI61qHgjhJXdtL4DoQ=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/common/util/swt/widget/ImageButt
+ on$3.class
+SHA1-Digest: N8tsOPHtO0k3mjjQyBOn4vgglN4=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/res/image/navigator_node.png
+SHA1-Digest: GI1wkMUcYc9pTM7BzTgHf8igQ5I=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/res/image/spot_panel_title_activ
+ e.png
+SHA1-Digest: UHzRKQh2BtLj3h56k796TH+iqrU=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/admin/view/TextConsole$1.cla
+ ss
+SHA1-Digest: QAdi4FzzrUf+djkpjaND4jY+c3E=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/SpotPanelManage
+ r.class
+SHA1-Digest: PukGES0AwdNX+nWaQ0/nczzxaWg=
+
+Name: lib/log4j-1.2.14.jar
+SHA1-Digest: Btv3mvoY59Pkv76KChiGDybfjZE=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/controller/QuoteSear
+ chController$1.class
+SHA1-Digest: IwGBd8HM8Yp1t1NSynw4UXFDZE0=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/extention/command/ToggleNavigato
+ rAction.class
+SHA1-Digest: CT/uH+hPG1Iijhs3Mk8bRRrpMcw=
+
+Name: icons/shell_view.png
+SHA1-Digest: MY9P0tL7SIuOFVvsB2y9He9iOig=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/admin/controller/ShellContro
+ ller.class
+SHA1-Digest: fdmKY//fAGlAqq/D+SHE9bCd/CY=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/ClientOrderTabl
+ e.class
+SHA1-Digest: hMsqpdERPfyWYHdhvjZry97He7o=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/common/util/swt/SwtUtils.class
+SHA1-Digest: jjL1u9nMuYtd290pFKKMFUDTHxM=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/admin/view/QuoteSubscription
+ View$1.class
+SHA1-Digest: M86c7v0eWh14Bunwqjho8Ly2xfA=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/OrderHistoryVie
+ w$2.class
+SHA1-Digest: ROJMLsuF7eOcDaizEwLhno7Rrbg=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/admin/controller/QuoteSubscr
+ iptionController$1.class
+SHA1-Digest: +mbNXsi8snmoY08JzrKCFIAIT1Y=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/controller/QuoteHist
+ oryController$1.class
+SHA1-Digest: 5lOo4oyGjgdPzL5arGXDjCFqxbc=
+
+Name: icons/quote_graph_view.png
+SHA1-Digest: eSj8HSN//9lXLCpreX9Rm1IeSkg=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/SpotPanel$5.cla
+ ss
+SHA1-Digest: bt09FQdC66h5lJ2u3eBq8vDvg/o=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/common/util/swt/SwtUtils$ExtentC
+ ache.class
+SHA1-Digest: lu4LjeljFwRrJWTGO0AZuFouGTo=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/admin/model/ShellModel.class
+SHA1-Digest: +XOKnW7xx4ZzvsO0t7IBDRTIBPM=
+
+Name: plugin_customization.ini
+SHA1-Digest: 1vlzW6rX831NTiy0OPa/vsdmuLI=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/common/util/swt/widget/ColorPick
+ er$3.class
+SHA1-Digest: ev/9eTRzhA6g8mTe3yzr6DInksk=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/view/QuoteSearchView
+ $6.class
+SHA1-Digest: GT/PV2WfLeAj4XQRCnOAnzTNwXg=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/SpotPanelPrice$
+ 3.class
+SHA1-Digest: p+N88ujL1aSP9ptZWV3AbdqGGw8=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/model/OrderSearchMod
+ el.class
+SHA1-Digest: vXl318JCB4xgY+vXuBPud/q4zs4=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/view/QuoteHistoryVie
+ w$3.class
+SHA1-Digest: x4PapkaUTHbue2lLCgag/+7mU/M=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/view/QuoteGraphView$
+ 9.class
+SHA1-Digest: RXjEWTEHZ4SmBut0nhXWoj5cRfo=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/extention/view/QuoteSearchViewPa
+ rt.class
+SHA1-Digest: seJSMASKknp0ptj0ZCshm4+UCwg=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/extention/perspective/Perspectiv
+ e.class
+SHA1-Digest: YdDNQD/qjN7X2bZOJ9XSySEiMxY=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/SpotPanelManage
+ r$4.class
+SHA1-Digest: rLVSsaXDrt1MH4/st0W65y3r4BQ=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/view/QuoteSearchView
+ $3.class
+SHA1-Digest: 0TdbgvSVG0Hw1lKrV6yhXg83npc=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/model/MarketIndicato
+ rModel$RateCache.class
+SHA1-Digest: ti6PfyQcHncUYz32UhhBplALXnM=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/ApplicationContext.class
+SHA1-Digest: Qs59Hc2Y68h+iqYiImBATqkX3Yk=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/view/QuoteDetailDial
+ og$1.class
+SHA1-Digest: yKyEnAnWwkpbd5OlmsDyKCprQ3M=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/MarketIndicator
+ $7.class
+SHA1-Digest: LcXQJ+1pCm7N5q6MN26teZxb0Oc=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/admin/controller/QuoteSubscr
+ iptionController.class
+SHA1-Digest: WML9+/UkcnyR7YY3yxWZrzN7RDg=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/SpotBoardView$3
+ .class
+SHA1-Digest: a8Rg916a9Tep6rsvSOQyYwNxzwQ=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/res/image/shape_handle.png
+SHA1-Digest: bKhyRs5MKZHo9JpmXUJbQPtsdxw=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/SpotPanel$10.cl
+ ass
+SHA1-Digest: /A0VdUQ8/Wo676MvhXfG++D3F3A=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/OrderSearchView
+ $2.class
+SHA1-Digest: 4+IfqHUvb714t4t06+UF/PX/gdA=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/res/ResourceManager$ResourceRefe
+ rence.class
+SHA1-Digest: aP9a9ngkGbNr914ORcRPY9MF/4Y=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/admin/view/TextConsole$2.cla
+ ss
+SHA1-Digest: DntRswdM8CRpvXJReVRf5ujAGcE=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/common/util/swt/widget/ImageCanv
+ as$2.class
+SHA1-Digest: ED89dGrUIGXlYD/1FzeKqI4AXFg=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/SpotPanelPrice.
+ class
+SHA1-Digest: rP58ToojJ29ipSauJ8EcgqwN098=
+
+Name: icons/navigator.gif
+SHA1-Digest: tk3PXbLBhksw62evCatBsgpSyhY=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/MarketIndicator
+ .class
+SHA1-Digest: eBorI1hGQWxSqAfmLApBjL4NrNQ=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/extention/application/Applicatio
+ n.class
+SHA1-Digest: sM4nlx/HkdUo6Naub5OpxLIpG2w=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/view/QuoteGraphView$
+ 13.class
+SHA1-Digest: a8oLXb+ywgzHV1ZN5eWbxMKRogQ=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/MarketIndicator
+ $1.class
+SHA1-Digest: PiybDgWq6SXvTZydPnZrSM3VdvA=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/common/util/swt/shape/Shape.clas
+ s
+SHA1-Digest: Oo3KW4IfNaXQgVsznh0FbAM6u3s=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/admin/view/ShellView.class
+SHA1-Digest: 3iB5QZZ9gjD/6hugpy368Kma1kY=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/view/QuoteGraphView$
+ 1.class
+SHA1-Digest: cu8Bq5OIWhffn/L1soiyR6tIb4c=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/admin/view/QuoteSubscription
+ View$2.class
+SHA1-Digest: mGzxh9COa/OHIGFnR0fE/uWQkBk=
+
+Name: lib/slf4j-log4j12-1.5.8.jar
+SHA1-Digest: 4PQpmoUPCrvnjJj4xONvVZ0K4eg=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/SpotPanelManage
+ r$6.class
+SHA1-Digest: EZ0SASB58to07QjF28z7I4qORpA=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/controller/MarketInd
+ icatorController$RefreshTask$1.class
+SHA1-Digest: kd9MUaYQ+XNsHbKLZNogfGTAdqo=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/SpotBoardView$2
+ .class
+SHA1-Digest: cyZ0renQJkUVvPZUzbntu7e4nv4=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/common/util/swt/shape/impl/Abstr
+ actShape.class
+SHA1-Digest: j5oo5lenx/s1Os+bKIrHGFxBH3g=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/model/QuoteHistoryMo
+ del$RateCache.class
+SHA1-Digest: ExydfoELTyKwMDgp0a/ugneOX18=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/SpotPanel$2.cla
+ ss
+SHA1-Digest: XcDgjTdX07KnO4G6/Cx1z8ia1Lc=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/common/util/swt/widget/ColorPick
+ er$4.class
+SHA1-Digest: yPQZM0qT/c+cyK5kpw8XD88rEJk=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/SpotPanel$1.cla
+ ss
+SHA1-Digest: eVJN6cn4/udU1iDKk3I+e/VTacY=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/res/image/close_hover.png
+SHA1-Digest: sz+EAPadSMOONkWsa/rx84RMScE=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/extention/view/QuoteHistoryViewP
+ art.class
+SHA1-Digest: 8ePAy7OCVNJMKW+gnSx5CVtBNzQ=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/misc/view/DlgLogin$1.class
+SHA1-Digest: UvBFLYwhrB6Zu9oquOhN9Fui+W0=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/extention/view/OrderSearchViewPa
+ rt.class
+SHA1-Digest: bmi5EDml2aR9mcsM3uP+Wb82+5Y=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/common/util/swt/listener/DigitVe
+ rifyListener.class
+SHA1-Digest: RUkcRs8W7pEvINchtILA5XpnHd8=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/common/util/swt/widget/ImageButt
+ on$4.class
+SHA1-Digest: zoxiPwRuEimMuTVuu1LU52rMKj8=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/model/MarketIndicato
+ rModel.class
+SHA1-Digest: AhefJPe4QW0YkT3TDNOn2cDeCq0=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/controller/QuoteSear
+ chController.class
+SHA1-Digest: JUdFfFfL9M6JMJnYTSFHnJr4x1s=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/extention/view/QuoteSubscription
+ ViewPart.class
+SHA1-Digest: 1k9gmpKaop0GjAp7zEk6SKSXFIY=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/OrderHistoryVie
+ w$4.class
+SHA1-Digest: OWQJ3cSYOd3v/Ik6FaT0J/CITLw=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/extention/application/Applicatio
+ nWorkbenchWindowAdvisor.class
+SHA1-Digest: p331tFF9KC9qFrITN5baxrlhEcM=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/OrderSearchView
+ $3.class
+SHA1-Digest: qgUcLKQY95C4qB/5P+QhnoYt/qY=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/common/service/CurrencyPairServi
+ ce$1.class
+SHA1-Digest: YGbcWHRyX59ftONzvcJJZyYeS1M=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/controller/OrderSear
+ chController.class
+SHA1-Digest: fK0ef2Cws4okmvKSZsxIYLr9CI8=
+
+Name: icons/fix_rcp.png
+SHA1-Digest: 2k5iVt/7/zGtTlOc0nDONzJW0qs=
+
+Name: lib/javacsv-2.0.jar
+SHA1-Digest: +WxWMC2OTxpsq3zMyU/48XAXbAQ=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/misc/view/DlgLogin$8.class
+SHA1-Digest: zC3JZPwe9aI0vayGnB5UTu934Tc=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/res/image/spot_panel_price.png
+SHA1-Digest: z0lI9j18T2/Nw0wlMk5lACCuwwo=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/admin/controller/SessionCont
+ roller.class
+SHA1-Digest: goxYpQx4gfgV73kUtbQ1J6/gEyQ=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/common/util/swt/shape/impl/Recta
+ ngle2D.class
+SHA1-Digest: nBpXnTVtUTnao1iccsrJpk9NVh8=
+
+Name: icons/fix_rcp_32.png
+SHA1-Digest: PUOaWCPFTJLiPzjVCodnNJgnHrw=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/ClientOrderTabl
+ e$1.class
+SHA1-Digest: eDrJbURcG1RvyGTOWVEuAztgN4Q=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/SpotPanelManage
+ r$3.class
+SHA1-Digest: VPgR8C7bMPaIn8/XbqVvj+t7KmQ=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/controller/SpotPanel
+ ManagerController.class
+SHA1-Digest: v8YvjXWd6I8bd6wB0e2gfow8hug=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/res/image/market_indicator_item.
+ png
+SHA1-Digest: ZR0LjuzFsKhd3Rx6ybjbIZBxu6A=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/OrderSearchView
+ $4.class
+SHA1-Digest: pLSBBfiBqB1xEK3l9KzOWdP+IlY=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/view/QuoteGraphView$
+ 14.class
+SHA1-Digest: o3XbsF5VInFhJNbYyJG2gy5ScCk=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/misc/view/DlgLogin$5.class
+SHA1-Digest: ZwABbksJL/tzRIO5sNVfxz3r9IQ=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/controller/SpotBoard
+ Controller.class
+SHA1-Digest: ECx2DggFpERXRiRUxRT8Hcw1AJ0=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/common/glossary/QuoteStrokeType.
+ class
+SHA1-Digest: EN2c1f8heXtIBK/B/Ty6GMjWYgM=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/view/QuoteTable.clas
+ s
+SHA1-Digest: WjFAr35vUomCFQkoYQGxqz1hZd4=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/common/glossary/SpotRate.class
+SHA1-Digest: OlVbrMaVIH1KCNBPHH6C/apUDFs=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/view/QuoteSearchView
+ $4.class
+SHA1-Digest: qgef4/nN1K5I1GED937BuvpAZtg=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/MarketIndicator
+ $9.class
+SHA1-Digest: dzKNGUqMBNHl0JbUy6Otr30rNEc=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/common/util/swt/listener/AlphaVe
+ rifyListener.class
+SHA1-Digest: 9fZcS7H62L8PeUNoc1DnM9xrVEs=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/res/image/arrow_up_click.png
+SHA1-Digest: RMlwofcPKZz4Di/pXKCx3mNUCfQ=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/view/QuoteGraphView$
+ 11.class
+SHA1-Digest: QcSXHwbAsyyrI5Y7RjqHRRh5SP4=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/OrderSearchView
+ $7.class
+SHA1-Digest: XjDsJIp4z/iLZvMXWzjmm070AY4=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/extention/view/QuoteGraphViewPar
+ t.class
+SHA1-Digest: HRalLujfzAagMpKeqVNjHVKmABs=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/view/QuoteSearchView
+ $2.class
+SHA1-Digest: IgmGMzXKu96duY2O06D3a9acJ0w=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/common/util/swt/widget/ColorPick
+ er.class
+SHA1-Digest: dxNVW9raigsmC7T7fKh7QmUoiTw=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/common/util/swt/widget/ColorPick
+ er$1.class
+SHA1-Digest: odUAe/EikJwGJwGc6+rsNmAyqCc=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/misc/view/DlgLogin$4.class
+SHA1-Digest: 3WvJeKfO/b//dj7CA1i0ZlZuQfw=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/SpotPanel$4.cla
+ ss
+SHA1-Digest: X6Np3j5GBt2bOk02buAtFmPi7k0=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/misc/view/DlgLogin$6.class
+SHA1-Digest: EG+BQ3OlgUeBRosVoi9a9cSQtW0=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/SpotPanel$11.cl
+ ass
+SHA1-Digest: rzPCD2omL/muuy1j04TB/JgRAII=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/view/QuoteHistoryVie
+ w.class
+SHA1-Digest: ikWTZ5umebykuLXTuoo1ofKimX4=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/common/glossary/QuoteGraphType.c
+ lass
+SHA1-Digest: Fx1hi0nEHihNDaahoDrcxArGdSw=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/admin/view/TextConsole$3.cla
+ ss
+SHA1-Digest: Mt21P9RFPc3JbNpRuMu8IeM4Ixo=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/misc/view/DlgLogin$2.class
+SHA1-Digest: qO7JaiRifTAQe89jyTrSGhuQ8rw=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/model/QuoteSearchMod
+ el.class
+SHA1-Digest: c588YTy0EeRWAk/EE0g+QonRhhA=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/misc/view/DlgLogin$11.class
+SHA1-Digest: Ruaqvf5bQMjjFLciFXoaKh7vFIw=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/res/image/unlock.png
+SHA1-Digest: 59WGLfYKHjK38lU8y8WtHjsg6Yc=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/extention/application/Applicatio
+ n$1.class
+SHA1-Digest: GKu9LAPgs2ewkrFLATvzY8wAh90=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/view/QuoteDetailDial
+ og.class
+SHA1-Digest: kIvLzmltXG2BfC8qT/lG5kIaJjo=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/SpotPanelPrice$
+ 1.class
+SHA1-Digest: +lPRTOjXD0UPMuhLeIUziQKOQio=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/misc/controller/DlgLoginCont
+ roller.class
+SHA1-Digest: JbucyqHoB9CcjglVM7+L1dU7HkY=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/common/service/CurrencyPairServi
+ ce.class
+SHA1-Digest: Eoz6D3QiI2Zl4yEonOJHuh/WTxk=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/view/QuoteGraphView$
+ 6.class
+SHA1-Digest: bLpSQUTISU6wM2mbF1ZPrVEApNE=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/common/util/swt/widget/ImageButt
+ on.class
+SHA1-Digest: jVOxEN0Rt5FqkhUZR1PDOMPS+x8=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/view/QuoteSearchView
+ $7.class
+SHA1-Digest: ghFX06stAXillzzn2fCh59n1uc8=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/MarketIndicator
+ $4.class
+SHA1-Digest: AlBjHTEkanLQivAOlD+4dRLI9cc=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/model/SpotBoardModel
+ .class
+SHA1-Digest: JqiCfsVrD5RYX4m0xUhIGjYq4zk=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/common/util/swt/shape/impl/Ellip
+ se2D.class
+SHA1-Digest: C560u4dlaiLXowjFqSt3JKNgaoQ=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/SpotPanelPrice$
+ 2.class
+SHA1-Digest: 36DZK1tCdoJp9i6SG+qJy4nwrtY=
+
+Name: lib/emcom-common.jar
+SHA1-Digest: 4H8D75q1e3OFMFU7qDbt4Me3ETc=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/res/image/arrow_up.png
+SHA1-Digest: TdRbQXP03aN9rTmTUZOUmHjZYV0=
+
+Name: icons/default_view.gif
+SHA1-Digest: 9v0wm5dXnLLrhy2VRPpOP/DhvOY=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/controller/QuoteGrap
+ hController$1.class
+SHA1-Digest: eFEO0UyiC0TGfGEzQk+n5lZ39rw=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/SpotPanelManage
+ r$1.class
+SHA1-Digest: bQXGLSh6qVImHew82pRcqQh64sM=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/view/QuoteGraphView$
+ 3.class
+SHA1-Digest: kCokerhHV44eFx/ufuOvsmQJHqA=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/view/QuoteTable$3.cl
+ ass
+SHA1-Digest: jU5UvFrKluzYuy2iPdrHVCvXnMU=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/SpotPanelManage
+ r$5.class
+SHA1-Digest: LQchsZj+XkwZWlgyZeb+LvmyjFY=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/common/glossary/Direction.class
+SHA1-Digest: InTBrzkMLaw/Y2DHecePkQBnp3A=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/extention/application/Applicatio
+ nWorkbenchAdvisor.class
+SHA1-Digest: +hX3OA6VlCH1lEkUUExnT4Mn+ec=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/controller/OrderHist
+ oryController$1.class
+SHA1-Digest: o+/jSQOcjWPNC0hBJP+zWRLe6b4=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/misc/model/NagigatorModel$No
+ de.class
+SHA1-Digest: R0YhBXhmAoI+ubsFE1nokWxPA1A=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/admin/view/TextConsole.class
+SHA1-Digest: QDpYN2jwBErcyfg9zyOZZiswNzA=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/view/QuoteTable$1.cl
+ ass
+SHA1-Digest: we6oYpakqkRwAHbNmuP9gyvKfsI=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/res/image/arrow_up_hover.png
+SHA1-Digest: BNg6TWO1tyb7vKA6tTsEeJxOoUc=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/controller/OrderHist
+ oryController.class
+SHA1-Digest: HnMveqK5zvOKQZg0rKfMHIMnUSU=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/view/QuoteHistoryVie
+ w$4.class
+SHA1-Digest: 4tg7D8fEwH/7qnrbBGc7I9nFG1M=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/common/util/swt/widget/ImageButt
+ on$1.class
+SHA1-Digest: OnUazeLtatCCcl8oVMiVfC2eIx4=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/SpotBoardView.c
+ lass
+SHA1-Digest: qj5Z9FZff479ehx5MiZ1OOg3V0c=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/view/QuoteGraphView$
+ 4.class
+SHA1-Digest: 9mBQr1nSLJHjBzzx3Tq1QI7jMI4=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/OrderHistoryVie
+ w$3.class
+SHA1-Digest: +8e1NHgkFrI+Bl9kACavqvM2djg=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/model/OrderHistoryMo
+ del$OrderCache.class
+SHA1-Digest: O0f/s2CSBt9NwfmRFWzF8jH5zmE=
+
+Name: lib/commons-lang-2.4.jar
+SHA1-Digest: o526+Lwro95Mgu9uV3SD7JHz4Vk=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/view/QuoteGraphView$
+ 2.class
+SHA1-Digest: gPIeRxN725zsIRm05M+TU6d9i+A=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/SpotPanel$3.cla
+ ss
+SHA1-Digest: 8s1J8+2cRpMmzabfL1CSjreaZ1k=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/controller/QuoteHist
+ oryController.class
+SHA1-Digest: 7cJ7WrXao80srf8Vitc+bDbl2n0=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/res/image/arrow_down_click.png
+SHA1-Digest: BlHFHP/7JWkk6FhFzmrGR3hzZsk=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/view/QuoteHistoryVie
+ w$2.class
+SHA1-Digest: wXDkobVjWafa2h7xIhg4suh9cSM=
+
+Name: plugin.xml
+SHA1-Digest: AQYaFICBuqXa4uWDextNa8zGLHA=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/view/QuoteGraphView$
+ 7.class
+SHA1-Digest: XWnxSVFiEsaQehbtF8NKzvrTCJ4=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/model/QuoteGraphMode
+ l.class
+SHA1-Digest: nLoF1tKicczn02OuGN+Gcx+dIH0=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/common/rcp/View.class
+SHA1-Digest: ueCQZUNZV0za8tp00zQLlI9kIOY=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/SpotPanel$8.cla
+ ss
+SHA1-Digest: KM1/r41E0tpqXzaQq27+qTDKGlc=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/SpotPanel$6.cla
+ ss
+SHA1-Digest: d5N82SyPCPaxPLjeSj4gNYNGkRU=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/ClientOrderDeta
+ ilDialog$1.class
+SHA1-Digest: 6qgdOxUw4BfZ5JRutaR+/IxJqUY=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/admin/view/SessionView$1.cla
+ ss
+SHA1-Digest: ItQNLe3nuRYsUauyx+JKce8vNA8=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/res/image/navigator_leaf.png
+SHA1-Digest: vDv/1/vVY2IZurcRpthbqEuSGGk=
+
+Name: icons/fix_rcp_16.png
+SHA1-Digest: 2omvpbWVowWesReCo8noCetCdrs=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/res/image/arrow_down.png
+SHA1-Digest: e0JBoNrkmaWFwDe0CCK9MRmQwqU=
+
+Name: lib/emcom-fix.jar
+SHA1-Digest: l+jQckwAREzBxXvZr15Eiaxv4+w=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/common/glossary/MouseStatus.clas
+ s
+SHA1-Digest: ANqSOStNQDlWtxkUGaqk7+3EIN8=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/misc/view/DlgLogin$9.class
+SHA1-Digest: Fw63VOT13NLwoCQFlg86t5JD8lw=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/misc/view/NavigatorView$1.cl
+ ass
+SHA1-Digest: /cbNVd6mt2yZDEwjmcYY9LOV2oY=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/res/image/cursor_arrow.png
+SHA1-Digest: Jg1OL60/GNtN/W4eDQRrzEd8WWM=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/view/QuoteSearchView
+ $5.class
+SHA1-Digest: CcLDtGURhckaTL91S4cEUApixHQ=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/misc/controller/NavigatorCon
+ troller.class
+SHA1-Digest: mHhd+SKiXVHLaDgY8iUheuwp0Eg=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/res/image/close.png
+SHA1-Digest: IO4eQfsnUKXK2rrR6Uce+/duFJg=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/extention/menu/readme.txt
+SHA1-Digest: 912CjYGCt4jsrXRDJ4sH7T0t3Pc=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/misc/model/NagigatorModel$Sh
+ owViewAction.class
+SHA1-Digest: iNaLnT7eBJ8dWRNwD8S92rUzICY=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/OrderSearchView
+ $6.class
+SHA1-Digest: VlQCkAmuPOWx6/hS6wYo6abQUeM=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/SpotPanelPrice$
+ 5.class
+SHA1-Digest: lUPtodcXQpwFlW+QyxhDyUuLC6k=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/admin/view/SessionView$2.cla
+ ss
+SHA1-Digest: ueAk3nSwD6tv8cRp1DteTpC6nFE=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/OrderSearchView
+ $1.class
+SHA1-Digest: aJ6zD29jX/daG20L4wfAPD5StQc=
+
+Name: icons/csv.png
+SHA1-Digest: N3URrbTKs33fMYOmINP44R5c02o=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/SpotPanel.class
+SHA1-Digest: gXOvxOx/Hz8lJBkbmhIXuVsqTM4=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/SpotPanel$7.cla
+ ss
+SHA1-Digest: sLHfkVkgVEP3QOy21vZGaZoqBec=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/view/QuoteGraphView$
+ 10.class
+SHA1-Digest: xExhE1I8wjeyAtyRC60dvLSAL54=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/misc/view/DlgLogin$3.class
+SHA1-Digest: toDxA3vIvh4oEjjF+lHuD+vtnMM=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/view/QuoteGraphView$
+ 12.class
+SHA1-Digest: VsiHmJJoT1ZZM+1kfYyWi4WJb7c=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/OrderSearchView
+ .class
+SHA1-Digest: NiTpuRvnoCK4aNLRkv6m/2+AKxI=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/extention/view/NavigatorViewPart
+ .class
+SHA1-Digest: DMkJX/ouozBcVXeGC1vZkTwipEM=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/common/util/swt/widget/ImageButt
+ on$2.class
+SHA1-Digest: y/UEtnqQH1QkergxkHNfmU8VcZE=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/view/QuoteGraphView.
+ class
+SHA1-Digest: thg5c15XHLTRbkx3mURdq4b8vnc=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/MarketIndicator
+ $8.class
+SHA1-Digest: s+V1XuEn3FKBKKht7NGS+dd76jQ=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/extention/application/Activator.
+ class
+SHA1-Digest: W7eeV8jB6Utvaz6hL9hBjWkFlv8=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/res/image/cursor_cross.png
+SHA1-Digest: bF4PfbvdDgSh0bThqYGM9TOBR9Q=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/common/util/swt/shape/impl/Line2
+ D.class
+SHA1-Digest: +Y8XWcD/T/xeYnHVO15HueMXvBc=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/controller/SpotPanel
+ ManagerController$RefreshTask$1.class
+SHA1-Digest: 66rL8BSkVLLOrc1YACrGR7YvmJg=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/controller/MarketInd
+ icatorController$RefreshTask.class
+SHA1-Digest: nae36i/8Z09prs75tkujLvU7gbs=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/OrderSearchView
+ $5.class
+SHA1-Digest: si5uj+AxDXacrqrgJtkn+D+rUY8=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/controller/MarketInd
+ icatorController.class
+SHA1-Digest: EZCnl6aJ5dOj2f1Hj5eo9tTtWwo=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/extention/view/ShellViewPart.cla
+ ss
+SHA1-Digest: GNlb/FWV+YLeSubm9MtbEtlQPok=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/res/image/market_indicator_title
+ .png
+SHA1-Digest: IzD0GtSuqukHXSCc923P4Cm+T38=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/ClientOrderDeta
+ ilDialog.class
+SHA1-Digest: qLsHEmxl80EVc8pNbBlSacYy+Pw=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/misc/view/NavigatorView.clas
+ s
+SHA1-Digest: 4inurflKHJf5MyuVxEeVSMiAAeM=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/extention/command/AllAction.clas
+ s
+SHA1-Digest: Nzi/+FanqggkffrOc3YpoPIrFLo=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/res/ResourceManager.class
+SHA1-Digest: 8DKv8HPJfG6rffih2OJSdXdoQNo=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: SwPvGXzoqhbu6llulpm8WpBxiUo=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/extention/view/OrderHistoryViewP
+ art.class
+SHA1-Digest: sEG/nXwu3G59xp6FQjwB1iSrESE=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/view/MarketIndicator
+ $6.class
+SHA1-Digest: VQ2r5IOv/BR0eRTospUdrGIHirw=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/pricing/model/QuoteHistoryMo
+ del.class
+SHA1-Digest: LiU+N6CyGMvFROZIi/fIwQXlC14=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/res/image/lock.png
+SHA1-Digest: p5ZZiSy1hCbxHozzJNSzVDJIiCQ=
+
+Name: jp/emcom/adv/whitelabel/fix/rcp/biz/trading/controller/OrderSear
+ chController$1.class
+SHA1-Digest: evhAS9BicCD4An7D1vRMkHAIbAo=
+

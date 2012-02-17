@@ -11,7 +11,7 @@ SELECT * FROM JHF_ALIVE_ORDER ORD
        ) 
    AND (   (    ORD.EXECUTION_TYPE = 0  
             AND (   (ORD.SIDE = -1 AND ORD.ORDER_PRICE <= '88.800') 
-                 OR (ORD.SIDE = 1 AND ORD.ORDER_PRICE >= '87.365') 
+                 OR (ORD.SIDE = 1 AND ORD.ORDER_PRICE >= '19.965') 
                 ) 
            ) 
         OR (    ORD.EXECUTION_TYPE = 1 

@@ -1,4 +1,34 @@
 
+
+/**
+??????????????????????+??????+?????
+
+
+??????????????????????swap??????T+1????
+
+?????????????????????swap??????T+2?????
+? ??????????????????????
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 SELECT * FROM JHF_APPLICATION_DATE
 SELECT * FROM JHF_SYSTEM_CONFIGURATION
 
@@ -133,8 +163,8 @@ WHERE  OD.CUSTOMER_ID = '00003242' AND OD.ORDER_STATUS IN (0,1,7)
 -- ¼ÆËã½¨ÓñÆÀ¼ÛËðÒæ  £¨ #################>>>>> ½ö½öÓÃÓÚ JPY ½áÎ²µÄ»õ±Ò¶Ô £©
 -- ÐèÒªÐÞ¸Ä  CUSTOMER_ID  £¬NOW_ASK £¬NOW_BID  £¬CURRENCY_PAIR
 
---ÙI½¨£º½¨Óñ½ðî~¡Á½¨‚Ž£¨¼s¶¨»ãÂÊ£©¡Á(-1)£«½¨Óñ½ðî~¡ÁÔuý»ãÂÊµÄBid
---‰Ó½¨£º½¨Óñ½ðî~¡Á½¨‚Ž£¨¼s¶¨»ãÂÊ£©£«½¨Óñ½ðî~¡ÁÔuý»ãÂÊµÄAsk¡Á(-1)
+--ÙI½¨£º½¨Óñ½ðî~¡Á½¨‚Ž£¨¼s¶¨»ãÂÊ£©¡Á(-1)£«½¨Óñ½ðî~¡ÁÔu?ý»ãÂÊµÄBid
+--‰Ó½¨£º½¨Óñ½ðî~¡Á½¨‚Ž£¨¼s¶¨»ãÂÊ£©£«½¨Óñ½ðî~¡ÁÔu?ý»ãÂÊµÄAsk¡Á(-1)
 
 SELECT SUM(PVS.PV) FROM (
 SELECT  CNT.SIDE,CNT.EXECUTION_PRICE,CNT.AMOUNT_NO_SETTLED ,
@@ -198,13 +228,13 @@ SELECT SUM(CASHFLOW_AMOUNT) FROM JHF_UNREALIZED_CASHFLOW WHERE CUSTOMER_ID = '00
  AND ACTIVE_FLAG = 1 ;
 
 
---- Èë³ö½ðÓè¶¨î~      ÏÖ½ðÁ÷ÀàÐÍÎªÈ¡Òý“pÒæ9§9ÊÖÊýÁÏ9§9swap¡¢¿±¶¨ÈÕÆÚÎªT+1µÄÏÖ½ðÁ÷
+--- Èë³ö½ðÓè¶¨î~      ÏÖ½ðÁ÷ÀàÐÍÎªÈ¡Òý“pÒæ?9§9ÊÖÊýÁÏ?9§9swap¡¢¿±¶¨ÈÕÆÚÎªT+1µÄÏÖ½ðÁ÷
 
 SELECT SUM(CASHFLOW_AMOUNT) FROM JHF_UNREALIZED_CASHFLOW WHERE CUSTOMER_ID = '00003242' 
  AND CASHFLOW_TYPE IN (3,4,5,6,9,10,12) 
  AND ACTIVE_FLAG = 1 AND VALUE_DATE = '20100119';
 
---- ¼È›Qœg“pÒæ       ÏÖ½ðÁ÷ÀàÐÍÎªÈ¡Òý“pÒæ9§9ÊÖÊýÁÏ9§9swap¡¢¿±¶¨ÈÕÆÚÎªT+2µÄÏÖ½ðÁ÷
+--- ¼È›Qœg“pÒæ       ÏÖ½ðÁ÷ÀàÐÍÎªÈ¡Òý“pÒæ?9§9ÊÖÊýÁÏ?9§9swap¡¢¿±¶¨ÈÕÆÚÎªT+2µÄÏÖ½ðÁ÷
 
 SELECT SUM(CASHFLOW_AMOUNT) FROM JHF_UNREALIZED_CASHFLOW WHERE CUSTOMER_ID = '00003242' 
  AND CASHFLOW_TYPE IN (3,4,5,6,9,10,12) 
