@@ -3,7 +3,7 @@
 wangyan
 wangyan520.
 bestwiz
-sys2oo9emcom
+sysemcom2oo9
 
 
 
@@ -14,7 +14,7 @@ sys2oo9emcom
 1) Panta front http://fxtest.bestwiz.cn/jhf_panta_web/    (172.18.3.101)
 
 
-
+UPDATE JHF_CUSTOMER_STATUS  SET LOGIN_PASSWORD='593c9b4a9390551d53e5cacf28ebd638' WHERE CUSTOMER_ID = '00000120';
 
 http://pantaweb.adv.emcom.jp/login.do?method=login&loginId=I1100008&md5pwd=e10adc3949ba59abbe56e057f20f883e
 

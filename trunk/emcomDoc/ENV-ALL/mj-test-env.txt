@@ -1,32 +1,15 @@
 	
 
-Iso00025,00023303,3
-Iso00026,00023302,2
-Cdo00001,00023201,1
-Clu00002,00017520,0
+
+WL  FRONT  
 
 
+
+Cwl00201    11111111    1bbd886460827015e5d605ed44252251
 
 
 
 /usr/local/mysql/bin/mysql -uroot -psys2oo9emcom
-
-
-
-
-■MJ测试:
-http://web.mj.net/jhf
-Cba00001/111111111111/00000473
-http://admin.mj.net/
-Admin/11111111
-手动汇率:
-
-
-
-╭∩╮（︶︿︶）╭∩╮鄙视你！
-
-
-
 
 
 
