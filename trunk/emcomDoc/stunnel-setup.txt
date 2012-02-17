@@ -1,0 +1,7 @@
+ tar zxvf stunnel-4.33.tar.gz 
+
+
+./configure  --with-ssl && make && make install 
+
+
+

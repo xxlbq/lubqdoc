@@ -1,0 +1,59 @@
+
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+(server)
+
+# QuickFIX
+[default]
+ResetOnLogon=Y
+FileStorePath=/jhfapp/app/logs/server/data/
+FileLogPath=/jhfapp/app/logs/server/quickfix/
+ConnectionType=acceptor
+SocketAcceptAddress=10.18.21.193
+StartTime=00:00:00
+EndTime=00:00:00
+StartDay=Sunday
+EndDay=Saturday
+BeginString=FIX.4.4
+FileIncludeTimeStampForMessages=Y
+#DataDictionary=./conf/server/EMCOM_FIX44.xml
+
+
+
+[session]
+SocketAcceptPort=9870
+SenderCompID=GJ98000201UAT
+TargetCompID=EMCOMPRICEUAT
+# Note: not for quickfixj prototype attributes, use for create fix server session
+SessionClass=jp.emcom.adv.fx.gws.fix.app.impl.WLFixServerSessionPricing
+RateExecutorPoolSize=1
+
+[session]
+SocketAcceptPort=9871
+SenderCompID=GJ98000201UAT
+TargetCompID=EMCOMTRADEUAT
+# Note: not for quickfixj prototype attributes, use for create fix server session
+SessionClass=jp.emcom.adv.fx.gws.fix.app.impl.WLFixServerSessionTrading
+TokenBucketSize=100
+TokenBucketFillingCount=50
+TokenBucketFillingRate=1000
+OrderRequestExecutorPoolSize=5
+OrderResponseExecutorPoolSize=5
+
+
+
+[session]
+SocketAcceptPort=9872
+SenderCompID=GJ98000201UAT
+TargetCompID=EMCOMPFETCHUAT
+# Note: not for quickfixj prototype attributes, use for create fix server session
+SessionClass=jp.emcom.adv.fx.gws.fix.app.impl.WLFixServerSessionFetch
+FetchExecutorPoolSize=1
+
+# Business
+clientId=DMMFX
+adminTopic=topic/AdminTopic
+wlSpotRateTopic=topic/WLSpotRateTopic
+orderRequestQueue=queue/WLOrderResquestQueueDMMFX
+orderResponseTopic=topic/WLOrderResponseTopicDMMFX

@@ -1,0 +1,87 @@
+
+Client   (gw)
+
+#-------------------------------------------------------------------------------
+# Used by GateWay(GJ)
+#-------------------------------------------------------------------------------
+
+# CounterPartyID Define the name of Deutsch Bank
+COUNTERPARTY_ID=GJ
+
+# Trade Receiver Count Define the number of FX traderequest Receivers
+TRADE_COUNT=20
+
+# CurrencyPair Code Convertion
+#  This defined value is covertion rule of currency pair code.
+
+CP_PAIR=CAD/JPY,CHF/JPY,AUD/JPY,EUR/JPY,USD/JPY,GBP/JPY,NZD/JPY,ZAR/JPY,AUD/USD,NZD/USD,EUR/USD,GBP/USD,USD/CAD
+FX_PAIR=CAD/JPY,CHF/JPY,AUD/JPY,EUR/JPY,USD/JPY,GBP/JPY,NZD/JPY,ZAR/JPY,AUD/USD,NZD/USD,EUR/USD,GBP/USD,USD/CAD
+
+#CP_PAIR=EUR/JPY,USD/JPY,GBP/JPY,EUR/USD,GBP/USD,ZAR/JPY,CAD/JPY
+#FX_PAIR=EUR/JPY,USD/JPY,GBP/JPY,EUR/USD,GBP/USD,ZAR/JPY,CAD/JPY
+
+FX_PAIRAMOUNT=1000000,1000000,1000000,1000000,1000000,1000000,1000000,1000000,1000000,1000000,1000000,1000000,1000000
+#FX_PAIRAMOUNT=1000000,1000000,1000000,1000000,1000000,1000000,1000000
+
+#CP_PAIR=USD/JPY
+#FX_PAIR=USD/JPY
+#FX_PAIRAMOUNT=1000000
+
+#BugRate check properties file
+BugRatePropertiesFile=GJbugrateConfig.properties
+
+StreamSenderCompID=EMCOMPRICEUAT
+TradeSenderCompID=EMCOMTRADEUAT
+
+CustomerId=98000201
+Account=98000201
+Slippage=0
+
+
+[DEFAULT]
+ResetOnLogon=Y
+ConnectionType=initiator
+ReconnectInterval=30
+BeginString=FIX.4.4
+
+TargetCompID=GJ98000201UAT
+
+StartTime=17:04:00 EST/EDT
+EndTime=17:01:00 EST/EDT
+CheckLatency=N
+LogonTimeout=60
+HeartBtInt=30
+FileLogPath=/jhfapp/app/logs/quickfix
+FileStorePath=/jhfapp/app/logs/quickfix
+
+[SESSION]
+SenderCompID=EMCOMPRICEUAT
+SocketConnectPort=9870
+SocketConnectHost=10.18.21.193
+
+BeginString=FIX.4.4
+StartTime=00:00:00
+EndTime=00:00:00
+StartDay=Sunday
+EndDay=Saturday
+HeartBtInt=60
+
+[SESSION]
+
+SenderCompID=EMCOMTRADEUAT
+SocketConnectPort=9871
+SocketConnectHost=10.18.21.193
+
+BeginString=FIX.4.4
+StartTime=00:00:00
+EndTime=00:00:00
+StartDay=Sunday
+EndDay=Saturday
+HeartBtInt=40
+
+
+
+
+
+
+

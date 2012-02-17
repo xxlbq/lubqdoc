@@ -1,3 +1,7 @@
+导表
+ /usr/local/mysql/bin/mysqldump -uwangyan  -pemcomwangyan  MAIN JHF_APPLICATION_DATE >date.sql
+
+导出：
 mysqldump MAIN JHF_SYS_MAIL_ACTION  --where "MAIL_ACTION_ID IN ('LOSSCUT9001','LOSSCUT9002')"  > a.sql
 
 /usr/local/mysql/bin/mysql -uroot -pBestwiz
@@ -6,3 +10,11 @@ mysqldump MAIN JHF_SYS_MAIL_ACTION  --where "MAIL_ACTION_ID IN ('LOSSCUT9001','L
 
 
 /usr/local/mysql/bin/mysql -u wangyan  -pemcomwangyan -A MAIN
+
+
+
+
+
+导入：
+
+/usr/local/mysql/bin/mysql MAIN  -uwangxuan -pwangxemcom < DATE.SQL  
