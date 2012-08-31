@@ -1,0 +1,7 @@
+find / -size +100M -print
+
+
+3)比如要查找磁盘中大于3M的文件：
+find . -size +3000k -exec ls -ld {} ; 
+
+

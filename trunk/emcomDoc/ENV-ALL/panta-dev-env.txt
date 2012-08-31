@@ -1,8 +1,19 @@
+
+
+
+ /usr/local/mysql/bin/mysql  -uroot -psys2oo9emcom
+
+
+
+
+
+
+
 o(╯□╰)o9156491000
 
 ajax   (2010-05-22 12:25:55) 劉雷刚: http://10.15.2.200:18080/login-window.jsp
 
-
+<TEXTFORMAT LEADING="2"><P ALIGN="LEFT"><FONT FACE="Meiryo,ヒラギノ角ゴ ProN W6,MS PGothic" SIZE="10" COLOR="#FFFFFF" LETTERSPACING="0" KERNING="0">NZD/JPY</FONT></P></TEXTFORMAT>
 
 http://10.15.2.200:8080/
 I3900001/111111111111/00000101
@@ -15,12 +26,19 @@ I3700001
   
 
 
+20002201 	      Ixi00020         1     c4ca4238a0b923820dcc509a6f75849b
+
+UPDATE JHF_CUSTOMER_STATUS SET LOGIN_PASSWORD='c4ca4238a0b923820dcc509a6f75849b' WHERE CUSTOMER_ID='20002201'
+
+
+
+
 
 
 
 BAK
 
-00000120        Ito00003    111111111111
+00000120        Ito00003    1                  c4ca4238a0b923820dcc509a6f75849b
 
 
 Panta Dev Front 可以正常使用的状态

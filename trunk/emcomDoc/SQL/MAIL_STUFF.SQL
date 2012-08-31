@@ -1,5 +1,22 @@
 
 
+// ============>  if couldn't send mail . pay attention to 
+
+
+SELECT * FROM JHF_APP_PROPERTY ;
+UPDATE  JHF_APP_PROPERTY SET PROPERTY_VALUE= 'adv.emcom.jp' WHERE PROPERTY_KEY  ='domainAddresses'
+
+UPDATE  JHF_APP_PROPERTY SET PROPERTY_VALUE= 'dmm-monitor@mail2.bestwiz.cn' WHERE PROPERTY_KEY  ='manageMailAddress'  ;
+UPDATE  JHF_APP_PROPERTY SET PROPERTY_VALUE= 'dmm-monitor@mail2.bestwiz.cn' WHERE PROPERTY_KEY  ='CsMailAddress'  or PROPERTY_KEY  ='upFileToMailAddress';
+
+
+
+
+ //<====================
+
+
+
+
 
 SELECT * FROM JHF_MAIL_ACTION WHERE MAIL_ACTION_ID IN ('5500','')
 

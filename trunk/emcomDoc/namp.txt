@@ -1,0 +1,22 @@
+[root@dmm-test-mq-gw ~]# nmap -sP -PI -PT -oN ipandmaclist.txt 10.18.28.*
+
+[root@dmm-test-mq-gw ~]# tail -f ipandmaclist.txt -n20
+Host 10.18.28.67 appears to be up.
+Host 10.18.28.68 appears to be up.
+Host 10.18.28.69 appears to be up.
+Host 10.18.28.70 appears to be up.
+Host 10.18.28.71 appears to be up.
+Host 10.18.28.74 appears to be up.
+Host 10.18.28.77 appears to be up.
+Host 10.18.28.81 appears to be up.
+Host 10.18.28.84 appears to be up.
+Host 10.18.28.86 appears to be up.
+Host 10.18.28.89 appears to be up.
+Host 10.18.28.91 appears to be up.
+Host 10.18.28.94 appears to be up.
+Host 10.18.28.95 appears to be up.
+Host 10.18.28.96 appears to be up.
+Host 10.18.28.103 appears to be up.
+Host 10.18.28.116 appears to be up.
+Host 10.18.28.118 appears to be up.
+Host 10.18.28.120 appears to be up.

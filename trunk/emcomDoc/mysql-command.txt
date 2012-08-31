@@ -81,3 +81,16 @@ netstat -ant|grep 3306|grep '10.15.4.117'|wc -l
 
 
 netstat -ant|grep 3306|grep '10.15.2.202'|wc -l  
+
+
+
+
+
+
+
+
+
+
+  932  /usr/local/mysql/bin/mysql -A MAIN -uroot -pemcomsys2o11 -h10.18.20.152
+  933  /usr/local/mysql/bin/mysql -A MAIN -uroot -pemcomsys2o11 
+  934  date 

@@ -4,10 +4,12 @@ http://10.15.2.144:8080/margincut/MarginAccountServlet?REQ=00007639,00007661
 
 
 
-jconsole service:jmx:rmi:///jndi/rmi://10.15.2.202:6357/MarginService-1
+jconsole service:jmx:rmi:///jndi/rmi://10.18.20.22:6357/MarginService-
 jconsole service:jmx:rmi:///jndi/rmi://10.4.7.152:6357/MarginService-1
 jconsole service:jmx:rmi:///jndi/rmi://10.4.7.152:6357/MarginService-101
 
 jconsole service:jmx:rmi:///jndi/rmi://10.4.7.159:6357/MarginService-0
 
 10.4.9.117
+
+Margincut2

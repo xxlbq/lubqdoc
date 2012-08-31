@@ -1,0 +1,237 @@
+(2012-08-15 15:48:49) 王慧宁: 
+
+主调度器：master
+IP：192.168.1.104 (eth0)
+    192.168.1.107 (eth1) 心跳线
+备用调度器：standby
+IP：192.168.1.108 (eth0)
+    192.168.1.109 (eth1) 心跳线
+真实服务器设定：Real Server
+IP：192.168.1.103 (eth0)
+IP：192.168.1.105 (eth0)
+
+vip :192.168.1.110
+
+
+=======第一部分监控load banlancer 节点 还有 资源接管相关的配置=======
+一、load balancer 两台分别执行
+yum install heartbeat*
+yum install heartbeat*
+
+二、real server 两台分别执行
+yum -y install httpd
+
+三、load balancer 两台分别执行
+cp -a /usr/share/doc/heartbeat-2.1.3/ha.cf /etc/ha.d/
+cp -a /usr/share/doc/heartbeat-2.1.3/haresources /etc/ha.d/
+cp -a /usr/share/doc/heartbeat-2.1.3/authkeys /etc/ha.d/
+cp -a /usr/share/doc/heartbeat-ldirectord-2.1.3/ldirectord.cf /etc/ha.d/
+
+
+四、load banlancer 两台分别执行
+/etc/hosts 分别追加
+192.168.1.104   master
+192.168.1.108   standby
+
+五.load banlancer 两台 ha.cf
+
+[root@master ~]# cat /etc/ha.d/ha.cf 
+debugfile /var/log/ha-debug
+logfile /var/log/ha-log
+keepalive 1000ms
+deadtime 30
+warntime 5
+initdead 120
+udpport 694
+ucast eth1 192.168.1.109
+auto_failback off
+node    master
+node    standby
+ping 192.168.1.1
+respawn hacluster /usr/lib/heartbeat/ipfail
+apiauth ipfail gid=haclient uid=hacluster
+
+
+
+[root@standby ~]# cat /etc/ha.d/ha.cf 
+debugfile /var/log/ha-debug
+logfile /var/log/ha-log
+keepalive 1000ms
+deadtime 30
+warntime 5
+initdead 120
+udpport 694
+ucast eth1 192.168.1.107
+auto_failback off
+node    master
+node    standby
+ping 192.168.1.1
+respawn hacluster /usr/lib/heartbeat/ipfail
+apiauth ipfail gid=haclient uid=hacluster
+
+
+六、master standby 分别追加
+cat /etc/ha.d/haresources
+master IPaddr::192.168.1.110/24/eth0:1 lvsDR ldirectord
+
+vi /etc/ha.d/authkeys
+auth 1
+1 crc
+
+chmod 600 /etc/ha.d/authkeys
+
+
+
+
+================第二部分ldirectord 配置lvs 和realserver 相关的配置===================
+一、load banlancer 两台分别执行
+[root@standby ha.d]# cat /etc/ha.d/ldirectord.cf 
+
+
+
+#Global Directives
+checktimeout=5
+checkinterval=10
+#fallback=127.0.0.1:80
+autoreload=yes
+logfile="/var/log/ldirectord.log"
+#emailalert="wangxl@adv.emcom.jp"
+#emailalertfreq=3600
+#emailalertstatus=all
+quiescent=no
+virtual=192.168.1.110:80
+        real=192.168.1.103:80 gate
+        real=192.168.1.105:80 gate
+        service=http
+        scheduler=rr
+        protocol=tcp
+        checkport=80
+        checktype=connect
+
+
+
+
+
+
+
+
+
+cat /etc/init.d/lvsDR
+
+
+#!/bin/sh
+#Description start lvs,disable arp response
+
+VIP1=192.168.1.110
+
+RIP1=192.168.1.103
+RIP2=192.168.1.105
+
+
+
+
+GW=192.168.1.1
+
+case "$1" in
+
+        start)
+            echo "lvs start"
+            # set the Virtual IP Address
+            echo "1" >/proc/sys/net/ipv4/ip_forward
+            #Clear IPVS table
+            /sbin/ipvsadm -C
+            #set LVS
+            /sbin/ipvsadm -A -t $VIP1:80 -s rr
+            /sbin/ipvsadm -a -t $VIP1:80 -r $RIP1:80 -g
+            /sbin/ipvsadm -a -t $VIP1:80 -r $RIP2:80 -g
+            /sbin/ipvsadm -Ln
+            /bin/touch /var/lock/subsys/lvs
+
+            # set Arp
+        #    /sbin/arping -I eth0 -c 5 -s $VIP $GW >/dev/null 2>&1 
+
+            ;;
+        stop)
+            /sbin/ipvsadm -C
+            /sbin/ipvsadm -Z
+            /bin/rm -rf /var/lock/subsys/lvs
+        #    /sbin/arping -I eth0 -c 5 -s $VIP $GW
+            echo  "ipvsadm STOPPED"
+            ;;
+        status)
+            if [ ! -e /var/lock/subsys/lvs ];then
+                echo "ipvsadm is STOPPED"
+                exit 1
+            else
+                /sbin/ipvsadm -ln
+                echo "..........ipvsadm is OK"
+            fi
+            ;;
+        *)
+
+            echo "Usage: $0{start|stop|status}"
+            exit 1
+esac
+exit 0
+
+
+chmod 755 /etc/init.d/lvsDR 
+
+
+
+
+
+
+二、realserver 两台分别执行
+
+vi ipvs_client.sh
+#!/bin/sh
+VIP=192.168.1.110
+/sbin/ifconfig dummy0 up 
+/sbin/ifconfig dummy0 $VIP netmask 255.255.255.255 broadcast $VIP up
+/sbin/route add -host $VIP dev dummy0
+echo "1" >/proc/sys/net/ipv4/conf/dummy0/arp_ignore
+echo "2" >/proc/sys/net/ipv4/conf/dummy0/arp_announce
+echo "1" >/proc/sys/net/ipv4/conf/all/arp_ignore
+echo "2" >/proc/sys/net/ipv4/conf/all/arp_announce 
+sysctl -p
+
+chmod +x ipvs_client.sh
+
+
+
+===================测试======================
+real server 执行
+
+[root@localhost ~]# sh ipvs_client.sh
+
+
+
+
+loadbanlcer 执行
+
+[root@master ~]# /etc/init.d/heartbeat start
+
+
+
+将eth1 down 掉 测试 结果虚拟ip 切换 说明正常
+
+
+将一个apache down 再启动 ：
+[Mon May  7 08:56:19 2012|ldirectord|12389] Invoking ldirectord invoked as: /etc/ha.d/resource.d/ldirectord status 
+[Mon May  7 08:56:19 2012|ldirectord|12389] Exiting with exit_status 3: Exiting from ldirectord status
+[Mon May  7 08:56:19 2012|ldirectord|12404] Invoking ldirectord invoked as: /etc/ha.d/resource.d/ldirectord start 
+[Mon May  7 08:56:19 2012|ldirectord|12404] Starting Linux Director v1.186-ha-2.1.3 as daemon
+[Mon May  7 08:56:19 2012|ldirectord|12406] Changed virtual server: 192.168.1.110:80
+[Mon May  7 09:05:09 2012|ldirectord|12406] Deleted real server: 192.168.1.103:80 (192.168.1.110:80)
+[Mon May  7 09:05:49 2012|ldirectord|12406] Added real server: 192.168.1.103:80 (192.168.1.110:80) (Weight set to 1
+
+说明正常 
+
+
+注意观察日志：
+
+
+tail -f -n200 /var/log/ldirectord.log 
+tail -f -n200 /var/log/ha-debug
+tail -f -n200 /var/log/ha-log 

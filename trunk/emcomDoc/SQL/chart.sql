@@ -1,5 +1,51 @@
 
 
+
+
+
+
+
+
+
+
+
+
+
+//============
+
+SELECT * FROM JHF_ALIVE_EXECUTION WHERE CUSTOMER_ID = '00000120' ORDER BY INPUT_DATE DESC LIMIT 10 ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 SELECT * FROM JHF_5MINUTELY_RATE_SUMMARY;
 
 
