@@ -11,7 +11,8 @@ Cwl00201    1    c4ca4238a0b923820dcc509a6f75849b
 
 /usr/local/mysql/bin/mysql -uroot -psys2oo9emcom
 
-
+  503  /usr/local/mysql/bin/mysqladmin -uroot -p shutdown
+  504  /usr/local/mysql/bin/mysqld_safe --user=mysql &
 
 ┌──────────────────┐
 │00000239    BieYongA     111111111111│
