@@ -1,9 +1,0 @@
-■Middle请求部署
-项目名称  : panta test 环境
-课题号    : all 88 
-课题内容  : Terracotta 开发,RateAgent/RateCache,Losscut(Topic),trader(BeanCopy,Rate过期检
-查)
-本次变更点: trader 增加了 rate 过期检查
-部署版本  : 10.12
-模块      : middle
-部署时间  : 马上

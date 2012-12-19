@@ -1,5 +1,0 @@
-connectionType:pserver
-user:lubq
-password:bestwiz
-host:cvs.bestwiz.cn
-repository path:/project
