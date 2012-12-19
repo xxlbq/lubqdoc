@@ -1,2 +1,0 @@
-在bugzilla填写review结果的时候，标题请采用下面格式：『review』『系统名称』/『课题编号』/『描述』，例如：review mj/ Front #190 / mobile 入金， 另外，review完毕后，如果没有发现问题，就不要填写bugzilla了。请各位负责人转达给reivew的人员。 
-dealer开发相关使用该会议室
