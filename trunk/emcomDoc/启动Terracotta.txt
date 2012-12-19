@@ -1,5 +1,0 @@
-18:13:57] 王岩 说： Terracotta服务器的启动与停止
-#cd /usr/local/terracotta
-#bin/start-tc-server.sh -f tc-config.xml (启动)
-#bin/stop-tc-server.sh (停止)
-[18:14:11] 王岩 说： vi /usr/local/terracotta/tc-config.xml

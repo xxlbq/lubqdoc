@@ -1,7 +1,0 @@
-client=yes
-socket=a:TCP_NODELAY=1
-socket=r:TCP_NODELAY=1
-output=/etc/stunnel/stunnel.log
-[GKGOH_Fetch]
-accept=127.0.0.1:5000
-connect=208.89.233.21:572
