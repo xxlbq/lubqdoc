@@ -1,9 +1,0 @@
-(16:47:18) 王岩: 2011-04-21 17:44:29,053 INFO  [core.service.CoreService#getTradeModeForInstantsOrder:2875] :  JhfCusttradeContrl : isAutohedgeSwatichOn=false,id=20110421ORD00181584
-
-
-2011-04-21 17:44:29,048 INFO  [trader.job.OrderRequestJob#mainProcess:121] :  === [Order Request Job] ===  orderBindInfo :cn.bestwiz.jhf.core.bo.bean.OrderBindInfo@12654b[mobileFlag=true
-(16:47:23) 王岩: MJ Test Mtools注文
-
-调用的成行1的模式,但是,却按照MOB进行的后续处理,比较矛盾.原来MTOOLS有Slip,后来去掉了,怀疑是没改利索
-
-备忘
